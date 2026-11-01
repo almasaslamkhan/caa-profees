@@ -1,0 +1,4 @@
+interface:
+  display_name: "Profees Medical Coding"
+  short_description: "Orchestrate ICD-10, E/M, CPT, HCPCS, association, modifiers"
+  default_prompt: "Run the Profees medical coding workflow per SKILL.md and return the coding summary JSON."

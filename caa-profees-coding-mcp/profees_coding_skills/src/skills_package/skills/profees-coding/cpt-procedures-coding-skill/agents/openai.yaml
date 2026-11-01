@@ -1,0 +1,4 @@
+interface:
+  display_name: "CPT Procedure Coding"
+  short_description: "Extract CPT procedure codes"
+  default_prompt: "Use $cpt-procedures-coding-skill to code CPT procedures from this note."

@@ -1,0 +1,18 @@
+artifacts:
+- name: caa-profees-coding-mcp
+  type: flock_commit
+  location: ocid1.devopsrepository.oc1.phx.amaaaaaaw4vcxbyapj4jtmxnfqjzliwhiz6aic2dnpovy4hd6w375nms26fq
+  branch: master
+  description: TF config to be used for shepherd releases
+  version: latest
+- name: caa-profees-coding-mcp-caa-common
+  type: pop
+  location: https://artifactory.oci.oraclecorp.com:443/shepherd-release-helm-local/caa-common
+  description: caa-common helm chart
+  artifactSource: EXTERNAL
+  version: latest
+- name: caa-profees-coding-mcp
+  type: docker
+  location: odo-docker-signed-local.artifactory.oci.oraclecorp.com/caa-profees-coding-mcp
+  description:  profees coding mcp container image
+  artifactSource: PIPELINE_RUN

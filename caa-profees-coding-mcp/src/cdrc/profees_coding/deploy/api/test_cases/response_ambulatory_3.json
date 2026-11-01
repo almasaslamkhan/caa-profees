@@ -1,0 +1,96 @@
+{
+  "procedure": [],
+  "em": [
+    {
+      "code": "99204",
+      "description": "Office o/p new mod 45 min",
+      "source": "MDM",
+      "system": "CPT",
+      "justification": "Encounter type: Problem follow-up: UTI workup, referrals, splint/med guidance.\nPatient type: New. Visit history support the prediction.\nProblem Complexity: Moderate. 1 acute, uncomplicated illness or injury. 1 chronic illness with exacerbation, progression, or side effects of treatment. 1 undiagnosed new problem with uncertain prognosis\nData Complexity: Low. Tests & Documents: 2 elements present.\nRisk Of Complications: Moderate. Ordered prescription medication lisinopril.\nTime statement: No clinician time statement is documented.",
+      "modifiers": [],
+      "encounter_type": {
+        "encounter_type": "Office or Other Outpatient Service",
+        "justification": "Problem follow-up: UTI workup, referrals, splint/med guidance."
+      },
+      "problem_complexity": {
+        "level": "Moderate",
+        "detailed_justification": "1 acute, uncomplicated illness or injury: UTI (urinary tract infection) with mild residual dysuria after completing nitrofurantoin. 1 chronic illness with exacerbation, progression, or side effects of treatment: Numbness in both hands with pain; suspected carpal tunnel and ulnar nerve involvement; uncontrolled. 1 undiagnosed new problem with uncertain prognosis: Borderline high CD4:CD8 ratio on flow cytometry (high CD4 T cell count).\nUTI (urinary tract infection) with mild residual dysuria after completing nitrofurantoin: A&P documents: \"Completed 7-day course of nitrofurantoin for E. coli UTI\" with \"Mild residual intermittent burning\" and orders a repeat urinalysis \"to assess for infection clearance\"; this is ongoing evaluation/management of an acute uncomplicated infection without systemic symptoms or complications.\nBorderline high CD4:CD8 ratio on flow cytometry (high CD4 T cell count): A&P documents: \"Borderline high CD4:CD8 ratio noted on flow cytometry\" with no clear etiology (\"no evidence of infection, anemia, or autoimmune disease\") and escalates care via: \"Referred to hematologist for evaluation and ongoing monitoring\"; this reflects diagnostic uncertainty requiring specialist evaluation, meeting the moderate problem criterion.\nNumbness in both hands with pain; suspected carpal tunnel and ulnar nerve involvement; uncontrolled: A&P documents chronicity and lack of control: \"Chronic, intermittent. Uncontrolled.\" Symptoms are described as worsening in the HPI and are actively managed with new supportive treatment: \"Recommended wrist splint\" plus neurology referral \"for further evaluation and possible nerve testing\"; this supports a chronic condition not at goal (exacerbation/poor control) rather than stable chronic.",
+        "justification": "1 acute, uncomplicated illness or injury. 1 chronic illness with exacerbation, progression, or side effects of treatment. 1 undiagnosed new problem with uncertain prognosis",
+        "confidence": 0.6
+      },
+      "data_complexity": {
+        "level": "Low",
+        "detailed_justification": "Limited Data Elements Present. Tests & Documents: 2 elements present. Two unique test orders documented: repeat urinalysis and CBC panel.",
+        "justification": "Tests & Documents: 2 elements present.",
+        "confidence": 1.0
+      },
+      "risk_of_complications": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": "Ordered prescription medication lisinopril.",
+        "confidence": 1.0
+      },
+      "pc_critic_response": "The prior problems assessment was directionally correct at the overall level (Moderate) but under-specified the driver. Per AMA rules, overall problem complexity is set by the single highest category met. Here, at least one problem reaches Moderate: the elevated CD4:CD8 ratio is an undiagnosed abnormal finding prompting hematology evaluation/monitoring (uncertain prognosis), and the bilateral hand numbness is explicitly documented as chronic and uncontrolled with escalation of management (splint and neurology evaluation). UTI remains acute uncomplicated. No documentation supports High (no threat to life/bodily function or severe exacerbation). Assumption: the CD4:CD8 abnormality is being evaluated for etiology (diagnostic uncertainty) rather than a confirmed benign condition, based on the hematology referral language.",
+      "rc_critic_response": "",
+      "dc_critic_response": "1) DISC: I searched the note for explicit statements of discussion with another clinician (e.g., called/spoke with Dr. X, discussed case with radiology/hematology). The A/P only documents referrals to hematology and neurology and staff coordination, which per rules do not count as DISC, so DISC is not present.\n2) Intpr (radiology): I checked for any imaging (X-ray/CT/MRI/US) orders or results and any language suggesting the clinician independently interpreted them. The encounter contains no radiology tests or interpretations, so Intpr is not present.\n3) Independent historian (iHx): I looked for any non-patient source providing history (parent/spouse/caregiver reported). The history is from the patient, and the exam notes show she is alert and able to follow instructions; no independent historian is documented, so iHx is not present.\n4) Tests & Documents count: I enumerated unique tests ordered/reviewed/analyzed that occurred in this encounter and removed non-qualifying items. The note orders a repeat urinalysis and the EHR orders a CBC panel; both are valid unique test orders. Prior labs (B12/folate, inflammatory markers, flow cytometry, urine culture) are mentioned as past results, but they are not tied to an explicit external-note review in this encounter and are outside this visit; therefore I do not add additional counted review items. Medication orders (lisinopril) are excluded from T&D. The SAWE follow-up is future and no preventive labs are counted.",
+      "mdm_complexity": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": null,
+        "confidence": null
+      },
+      "time_spent": {
+        "time_spent_minutes": 0,
+        "evidence": null,
+        "justification": "No clinician time statement is documented."
+      },
+      "linked_diagnosis": [
+        {
+          "code": "N39.0",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Urinary tract infection, site not specified",
+          "justification": "The assessment and plan documents active follow-up and management of urinary tract infection, including review of urine culture results, residual symptoms after nitrofurantoin, and ordering repeat urinalysis."
+        },
+        {
+          "code": "R20.0",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Anesthesia of skin",
+          "justification": "The assessment and plan documents chronic uncontrolled numbness in both hands with pain, conservative treatment recommendations, and referral to neurology for further evaluation."
+        },
+        {
+          "code": "D72.828",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Other elevated white blood cell count",
+          "justification": "The assessment and plan addresses the elevated CD4:CD8 ratio/other elevated white blood cell count finding with review of normalized counts and referral to hematology for ongoing evaluation and monitoring."
+        }
+      ],
+      "confidence": null
+    }
+  ],
+  "diagnosis": [
+    {
+      "code": "N39.0",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Urinary tract infection, site not specified",
+      "justification": "The assessment and plan documents active follow-up and management of urinary tract infection, including review of urine culture results, residual symptoms after nitrofurantoin, and ordering repeat urinalysis."
+    },
+    {
+      "code": "R20.0",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Anesthesia of skin",
+      "justification": "The assessment and plan documents chronic uncontrolled numbness in both hands with pain, conservative treatment recommendations, and referral to neurology for further evaluation."
+    },
+    {
+      "code": "D72.828",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Other elevated white blood cell count",
+      "justification": "The assessment and plan addresses the elevated CD4:CD8 ratio/other elevated white blood cell count finding with review of normalized counts and referral to hematology for ongoing evaluation and monitoring."
+    }
+  ]
+}

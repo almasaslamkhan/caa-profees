@@ -1,0 +1,222 @@
+{
+  "encounter_id": "ascdsdfrwegergfvavdafv",
+  "ambient_note": {
+    "subjective": {
+      "cc": "for wellness exam",
+      "hpi": "The patient is a 29-year-old female with no significant past medical history, presenting for a routine check-up with a complaint of right knee pain.<br/><br/>Right Knee Pain<br/>The patient reports right knee pain that began three to four days ago after starting cycling exercise classes, which involve spin activities. The pain is localized to the right knee, described as dull and intermittent, and does not occur all day. It is aggravated by standing for long periods, walking uphill, running, and climbing stairs, and is relieved by sitting or resting. She took a painkiller once at the onset, which provided some relief, though she is unsure if improvement was due to rest or medication. She is not regularly using ice or a knee wrap. The patient denies any prior knee injuries or surgeries and has not experienced the knee giving out. She is generally healthy, does not take any regular medications, and has no allergies. Family history is notable for hypertension in her father and low blood pressure in her mother. She has had one prior surgery for a dental cyst, unrelated to her current complaint.<br/><br/>",
+      "pastMedicalHistory": "",
+      "surgicalHistory": "",
+      "familyHistory": "",
+      "socialHistory": "",
+      "immunizationHistory": "",
+      "listOfAllergies": "",
+      "listOfCurrentRx": ""
+    },
+    "reviewOfSystems": "Musculoskeletal: Positive for knee pain and problems climbing stairs. Negative for knee giving out.",
+    "objective": {
+      "vitalSigns": "",
+      "laboratoryResults": "",
+      "physicalExamination": "Extremities:<br/>Left knee exam within normal limits<br/><br/>Musculoskeletal:<br/>No pain with right knee extension<br/>No pain with right knee flexion<br/>Mild pain with right knee abduction or external rotation<br/><br/>Neurological:<br/>Deep tendon reflexes 2+ to 4+ throughout<br/><br/>"
+    },
+    "assessmentAndPlan": {
+      "summary": "Patient is a 29-year-old female presenting for evaluation of right knee pain following recent increase in physical activity.<br/><br/>",
+      "text": "I spedn 10 mins for this encounter. Wellness exam done ;Right knee sprain<br/>- Assessment consistent with right knee sprain based on localized pain, exam findings, and recent increase in physical activity; no evidence of structural injury requiring imaging.<br/>- Recommend rest and avoidance of spinning or strenuous activity for at least one week.<br/>- Gradual return to exercise, starting with walking.<br/>- Use knee brace when resuming exercise.<br/>- Over-the-counter pain medications (Ibuprofen, Motrin, Advil) as needed.<br/>- Nurse to provide knee exercises.<br/><br/>",
+      "diagnoses": []
+    },
+    "diagnosticsStudies": ""
+  },
+    "soap_text": "Chief Complaint\njoint pain - bilateral elbow pain; r elbow bursitis (started\n\nHistory of Present Illness\nThe patient is a [AGE] male with a history of rheumatoid arthritis, hypogonadism, and colon polyps, presenting for evaluation of joint pain and annual physical. Initially made this appointment for joint pain but wanted to switch it to an annual physical today. He has already addressed the joint pain with his rheumatologist. Rheumatoid Arthritis and Joint Pain The patient has a history of rheumatoid arthritis and reports ongoing joint pain, including elbow pain. He is currently taking hydroxychloroquine. He denies chills and diarrhea. Hypogonadism The patient has a history of hypogonadism and administers weekly testosterone injections, using 100 mg per week. He sometimes varies the day of administration but generally maintains a weekly schedule. His last testosterone level was checked 10 months ago. He reports mild nocturia and denies a family history of prostate cancer. Health Maintenance and Cancer Screening The patient presents for his annual physical. He does not smoke and has no history of tobacco use. He is up to date on his tetanus immunization (2022) and is unsure if he has received the pneumococcal vaccine. He plans to receive the pneumococcal and flu vaccines at a future visit. The patient has a family history of colon cancer and a personal history of colon polyps. His last colonoscopy was on January 6, 2020, with findings of cecal polyps, sessile serrated adenomata, and tubular adenomas in the ascending and transverse colon. He is due for a five-year follow-up colonoscopy. The patient stopped taking vitamin D and folic acid more than two months ago when his prescriptions ran out. He has a history of multiple benign skin moles and attends dermatology visits for skin checks.\n\nPhysical Exam\nVitals & Measurements T: 36 \u00b0C HR: 55 RR: 14 BP: 130/82 SpO2: 96% HT: 185 cm WT: 110.8 kg BMI: 32.4 Neck: No cervical lymphadenopathy. Integumentary: Multiple benign nevi observed. General: No acute distress. Eyes: Anicteric sclera. Extraocular movements are intact. HEENT: Tympanic membranes are clear bilateral. External auditory canals are clear bilaterally as well. Cardiovascular: Regular rate and rhythm Pulmonary: Lungs are clear to auscultation bilaterally. Gastrointestinal: Abdomen is soft. Bowel sounds are present. Skin: No rash. Musculoskeletal: Gait is normal. Psychiatric: Mood is normal. Affect is appropriate.\n\nAssessment/Plan\nPatient is a [AGE] male with rheumatoid arthritis on hydroxychloroquine, hypogonadism on testosterone therapy, and a personal history of colon polyps, presenting today for annual physical and preventive care. 1. Annual physical exam - Annual preventive care visit for age-appropriate screening and immunizations. - Ordered CMP, CBC, lipid panel for routine screening. - Recommended pneumococcal vaccine (Prevnar 21); to be administered at nurse visit in October. - Recommended annual influenza vaccine; to be administered at nurse visit in October. - Discussed COVID-19 booster as optional; patient not at high risk, may consider in future. - Reviewed immunization status; tetanus up to date, shingles vaccine completed. - Scheduled follow-up in one year for next annual physical. Ordered: influenza virus vaccine, inactivated(influenza virus Vaccine PF 0.5 mL Syr Inj >= 6 months), 0.5 mL, IM, Unscheduled pneumococcal 21-valent conjugate vaccine (cvx 327)(Capvaxive PF Prefilled Syringe), 0.5 mL, IM, Once CBC with Auto Differential(CBC Auto), Routine collect, Blood, Start date 09/17/25 9:17:00 CDT, Stop date 09/17/25 9:17:00 CDT, Annual physical exam | Hypogonadism male, Orig Ref Doc No ORP Reason: Self-referral Comprehensive Metabolic Panel(CMP), Routine collect, Blood, Start date 09/17/25 9:17:00 CDT, Stop date 09/17/25 9:17:00 CDT, Annual physical exam, Orig Ref Doc No ORP Reason: Self-referral Lipid Profile w Direct LDL rfx(Lipid CRMC), Routine collect, Blood, Start date 09/17/25 9:17:00 CDT, Stop date 09/17/25 9:17:00 CDT, Annual physical exam, Orig Ref Doc No ORP Reason: Self-referral Return to Clinic - [ORGANIZATION], Order for Future Visit, *Est. 09/17/26 +/- 28 day(s), annual physical, PHYSICAL, [ORGANIZATION] 2. RA (rheumatoid arthritis) - Stable on hydroxychloroquine; continue current regimen. - Use naproxen for joint pain as needed. - Option for short course of oral prednisone for acute symptom relief if needed. - Recommended anti-inflammatory diet. - Instructed to report worsening symptoms or increased frequency of flares for possible escalation of therapy. Ordered: Folate Level, Routine collect, Blood, Start date 09/17/25 9:20:00 CDT, Stop date 09/17/25 9:20:00 CDT, RA (rheumatoid arthritis), Orig Ref Doc No ORP Reason: Self-referral 3. Elbow pain 4. Long-term use of hydroxychloroquine - Ongoing hydroxychloroquine therapy for RA. - Patient discontinued folic acid supplementation; ordered folate level to assess need for resuming folic acid. 5. Hypogonadism male - Ongoing testosterone therapy with weekly injections (100 mg per week). - Ordered PSA and CBC for annual monitoring of testosterone therapy. - Ordered testosterone level to assess adequacy of therapy. Ordered: CBC with Auto Differential(CBC Auto), Routine collect, Blood, Start date 09/17/25 9:17:00 CDT, Stop date 09/17/25 9:17:00 CDT, Annual physical exam | Hypogonadism male, Orig Ref Doc No ORP Reason: Self-referral Prostate Specific Antigen(PSA Diagnostic), Routine collect, Blood, Start date 09/17/25 9:17:00 CDT, Stop date 09/17/25 9:17:00 CDT, Hypogonadism male, Orig Ref Doc No ORP Reason: Self-referral Return to Clinic - [ORGANIZATION], Order for Future Visit, *Est. 09/17/26 +/- 28 day(s), annual physical, PHYSICAL, [ORGANIZATION] Testosterone Level Total, Routine collect, Blood, Start date 09/17/25 9:17:00 CDT, Stop date 09/17/25 9:17:00 CDT, Hypogonadism male, Orig Ref Doc No ORP Reason: Self-referral 6. Hypovitaminosis D - History of vitamin D deficiency; patient discontinued supplementation after prescription ran out. - Ordered vitamin D level to assess current status before resuming supplementation. Ordered: Vitamin D Level, Routine collect, Blood, Start date 09/17/25 9:17:00 CDT, Stop date 09/17/25 9:17:00 CDT, Hypovitaminosis D, Orig Ref Doc No ORP Reason: Self-referral 7. Personal history of colon polyps, unspecified Ordered: [DIAGNOSTIC_LABS], Surveillance (<10 years), Order for Future Visit, *Est. 09/17/25 due within 3 month(s), Location: [ORGANIZATION], [PERSON], [PERSON], Colonoscopy, flexible; diagnostic, including collection of specimen(s) by brushing or washing, when performed (separate... Personal history of colon polyps - History of cecal polyps (sessile serrated adenomata, tubular adenomas) with last colonoscopy on January 6, 2020; five-year follow-up now due. - Recommended colonoscopy for colorectal cancer surveillance; records to be confirmed and referral as needed. Problem List/Past Medical History Ongoing Ankle weakness Annual physical exam Cervicalgia Chronic neck and back pain Left ankle pain Left cervical radiculopathy Left shoulder pain Long-term use of hydroxychloroquine Obesity Prediabetes Right ankle pain Right otitis externa Right otitis media Subluxation of peroneal tendon of right foot Unstable left ankle Unstable right ankle Historical Costochondritis Hypercalcemia Hyperlipidemia Hypertension Procedure/Surgical History \u2022 LEFT ANKLE SURGERY \u2022 TONSILECTOMY \u2022 HERNIA \u2022 Appendectomy; \u2022 COLONOSCOPY Medications allopurinol(allopurinol 100 mg oral tablet), 1 Tablet(s), Oral, Daily, 11 refills folic acid(folic acid 1 mg oral tablet), See Instructions hydroxychloroquine(hydroxychloroquine 200 mg oral tablet), See Instructions, 3 refills irbesartan(irbesartan 150 mg oral tablet), 1 Tablet(s), Oral, Daily pantoprazole(pantoprazole 20 mg oral delayed release tablet), 20 mg= 1 Tablet(s), Oral, Daily predniSONE(predniSONE 5 mg oral tablet), See Instructions testosterone(Testosterone Cypionate 200 mg/mL intramuscular solution), See Instructions testosterone(Testosterone Cypionate 100 mg/mL intramuscular solution), 100 mg, IM, qWeek, 5 refills Allergies doxycycline Skin tingling Social History Smoking Status Never smoker Alcohol Use:Current Type:Beer Frequency:1-2 times per month Substance Abuse - Denies Substance Abuse Tobacco - Denies Tobacco Use Smoking HistoryNever smoker Family History Asthma: Sister, Brother, Brother, Child and Child.Negative: Mother. CA - Cancer of colon: Father. Skin cancer: Mother. Deceased Family Member(s) Relationship: Father, Age: unknown, Cause: cancer, colon Immunizations Vaccine Date Status influenza virus vaccine inactivated 10/09/2024 Given influenza virus vaccine inactivated 11/28/2023 Given diphtheria/pertussis acel/tetanus adult 04/07/2022 Given influenza virus vaccine inactivated 12/02/2021 Recorded SARS-CoV-2 (COVID-19) mRNA-1273 vaccine 12/02/2021 Recorded SARS-CoV-2 (COVID-19) mRNA-1273 vaccine 03/26/2021 Recorded SARS-CoV-2 (COVID-19) mRNA-1273 vaccine 02/26/2021 Recorded influenza, unspecified formulation 11/01/2018 Recorded influenza virus vaccine inactivated 12/13/2017 Recorded influenza virus vaccine inactivated 02/22/2017 Recorded influenza virus vaccine inactivated 02/01/2016 Recorded influenza virus vaccine inactivated 11/20/2014 Recorded hepatitis A adult vaccine 06/08/2012 Recorded influenza, unspecified formulation 12/08/2003 Recorded Visit Information Attending Physician: [PERSON] Referring Physician: [PERSON] Primary Care Physician: [PERSON] Visit Date: 09/17/2025\n\n",
+  "orders": [
+    {
+      "order_type": "Medication Order",
+      "status": "ordered",
+      "catalog_type": "Pharmacy",
+      "display_line": "Tablet",
+      "mnemonic": "Lisinopril"
+    },
+    {
+      "order_type": "Non Medication Order",
+      "status": "ordered",
+      "catalog_type": "Lab",
+      "display_line": "Blood Test",
+      "mnemonic": "CBC Panel"
+    }
+  ],
+  "patient_type": "New",
+  "patient_birthdate": "1958-02-10T00:00:00Z",
+  "patient_sex": "male",
+  "current_encounter_period": {
+    "start": "2023-10-03T14:15:00Z",
+    "end": "2023-10-03T14:15:00Z"
+  },
+  "problem_list": [
+    {
+      "description": "Vertigo",
+      "code": "R42",
+      "status": "active",
+      "priority": "2"
+    },
+    {
+      "description": "Acute depression",
+      "code": "F32.A",
+      "status": "active",
+      "priority": "1"
+    },
+    {
+      "description": "Brain concussion",
+      "code": "S06.0XAA",
+      "status": "inactive",
+      "priority": "2"
+    },
+    {
+      "description": "Benign essential hypertension",
+      "code": "I10",
+      "status": "active",
+      "priority": "1"
+    },
+    {
+      "description": "Acute insomnia",
+      "code": "G47.00",
+      "status": "future",
+      "priority": "2"
+    }
+  ],
+  "soap_text_previous": "the previous soap text",
+  "orders_previous": [
+    {
+      "order_type": "Medication Order",
+      "status": "ordered",
+      "catalog_type": "Pharmacy",
+      "display_line": "Tablet",
+      "mnemonic": "Lisinopril"
+    }
+  ],
+  "response_previous": {
+    "procedure": [
+      {
+        "description": "Visit complexity inherent to ongoing, longitudinal primary care relationship",
+        "code": "G2211",
+        "system": "HCPCS",
+        "justification": "Established patient seen for routine wellness and primary care; clinician documents that they \"continue to follow for general primary care,\" are providing ongoing preventive health management, and will continue to monitor and oversee musculoskeletal concerns over time with planned follow-up, reflecting a longitudinal, focal primary care relationship.",
+        "modifiers": [],
+        "linked_diagnosis": [
+          {
+            "code": "Z00.01",
+            "is_primary": true,
+            "system": "ICD-10-CM",
+            "description": "Encounter for general adult medical examination with abnormal findings",
+            "justification": "G2211 reflects visit complexity inherent to an ongoing, longitudinal primary care relationship. The assessment explicitly documents a wellness exam and ongoing primary care and preventive health management, which is captured by Z00.01 (general adult medical examination with abnormal findings), supporting the longitudinal primary care nature of the service."
+          },
+          {
+            "code": "S83.91XA",
+            "is_primary": false,
+            "system": "ICD-10-CM",
+            "description": "Sprain of unspecified site of right knee, initial encounter",
+            "justification": "The note describes ongoing monitoring and management of a new right knee sprain as part of her primary care, with advice for follow-up and potential future imaging. This ongoing oversight of a musculoskeletal condition supports the complexity add-on G2211 in the context of longitudinal primary care for S83.91XA (sprain of unspecified site of right knee, initial encounter)."
+          }
+        ]
+      }
+    ],
+    "em": [
+      {
+        "code": "99203",
+        "description": null,
+        "source": "MDM",
+        "confidence": null,
+        "system": "CPT",
+        "justification": "Encounter type: EncounterType.OUTPATIENT. Objective evidence: \"Musculoskeletal: No pain with right knee extension or flexion. Mild pain with right knee abduction or external rotation.\" Assessment/Plan evidence: \"2. Right knee sprain - Assessment consistent with sprain related to recent increase in activity. - Recommend rest and avoidance of spinning/strenuous activity for at least one week. - Gradual return to exercise, starting with walking. - Knee brace when resuming activity. - OTC NSAIDs as needed. - Home knee-strengthening program reviewed; nurse provided exercises. - ... follow up in 4\u20136 weeks or sooner if pain persists/worsens to reassess need for further treatment or imaging.\"\n1. problem_complexity: Low. Justification: 1 acute, uncomplicated illness or injury: Right knee sprain.\nRight knee sprain: A&P: \u201cRight knee sprain \u2013 Assessment consistent with sprain related to recent increase in activity.\u201d Management: rest, activity modification, knee brace on return to activity, OTC NSAIDs PRN, home strengthening exercises, and follow-up in 4\u20136 weeks. Onset 3\u20134 days ago (acute), no systemic symptoms, no high-risk treatment, no immediate diagnostic workup for serious pathology. Meets AMA definition of acute, uncomplicated injury.\n2. data_complexity: Minimal. Justification: Minimal Data Elements Present. Tests & Documents: 1 elements present. One unique test ordered: CBC Panel (blood). No external notes reviewed, no other tests reviewed/ordered documented. Medication order excluded from T&D.\n3. risk_of_complications: Moderate. Justification: Prescription drug management documented: a named prescription medication (lisinopril) was ordered at this encounter, which qualifies as Moderate risk. Additional actions include named OTC NSAIDs recommendation and OTC knee brace (Low) and rest/exercises (Minimal), but the highest level is Moderate.",
+        "modifiers": [],
+        "encounter_type": {
+          "encounter_type": "Office or Other Outpatient Service",
+          "justification": "Objective evidence: \"Musculoskeletal: No pain with right knee extension or flexion. Mild pain with right knee abduction or external rotation.\" Assessment/Plan evidence: \"2. Right knee sprain - Assessment consistent with sprain related to recent increase in activity. - Recommend rest and avoidance of spinning/strenuous activity for at least one week. - Gradual return to exercise, starting with walking. - Knee brace when resuming activity. - OTC NSAIDs as needed. - Home knee-strengthening program reviewed; nurse provided exercises. - ... follow up in 4\u20136 weeks or sooner if pain persists/worsens to reassess need for further treatment or imaging.\""
+        },
+        "problem_complexity": {
+          "level": "Low",
+          "justification": "1 acute, uncomplicated illness or injury: Right knee sprain.\nRight knee sprain: A&P: \u201cRight knee sprain \u2013 Assessment consistent with sprain related to recent increase in activity.\u201d Management: rest, activity modification, knee brace on return to activity, OTC NSAIDs PRN, home strengthening exercises, and follow-up in 4\u20136 weeks. Onset 3\u20134 days ago (acute), no systemic symptoms, no high-risk treatment, no immediate diagnostic workup for serious pathology. Meets AMA definition of acute, uncomplicated injury.",
+          "confidence": 1.0
+        },
+        "data_complexity": {
+          "level": "Minimal",
+          "justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. One unique test ordered: CBC Panel (blood). No external notes reviewed, no other tests reviewed/ordered documented. Medication order excluded from T&D.",
+          "confidence": 1.0
+        },
+        "risk_of_complications": {
+          "level": "Moderate",
+          "justification": "Prescription drug management documented: a named prescription medication (lisinopril) was ordered at this encounter, which qualifies as Moderate risk. Additional actions include named OTC NSAIDs recommendation and OTC knee brace (Low) and rest/exercises (Minimal), but the highest level is Moderate.",
+          "confidence": 1.0
+        },
+        "pc_critic_response": "0. Evidence from A&P vs. HPI: The A&P lists two items: (1) \u201cWellness exam completed; ongoing primary care and preventive health management reviewed.\u201d This is preventive care and not an active disease problem; per instructions, routine preventive/wellness components are not counted as separate problems unless abnormality/suspicion documented\u2014none is present. (2) \u201cRight knee sprain\u201d with a structured plan (rest, avoid strenuous activity, gradual return, brace, OTC NSAIDs, home exercises, follow-up if persists/worsens). Therefore, only one problem is addressed: right knee sprain.\n\n1. Consolidate all conditions: Consolidation yields a single active problem: Right knee sprain (new musculoskeletal injury). Preventive wellness is excluded as a problem per rules. No other diagnoses with active management are in the A&P.\n\n2A. Self-limited or minor? While a sprain may resolve, the A&P initiates management specific to the injury (activity modification, brace, NSAIDs, exercises, follow-up). This aligns with acute, uncomplicated injury rather than self-limited/minor per definitions.\n\n2B. Chronic vs. acute: The HPI states onset \u201cthree to four days ago,\u201d confirming acute. Not inherently chronic and no >1 year duration. Thus, classify as acute.\n\n2D. Uncomplicated vs. complicated: No evidence of complicated features: no cross-system evaluation, no extensive injury, no high-risk treatment, no systemic symptoms, no immediate imaging/workup for serious pathology. Conservative care only. Therefore, acute, uncomplicated injury.\n\n2F. Uncertain prognosis? No immediate diagnostic workup ordered for the knee; future imaging only if not improving (\u201creassess need for further treatment or imaging\u201d). Contingent plans do not meet uncertain prognosis per rules.\n\nOverall complexity determination: Based on the single highest category among addressed problems, the right knee sprain meets \u201cacute, uncomplicated illness or injury,\u201d which maps to Low problem complexity. No other problem elevates the category.\n\nGround Truth vs. Model Prediction: Ground Truth not provided. Model Prediction classified Problem Complexity as Low for an acute, uncomplicated injury, which matches the A&P and the above rules. No discrepancy for the Problems element. Assumptions: Wellness/preventive care does not count as a separate problem due to absence of abnormal findings or specific suspicion; only the right knee sprain is counted. When documentation is ambiguous, defaulted to lower category (acute uncomplicated) rather than uncertain/complicated.",
+        "rc_critic_response": "System 2 step-through:\n- Key Risk Criteria 1 (Surgery/Procedure): No procedures or surgery decisions documented. Not applicable.\n- Criteria 2 (Vaccines): Wellness visit noted but no vaccine given for problem; none documented. Not applicable.\n- Criteria 3 (OTC Medication): Plan includes \u201cOTC NSAIDs as needed\u201d and \u201cKnee brace when resuming activity.\u201d Named OTC medication and OTC device use both count as Low. Also rest, home exercises, gradual return are Minimal but do not change highest risk.\n- Criteria 4 (Prescription and High-Risk Medication): Medication Orders list \u201cLisinopril | Tablet (ordered).\u201d This is a prescription drug started/ordered at this encounter. That is prescription drug management \u2192 Moderate. Note: Although HPI says patient takes no chronic meds, the explicit Orders include a named Rx; per rules, we must rely on documented orders and management actions\u2014this meets prescription drug management regardless of OTC items.\n- Criteria 5 (Health Devices): Knee brace is an OTC device recommendation \u2192 Low, not a prescribed/custom device. No CPAP/BiPAP etc. Not Moderate via device.\n- Criteria 6 (SDoH): None documented affecting management. Not applicable.\n- Criteria 7 (Final Decision): Highest level among identified actions is Moderate (Rx drug management) despite presence of Low and Minimal items.\n\nKey Notes cross-check:\n1. Recommendations to start/continue/stop: Named OTC NSAIDs recommended (Low). Explicit Rx order for lisinopril constitutes prescription drug management (Moderate). Name specified\u2014meets requirement.\n2. Information without explicit order: Not relied upon; explicit orders present.\n3. Gargles/rest/minimal testing: Rest and exercises are Minimal, already considered.\n4. Referrals: None relevant; PT was not referred.\n5. Hypothetical/future: Follow-up if worse is minimal; does not alter risk.\n6. Previously completed treatment: None counted.\n7. Diagnosis alone: Not used for risk.\n8. Do not ignore identifiable risk: Counted Rx order and OTC/device recs.\n9. Multiple low-dose meds do not increase: Acknowledged; highest is due to Rx.\n10. When OTC is prescribed, Moderate: Not applicable; OTC NSAIDs not prescribed, just recommended (Low). The Rx medication lisinopril is clearly prescription (Moderate).\n11. Supplements default OTC: Not applicable.\n\nHighest risk confirmation: Moderate (due to lisinopril order). Any minimal-risk testing (CBC) does not change risk; the CBC itself is minimal but presence of Rx management elevates overall to Moderate.\n\nComparison to Ground Truth/Model Prediction: None provided. Following official guidelines and prompt rules, prescription drug management present \u2192 Moderate.\n",
+        "dc_critic_response": "Step-by-step audit against each instruction:\n1) Discussion with external provider (DISC): The note contains no mention of discussion with another healthcare professional, specific names, or addresses. Only internal plan and follow-up are present. Therefore, this instruction is not applicable; DISC should not be added.\n2) Independent interpretation of radiology (Intpr): There is no radiology test mentioned as ordered or reviewed. No X-ray/MRI/CT results discussed. Therefore, Intpr is not applicable and should not be added.\n3) Independent historian (iHx): The history is provided by a capable adult patient; no other person contributed crucial information. No indication of a third-party historian. Therefore, iHx should not be added.\n4) Tests & Documents count: A CBC panel was ordered and is not conditional\u2014this counts as 1 unique test order. No other tests or external notes reviewed are documented. Medication orders (lisinopril) do not count towards T&D. No pending/conditional orders besides the CBC (which is definitively ordered). Therefore, Tests & Documents count should be 1. Since only 1 item is present, overall data complexity remains Minimal by AMA rules (requires 2 items for Low).",
+        "mdm_complexity": {
+          "level": "Low",
+          "justification": null,
+          "confidence": null
+        },
+        "time_spent": null,
+        "linked_diagnosis": [
+          {
+            "code": "S83.91XA",
+            "is_primary": true,
+            "system": "ICD-10-CM",
+            "description": "Sprain of unspecified site of right knee, initial encounter",
+            "justification": "99203 represents a problem-oriented evaluation and management service. The visit includes history, exam, and management focused on a new right knee sprain related to recent increased activity, with detailed treatment recommendations (rest, brace, NSAIDs, exercises, follow-up). This makes S83.91XA the diagnosis that directly supports the medical necessity of the 99203 service."
+          }
+        ]
+      },
+      {
+        "code": "99387",
+        "description": null,
+        "source": null,
+        "confidence": null,
+        "system": "CPT",
+        "justification": "Encounter type: EncounterType.PREVENTIVE_MEDICINE. Objective evidence: \"Physical Examination: Extremities: Left knee exam WNL. Musculoskeletal... Neurological...\" Assessment/Plan evidence: \"1. Wellness exam completed; ongoing primary care and preventive health management reviewed.\"",
+        "modifiers": [],
+        "encounter_type": {
+          "encounter_type": "Preventive Medicine",
+          "justification": "Objective evidence: \"Physical Examination: Extremities: Left knee exam WNL. Musculoskeletal... Neurological...\" Assessment/Plan evidence: \"1. Wellness exam completed; ongoing primary care and preventive health management reviewed.\""
+        },
+        "problem_complexity": null,
+        "data_complexity": null,
+        "risk_of_complications": null,
+        "pc_critic_response": "0. Evidence from A&P vs. HPI: The A&P lists two items: (1) \u201cWellness exam completed; ongoing primary care and preventive health management reviewed.\u201d This is preventive care and not an active disease problem; per instructions, routine preventive/wellness components are not counted as separate problems unless abnormality/suspicion documented\u2014none is present. (2) \u201cRight knee sprain\u201d with a structured plan (rest, avoid strenuous activity, gradual return, brace, OTC NSAIDs, home exercises, follow-up if persists/worsens). Therefore, only one problem is addressed: right knee sprain.\n\n1. Consolidate all conditions: Consolidation yields a single active problem: Right knee sprain (new musculoskeletal injury). Preventive wellness is excluded as a problem per rules. No other diagnoses with active management are in the A&P.\n\n2A. Self-limited or minor? While a sprain may resolve, the A&P initiates management specific to the injury (activity modification, brace, NSAIDs, exercises, follow-up). This aligns with acute, uncomplicated injury rather than self-limited/minor per definitions.\n\n2B. Chronic vs. acute: The HPI states onset \u201cthree to four days ago,\u201d confirming acute. Not inherently chronic and no >1 year duration. Thus, classify as acute.\n\n2D. Uncomplicated vs. complicated: No evidence of complicated features: no cross-system evaluation, no extensive injury, no high-risk treatment, no systemic symptoms, no immediate imaging/workup for serious pathology. Conservative care only. Therefore, acute, uncomplicated injury.\n\n2F. Uncertain prognosis? No immediate diagnostic workup ordered for the knee; future imaging only if not improving (\u201creassess need for further treatment or imaging\u201d). Contingent plans do not meet uncertain prognosis per rules.\n\nOverall complexity determination: Based on the single highest category among addressed problems, the right knee sprain meets \u201cacute, uncomplicated illness or injury,\u201d which maps to Low problem complexity. No other problem elevates the category.\n\nGround Truth vs. Model Prediction: Ground Truth not provided. Model Prediction classified Problem Complexity as Low for an acute, uncomplicated injury, which matches the A&P and the above rules. No discrepancy for the Problems element. Assumptions: Wellness/preventive care does not count as a separate problem due to absence of abnormal findings or specific suspicion; only the right knee sprain is counted. When documentation is ambiguous, defaulted to lower category (acute uncomplicated) rather than uncertain/complicated.",
+        "rc_critic_response": "System 2 step-through:\n- Key Risk Criteria 1 (Surgery/Procedure): No procedures or surgery decisions documented. Not applicable.\n- Criteria 2 (Vaccines): Wellness visit noted but no vaccine given for problem; none documented. Not applicable.\n- Criteria 3 (OTC Medication): Plan includes \u201cOTC NSAIDs as needed\u201d and \u201cKnee brace when resuming activity.\u201d Named OTC medication and OTC device use both count as Low. Also rest, home exercises, gradual return are Minimal but do not change highest risk.\n- Criteria 4 (Prescription and High-Risk Medication): Medication Orders list \u201cLisinopril | Tablet (ordered).\u201d This is a prescription drug started/ordered at this encounter. That is prescription drug management \u2192 Moderate. Note: Although HPI says patient takes no chronic meds, the explicit Orders include a named Rx; per rules, we must rely on documented orders and management actions\u2014this meets prescription drug management regardless of OTC items.\n- Criteria 5 (Health Devices): Knee brace is an OTC device recommendation \u2192 Low, not a prescribed/custom device. No CPAP/BiPAP etc. Not Moderate via device.\n- Criteria 6 (SDoH): None documented affecting management. Not applicable.\n- Criteria 7 (Final Decision): Highest level among identified actions is Moderate (Rx drug management) despite presence of Low and Minimal items.\n\nKey Notes cross-check:\n1. Recommendations to start/continue/stop: Named OTC NSAIDs recommended (Low). Explicit Rx order for lisinopril constitutes prescription drug management (Moderate). Name specified\u2014meets requirement.\n2. Information without explicit order: Not relied upon; explicit orders present.\n3. Gargles/rest/minimal testing: Rest and exercises are Minimal, already considered.\n4. Referrals: None relevant; PT was not referred.\n5. Hypothetical/future: Follow-up if worse is minimal; does not alter risk.\n6. Previously completed treatment: None counted.\n7. Diagnosis alone: Not used for risk.\n8. Do not ignore identifiable risk: Counted Rx order and OTC/device recs.\n9. Multiple low-dose meds do not increase: Acknowledged; highest is due to Rx.\n10. When OTC is prescribed, Moderate: Not applicable; OTC NSAIDs not prescribed, just recommended (Low). The Rx medication lisinopril is clearly prescription (Moderate).\n11. Supplements default OTC: Not applicable.\n\nHighest risk confirmation: Moderate (due to lisinopril order). Any minimal-risk testing (CBC) does not change risk; the CBC itself is minimal but presence of Rx management elevates overall to Moderate.\n\nComparison to Ground Truth/Model Prediction: None provided. Following official guidelines and prompt rules, prescription drug management present \u2192 Moderate.\n",
+        "dc_critic_response": "Step-by-step audit against each instruction:\n1) Discussion with external provider (DISC): The note contains no mention of discussion with another healthcare professional, specific names, or addresses. Only internal plan and follow-up are present. Therefore, this instruction is not applicable; DISC should not be added.\n2) Independent interpretation of radiology (Intpr): There is no radiology test mentioned as ordered or reviewed. No X-ray/MRI/CT results discussed. Therefore, Intpr is not applicable and should not be added.\n3) Independent historian (iHx): The history is provided by a capable adult patient; no other person contributed crucial information. No indication of a third-party historian. Therefore, iHx should not be added.\n4) Tests & Documents count: A CBC panel was ordered and is not conditional\u2014this counts as 1 unique test order. No other tests or external notes reviewed are documented. Medication orders (lisinopril) do not count towards T&D. No pending/conditional orders besides the CBC (which is definitively ordered). Therefore, Tests & Documents count should be 1. Since only 1 item is present, overall data complexity remains Minimal by AMA rules (requires 2 items for Low).",
+        "mdm_complexity": null,
+        "time_spent": null,
+        "linked_diagnosis": [
+          {
+            "code": "Z00.01",
+            "is_primary": true,
+            "system": "ICD-10-CM",
+            "description": "Encounter for general adult medical examination with abnormal findings",
+            "justification": "99387 is a comprehensive preventive medicine evaluation and management service. The assessment and plan document a completed wellness exam and review of preventive health management, which corresponds directly to Z00.01 (encounter for general adult medical examination with abnormal findings) and establishes the primary medical necessity for this preventive E/M service."
+          },
+          {
+            "code": "S83.91XA",
+            "is_primary": false,
+            "system": "ICD-10-CM",
+            "description": "Sprain of unspecified site of right knee, initial encounter",
+            "justification": "The knee sprain was identified and addressed during the wellness encounter and is the abnormal musculoskeletal finding noted in association with the general medical examination. As an abnormal finding evaluated and counseled on during the preventive visit, S83.91XA appropriately supports the \u2018with abnormal findings\u2019 component of Z00.01 for the 99387 service."
+          }
+        ]
+      }
+    ],
+    "diagnosis": [
+      {
+        "code": "Z00.01",
+        "is_primary": true,
+        "system": "ICD-10-CM",
+        "description": "Encounter for general adult medical examination with abnormal findings",
+        "justification": "Assessment/Plan lists \u201c1. Wellness exam completed\u201d as a primary purpose. An abnormal finding (right knee sprain) is diagnosed and managed at this visit, so the wellness encounter is coded with abnormal findings rather than without."
+      },
+      {
+        "code": "S83.91XA",
+        "is_primary": false,
+        "system": "ICD-10-CM",
+        "description": "Sprain of unspecified site of right knee, initial encounter",
+        "justification": "The plan documents \u201cRight knee sprain\u2026related to recent increase in activity\u201d with rest, brace, NSAIDs, and follow-up. The site is right knee, ligament not specified, and this is the initial presentation, matching S83.91XA."
+      }
+    ]
+  }
+}

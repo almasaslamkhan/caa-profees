@@ -1,0 +1,116 @@
+{
+  "procedure": [],
+  "em": [
+    {
+      "code": "99203",
+      "description": null,
+      "source": "MDM",
+      "confidence": null,
+      "system": "CPT",
+      "justification": "Encounter type: EncounterType.OUTPATIENT. objective_evidence: \"Musculoskeletal: No pain with right knee extension; No pain with right knee flexion; Mild pain with right knee abduction or external rotation\"; \"Extremities: Left knee exam within normal limits\"; \"Neurological: Deep tendon reflexes 2+ to 4+ throughout\"\nassessment_plan_evidence: \"Right knee sprain - Assessment consistent with right knee sprain based on localized pain, exam findings, and recent increase in physical activity; ... Recommend rest and avoidance of spinning or strenuous activity for at least one week. ... Gradual return to exercise ... Use knee brace ... Over-the-counter pain medications ... Nurse to provide knee exercises.\"\n1. problem_complexity: Low. Justification: 1 acute, uncomplicated illness or injury: Right knee sprain.\nRight knee sprain: A&P explicitly diagnoses right knee sprain with conservative management (rest, activity modification, brace, OTC NSAIDs, home exercises). Onset 3\u20134 days ago. No systemic symptoms, no cross-system evaluation, no procedural intervention or high-risk treatment; provider notes no evidence of structural injury requiring imaging. Meets definition of an acute, uncomplicated injury (Low).\n2. data_complexity: Minimal. Justification: Minimal Data Elements Present. Tests & Documents: 1 elements present. System 2 audit of each instruction: 1) DISC: The signed note does not mention discussion with any external provider; no specific names/addresses or consultation documented. Therefore, DISC not present. 2) Intpr: No radiology tests are ordered or referenced; only a lab order (CBC Panel) appears. Thus, no independent interpretation of radiology\u2014Intpr not present. 3) IHx: The patient clearly provides her own history; no other person contributed crucial information. Patient is an adult and capable. Therefore, IHx not present. 4) Tests & Documents counting: - Physical exam and medication orders do not count. The medication order (Lisinopril) must be excluded from T&D. - One unique lab test ordered in this encounter: CBC Panel (ordered). No test results are reviewed in the note. No external notes reviewed. The lab order is active (status: ordered), not conditional, and performed as part of this visit, so it counts as 1 Category1 item. No other qualifying items present. Final T&D count = 1.\n3. risk_of_complications: Moderate. Justification: Highest risk action documented is prescription drug management: a named prescription medication \u201cLisinopril | Tablet\u201d appears as an ordered item for this encounter. Per official guidelines, initiation/management of a prescription drug = Moderate risk. Additional actions include named OTC analgesic recommendations (Low), OTC device (knee brace) recommendation (Low), and minimal-risk testing (CBC) (Minimal). Final risk equals highest present \u2192 Moderate.",
+      "modifiers": [
+        {
+          "code": "25",
+          "description": "Significant, Separately Identifiable Evaluation and Management Service by the Same Physician or Other Qualified Health Care Professional on the Same Day of the Procedure or Other Service",
+          "justification": "99203 is a problem-oriented new patient E/M. 99387 is a preventive/wellness E/M for a new patient age 65+ (used here to represent the wellness exam). Both are billed on the same date by the same provider. Per Modifier 25 rules, when a preventive E/M (99381\u201399397) and a problem-oriented E/M (99202\u201399215) are reported together, modifier 25 is appended to the problem-oriented E/M if there is a significant, separately identifiable problem-oriented service. Documentation shows a full preventive wellness exam was performed (\"for wellness exam\" and \"Wellness exam done\") and, in addition, a distinct evaluation of acute right knee pain: detailed HPI (onset with spin classes, aggravating/relieving factors, prior treatment, lack of prior injury), focused musculoskeletal and neurologic exams, and an assessment/plan for \"Right knee sprain\" with rest, activity modification, brace, OTC meds, and exercises. This work clearly exceeds what is inherent to a routine preventive visit and would support a stand-alone 99203. Therefore, modifier 25 is appropriately appended to 99203 to indicate that it is a significant, separately identifiable E/M service beyond the preventive service 99387."
+        }
+      ],
+      "encounter_type": {
+        "encounter_type": "Office or Other Outpatient Service",
+        "justification": "objective_evidence: \"Musculoskeletal: No pain with right knee extension; No pain with right knee flexion; Mild pain with right knee abduction or external rotation\"; \"Extremities: Left knee exam within normal limits\"; \"Neurological: Deep tendon reflexes 2+ to 4+ throughout\"\nassessment_plan_evidence: \"Right knee sprain - Assessment consistent with right knee sprain based on localized pain, exam findings, and recent increase in physical activity; ... Recommend rest and avoidance of spinning or strenuous activity for at least one week. ... Gradual return to exercise ... Use knee brace ... Over-the-counter pain medications ... Nurse to provide knee exercises.\""
+      },
+      "problem_complexity": {
+        "level": "Low",
+        "justification": "1 acute, uncomplicated illness or injury: Right knee sprain.\nRight knee sprain: A&P explicitly diagnoses right knee sprain with conservative management (rest, activity modification, brace, OTC NSAIDs, home exercises). Onset 3\u20134 days ago. No systemic symptoms, no cross-system evaluation, no procedural intervention or high-risk treatment; provider notes no evidence of structural injury requiring imaging. Meets definition of an acute, uncomplicated injury (Low).",
+        "confidence": 1.0
+      },
+      "data_complexity": {
+        "level": "Minimal",
+        "justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. System 2 audit of each instruction: 1) DISC: The signed note does not mention discussion with any external provider; no specific names/addresses or consultation documented. Therefore, DISC not present. 2) Intpr: No radiology tests are ordered or referenced; only a lab order (CBC Panel) appears. Thus, no independent interpretation of radiology\u2014Intpr not present. 3) IHx: The patient clearly provides her own history; no other person contributed crucial information. Patient is an adult and capable. Therefore, IHx not present. 4) Tests & Documents counting: - Physical exam and medication orders do not count. The medication order (Lisinopril) must be excluded from T&D. - One unique lab test ordered in this encounter: CBC Panel (ordered). No test results are reviewed in the note. No external notes reviewed. The lab order is active (status: ordered), not conditional, and performed as part of this visit, so it counts as 1 Category1 item. No other qualifying items present. Final T&D count = 1.",
+        "confidence": 1.0
+      },
+      "risk_of_complications": {
+        "level": "Moderate",
+        "justification": "Highest risk action documented is prescription drug management: a named prescription medication \u201cLisinopril | Tablet\u201d appears as an ordered item for this encounter. Per official guidelines, initiation/management of a prescription drug = Moderate risk. Additional actions include named OTC analgesic recommendations (Low), OTC device (knee brace) recommendation (Low), and minimal-risk testing (CBC) (Minimal). Final risk equals highest present \u2192 Moderate.",
+        "confidence": 1.0
+      },
+      "pc_critic_response": null,
+      "rc_critic_response": null,
+      "dc_critic_response": null,
+      "mdm_complexity": {
+        "level": "Low",
+        "justification": null,
+        "confidence": null
+      },
+      "time_spent": {
+        "time_spent_minutes": 10,
+        "evidence": "I spedn 10 mins for this encounter."
+      },
+      "linked_diagnosis": [
+        {
+          "code": "S83.91XA",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Sprain of unspecified site of right knee, initial encounter",
+          "justification": "The acute right knee sprain is the specific problem addressed and evaluated during this problem-oriented encounter (history, exam, and management recommendations focused on right knee pain and sprain), directly supporting medical necessity for a separate office/outpatient E/M service (99203)."
+        }
+      ]
+    },
+    {
+      "code": "99387",
+      "description": null,
+      "source": "Age",
+      "confidence": null,
+      "system": "CPT",
+      "justification": "Encounter type: EncounterType.PREVENTIVE_MEDICINE. objective_evidence: \"Physical Examination:\" (general exam documented in Objective section)\nassessment_plan_evidence: \"Wellness exam done\"",
+      "modifiers": [],
+      "encounter_type": {
+        "encounter_type": "Preventive Medicine",
+        "justification": "objective_evidence: \"Physical Examination:\" (general exam documented in Objective section)\nassessment_plan_evidence: \"Wellness exam done\""
+      },
+      "problem_complexity": null,
+      "data_complexity": null,
+      "risk_of_complications": null,
+      "pc_critic_response": null,
+      "rc_critic_response": null,
+      "dc_critic_response": null,
+      "mdm_complexity": null,
+      "time_spent": {
+        "time_spent_minutes": 10,
+        "evidence": "I spedn 10 mins for this encounter."
+      },
+      "linked_diagnosis": [
+        {
+          "code": "Z00.01",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Encounter for general adult medical examination with abnormal findings",
+          "justification": "The visit is documented as a wellness exam (\u201cfor wellness exam\u201d and \u201cWellness exam done\u201d), which corresponds to an encounter for general adult medical examination with abnormal findings, supporting the preventive E/M service (99387)."
+        },
+        {
+          "code": "S83.91XA",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Sprain of unspecified site of right knee, initial encounter",
+          "justification": "The right knee sprain is the abnormal finding identified during the wellness examination, which justifies the use of Z00.01 instead of Z00.00 and is appropriately reported as an additional diagnosis for the preventive service (99387)."
+        }
+      ]
+    }
+  ],
+  "diagnosis": [
+    {
+      "code": "Z00.01",
+      "is_primary": true,
+      "system": "ICD-10-CM",
+      "description": "Encounter for general adult medical examination with abnormal findings",
+      "justification": "Chief complaint is \"for wellness exam\" and provider states \"Wellness exam done\". An acute right knee sprain was identified during this routine exam, making it a wellness visit with abnormal findings per ICD-10-CM guidelines."
+    },
+    {
+      "code": "S83.91XA",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Sprain of unspecified site of right knee, initial encounter",
+      "justification": "Assessment/Plan documents \"Right knee sprain\" after recent spinning with localized right knee pain. No specific ligament is identified, and this is the first visit, so unspecified site, right knee, initial encounter is most accurate."
+    }
+  ]
+}

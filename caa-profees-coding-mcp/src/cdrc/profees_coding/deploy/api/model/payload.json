@@ -1,0 +1,157 @@
+{
+    "encounter_id": "ascdsdfrwegergfvavdafv", 
+    "encounter_metadata": {
+      "client_name": "Hudson",
+      "type": "Ambulatory",
+      "service_dates": [
+        "2025-01-16"
+      ]
+    },
+    "ambient_note": {
+      "subjective": {
+          "cc": "for wellness exam",
+          "hpi": "The patient is a 29-year-old female with no significant past medical history, presenting for a routine check-up with a complaint of right knee pain.<br/>\n<br/>\nRight Knee Pain<br/>\nThe patient reports right knee pain that began three to four days ago after starting cycling exercise classes, which involve spin activities. The pain is localized to the right knee, described as dull and intermittent, and does not occur all day. It is aggravated by standing for long periods, walking uphill, running, and climbing stairs, and is relieved by sitting or resting. She took a painkiller once at the onset, which provided some relief, though she is unsure if improvement was due to rest or medication. She is not regularly using ice or a knee wrap. The patient denies any prior knee injuries or surgeries and has not experienced the knee giving out. She is generally healthy, does not take any regular medications, and has no allergies. Family history is notable for hypertension in her father and low blood pressure in her mother. She has had one prior surgery for a dental cyst, unrelated to her current complaint.<br/>\n<br/>\n",
+          "pastMedicalHistory": "",
+          "surgicalHistory": "",
+          "familyHistory": "",
+          "socialHistory": "",
+          "immunizationHistory": "",
+          "listOfAllergies": "",
+          "listOfCurrentRx": ""
+      },
+      "reviewOfSystems": "Musculoskeletal: Positive for knee pain and problems climbing stairs. Negative for knee giving out.",
+      "objective": {
+          "vitalSigns": "",
+          "laboratoryResults": "",
+          "physicalExamination": "Extremities:<br/>\nLeft knee exam within normal limits<br/>\n<br/>\nMusculoskeletal:<br/>\nNo pain with right knee extension<br/>\nNo pain with right knee flexion<br/>\nMild pain with right knee abduction or external rotation<br/>\n<br/>\nNeurological:<br/>\nDeep tendon reflexes 2+ to 4+ throughout<br/>\n<br/>\n"
+      },
+      "assessmentAndPlan": {
+          "summary": "Patient is a 29-year-old female presenting for evaluation of right knee pain following recent increase in physical activity.<br/><br/>",
+          "text": " 69210 (instrumentation) was performed during encounter note no diagnosis for this procedure and I perform it per patient request. Time: A total of 40 minutes was spent on this visit. Time spent with patient: 20 minutes This time was spent with patient obtaining HPI, performing a physical exam, and counseling the patient on presenting illness, diagnoses, further workup and testing, plan/treatment/risks and complications, refilling medications and ordering labs for further evaluation and medical management decision making, and/or for monitoring chronic disease.   Visit Prep: 5 minutes Documentation time: 10 minutes Post Visit Follow up within 24 hrs: 5 minutes  Right knee sprain (initial encounter).Exam findings consistent with mild sprain without structural injury. A therapeutic corticosteroid injection was performed to reduce inflammation and facilitate improved function. During today’s wellness visit, the patient initiated and reaffirmed an ongoing, continuous primary care relationship. Management of her musculoskeletal complaint requires longitudinal oversight, including monitoring response to conservative therapy, guidance on graded return to exercise, injury-prevention counseling, and assessment for potential escalation if symptoms do not improve. Her care plan will require personalized follow-up to support her long-term health goals, integrate preventive services, and proactively manage emerging issues. The complexity and continuity of this relationship extend beyond today’s singular knee complaint and involve a holistic, patient-specific approach to ongoing primary care. Wellness exam done ;Right knee sprain<br/>- Assessment consistent with right knee sprain based on localized pain, exam findings, and recent increase in physical activity; no evidence of structural injury requiring imaging.<br/>- Recommend rest and avoidance of spinning or strenuous activity for at least one week.<br/>- Gradual return to exercise, starting with walking.<br/>- Use knee brace when resuming exercise.<br/>- Over-the-counter pain medications (Ibuprofen, Motrin, Advil) as needed.<br/>- Nurse to provide knee exercises.<br/><br/>",
+          "diagnoses": []
+      },
+      "diagnosticsStudies": ""
+    },
+    "soap_text": "Chief Complaint\nRM 310; Subsequent Medicare Annual Wellness Visit. Has form for [OCCUPATION]. Big toe (right foot) toenail concerns.\n\nHistory of Present Illness\nThe patient is a [AGE] male with a history of heart attack and coronary artery disease, presenting for a subsequent Medicare Annual Wellness Visit. Prior initial Medicare Annual Wellness Visit G0438 was completed more than 12 months ago. No AWV or IPPE has been billed in the past 12 months.   Heart Attack and Coronary Artery Disease The patient reports having had a heart attack, which he attributes to stress from being [OCCUPATION] after a layoff last year. He has a family history of heart disease. He is currently attending cardiac rehab and notes that his blood pressure has improved and he feels better physically. He denies any current chest pain or shortness of breath. He is not experiencing any significant issues with his current medications.   Onychomycosis of Great Toe The patient has had a fungal infection in his right great toenail for many years, which has recently worsened. [PARENTHOOD] attempted to treat it, resulting in the nail cracking. The patient reports that the infection is also present in his small toe but to a lesser extent. He is interested in treatment options and is informed about an antifungal pill that takes about three months to show improvement. He is concerned about the impact of the medication on his cardiac health, but it is clarified that the medication is metabolized by the liver and does not affect the heart.   Elevated Liver Enzymes and Hyperlipidemia The patient has a history of elevated liver enzymes, which have been monitored due to his hyperlipidemia. His liver function tests were normal during his last checkup. He has been managing his hyperlipidemia with diet and exercise. He reports that he has made some changes to his diet and exercise routine, although he is not engaging in intense physical activity. He previously experienced backaches, which he suspected were related to his statin medication. After switching to a different statin and lowering the dose, the backaches have resolved.\n\nReview of Systems\nGenitourinary: Positive for urgency when urinating. Skin: Positive for fungal toenail infection. Cardiovascular: Negative for chest pain. Respiratory: Negative for shortness of breath.\n\nPhysical Exam\nHR: 58 (Peripheral)  BP: 122/78  SpO2: 98%   HT: 69.5 in  WT: 181.8 lb  BMI: 26.46\n\nAssessment/Plan\n1. Subsequent Medicare Annual Wellness Visit|(Z00.00: Encounter for general adult medical examination without abnormal findings) Recommend appropriate diet, exercise, healthy lifestyle choices, relevant supplements, avoidance of alcohol and tobacco and adherence to the medical treatment plans.   Healthcare Maintenance and Screening:  Discussed age-appropriate USPSTF screening recommendations. See orders.   Vaccines: discussed age and season appropriate vaccinations, see orders.   Labs: see orders. Labs ordered based on individual patient risk factors and family history.   RTC for annual wellness visit and update of healthcare maintenance or sooner if needed.  Ordered:  G0439 annual wellness visit, includes a personalized prevention plan of service (PPPS), subsequent visit (Charge), Quantity: 1, Subsequent Medicare Annual Wellness Visit | History of adenomatous polyp of colon PSA, Total (Prostate Specific Antigen) (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST      2. Hyperlipidemia|(E78.5: Hyperlipidemia, unspecified) - Continue current statin medication. - Monitor for any side effects such as backaches. - Ordered blood tests to check cholesterol levels.    Ordered:  99214 office o/p est mod 30-39 min (Charge), Quantity: 1, Hyperlipidemia | Elevated liver enzymes | GERD (gastroesophageal reflux disease) | History of heart attack | Coronary artery disease | Onychomycosis of great toe Chem 14 (Comprehensive Metabolic Panel) (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST Lipid Panel (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST      3. History of adenomatous polyp of colon|(Z86.0101: Personal history of adenomatous and serrated colon polyps) q5 colonoscopy. Last done 12/2021, repeat 2026.  Ordered:  G0439 annual wellness visit, includes a personalized prevention plan of service (PPPS), subsequent visit (Charge), Quantity: 1, Subsequent Medicare Annual Wellness Visit | History of adenomatous polyp of colon      4. Elevated liver enzymes|(R74.8: Abnormal levels of other serum enzymes) - Ordered blood tests to recheck liver function. - Monitor liver function after antifungal treatment.    Ordered:  99214 office o/p est mod 30-39 min (Charge), Quantity: 1, Hyperlipidemia | Elevated liver enzymes | GERD (gastroesophageal reflux disease) | History of heart attack | Coronary artery disease | Onychomycosis of great toe Chem 14 (Comprehensive Metabolic Panel) (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST      5. GERD (gastroesophageal reflux disease)|(K21.9: Gastro-esophageal reflux disease without esophagitis) Stable.  Ordered:  99214 office o/p est mod 30-39 min (Charge), Quantity: 1, Hyperlipidemia | Elevated liver enzymes | GERD (gastroesophageal reflux disease) | History of heart attack | Coronary artery disease | Onychomycosis of great toe      6. History of heart attack|(I25.2: Old myocardial infarction) Comments: 01/03/2025 09:36 am - [PERSON] 2024, DES to LCX - Continue with cardiac rehabilitation. - Monitor blood pressure regularly. - Advised patient to maintain a healthy diet and exercise routine.    Ordered:  99214 office o/p est mod 30-39 min (Charge), Quantity: 1, Hyperlipidemia | Elevated liver enzymes | GERD (gastroesophageal reflux disease) | History of heart attack | Coronary artery disease | Onychomycosis of great toe      7. Coronary artery disease|(I25.10: Atherosclerotic heart disease of native coronary artery without angina pectoris) - Continue with cardiac rehabilitation. - Monitor blood pressure regularly. - Advised patient to maintain a healthy diet and exercise routine.  Ordered:  99214 office o/p est mod 30-39 min (Charge), Quantity: 1, Hyperlipidemia | Elevated liver enzymes | GERD (gastroesophageal reflux disease) | History of heart attack | Coronary artery disease | Onychomycosis of great toe CBC Automated (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST Chem 14 (Comprehensive Metabolic Panel) (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST Lipid Panel (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST PSA, Total (Prostate Specific Antigen) (Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST      8. Onychomycosis of great toe|(B35.1: Tinea unguium) - Prescribed antifungal medication for toenail infection. - Advised patient that it takes three months to start seeing healthy nail growth. - Plan to recheck liver numbers after treatment to ensure liver handled the medication well.    Ordered:  terbinafine(terbinafine 250 mg oral tablet), 250 mg= 1 tab(s), Oral, daily, (Ordered) 99214 office o/p est mod 30-39 min (Charge), Quantity: 1, Hyperlipidemia | Elevated liver enzymes | GERD (gastroesophageal reflux disease) | History of heart attack | Coronary artery disease | Onychomycosis of great toe         Orders for this visit         PSA, Total (Prostate Specific Antigen) (Request)* ([DIAGNOSTIC_LABS]): Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST.         CBC Automated (Request)* ([DIAGNOSTIC_LABS]): Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST.         Chem 14 (Comprehensive Metabolic Panel) (Request)* ([DIAGNOSTIC_LABS]): Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST.         Lipid Panel (Request)* ([DIAGNOSTIC_LABS]): Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 01/03/25 9:51:00 CST.         36415 collection venous blood venipuncture (Charge): Quantity: 1, Subsequent Medicare Annual Wellness Visit.         G0439 annual wellness visit, includes a personalized prevention plan of service (PPPS), subsequent visit (Charge): Quantity: 1, Subsequent Medicare Annual Wellness Visit | History of adenomatous polyp of colon.         99214 office o/p est mod 30-39 min (Charge): Quantity: 1, Hyperlipidemia | Elevated liver enzymes | GERD (gastroesophageal reflux disease) | History of heart attack | Coronary artery disease | Onychomycosis of great toe.   New Medications This Visit           *denotes recorded medication         terbinafine 250 mg oral tablet: 250 mg, 1 tab(s), Oral, daily, for 84 day(s), 84 tab(s), 0 Refill(s).\n\n",
+    "orders": [
+        {
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display_line": "Tablet",
+          "mnemonic": "Lisinopril"
+        },
+        {
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display_line": "Blood Test",
+          "mnemonic": "CBC Panel"
+        }
+    ],
+    "patient_type": "New",
+    "appointment_type": "New",
+    "patient_birthdate": "1958-02-10T00:00:00Z",
+    "patient_sex": "male",
+    "current_encounter_period": {
+      "start": "2023-10-03T14:15:00Z",
+      "end": "2023-10-03T14:15:00Z"
+    },
+    "health_plan": [
+      {
+        "health_plan": "medicare advantag part b",
+        "active_status": "Active",
+        "health_plan_effective_date": "2025-01-01"
+      }
+    ],
+    "awv_history": [
+      {
+        "hcpcs_code": "G0439",
+        "claim_date": "2024-02-12"
+      }
+    ],
+    "facility_info": [
+      {
+        "patient_loc": "Clinic Room 3",
+        "nurse_unit_loc": "Primary Care",
+        "building_loc": "Medical Office Building A",
+        "facility_loc": "Main Campus",
+        "ccn_name": "General Hospital",
+        "ccn_number": 123456.0,
+        "pos_code": 11,
+        "cms_submission_type": "Professional",
+        "beg_effective_dt_tm": "2025-01-01T00:00:00Z",
+        "end_effective_dt_tm": "2026-12-31T23:59:59Z",
+        "is_excepted": true
+      }
+    ],
+    "provider_info": [
+      {
+        "physician_ind": 1,
+        "position": "Attending Physician",
+        "physician_status": "In",
+        "encntr_prsnl_r": "Primary"
+      }
+    ],
+    "lab_info": [
+      {
+        "facility_location": "Main Campus Lab",
+        "service_location": "Outpatient Lab",
+        "lab_name": "Hospital Core Lab",
+        "clia_number_txt": "12D4567890"
+      }
+    ],
+    "anaesthesia_staff_info": [
+      {
+        "role_performed": "Anesthesiologist",
+        "signing_indicator": 1,
+        "in_time": "2025-01-16T09:00:00Z",
+        "out_time": "2025-01-16T10:00:00Z"
+      }
+    ],
+    "anaesthesia_concurrent_staff_info": [
+      {
+        "relationship": "Anesthesia Coverage",
+        "concurrent_encounter_count": 2
+      }
+    ],
+    "anaesthesia_record_info": [
+      {
+        "asa_display_value": "ASA 2",
+        "asa_structured_status": "Final",
+        "result_date": "2025-01-16T10:05:00Z"
+      }
+    ],
+    "problem_list": [
+      {
+        "description": "Vertigo",
+        "code": "R42",
+        "status": "active",
+        "priority": "2"
+      },
+      {
+        "description": "Acute depression",
+        "code": "F32.A",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Brain concussion",
+        "code": "S06.0XAA",
+        "status": "inactive",
+        "priority": "2"
+      },
+      {
+        "description": "Benign essential hypertension",
+        "code": "I10",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Acute insomnia",
+        "code": "G47.00",
+        "status": "future",
+        "priority": "2"
+      }
+    ]
+}

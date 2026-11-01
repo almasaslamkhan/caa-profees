@@ -1,0 +1,101 @@
+{
+  "procedure": [
+    {
+      "code": "93000",
+      "system": "CPT",
+      "description": "ECG procedure",
+      "justification": "Synthetic example of a predicted procedure.",
+      "order_catalog_candidates": [
+        {
+          "CATALOG_CD": "31001",
+          "description": "Clinic ECG",
+          "justification": "Supplied catalog mapped to the predicted procedure code."
+        },
+        {
+          "CATALOG_CD": "31002",
+          "description": "Cardiology ECG",
+          "justification": "Another supplied catalog mapped to the same procedure code."
+        }
+      ],
+      "quantity": 1,
+      "quantity_evidence": []
+    },
+    {
+      "code": "36415",
+      "system": "CPT",
+      "description": "Blood collection procedure",
+      "justification": "Synthetic example of another predicted procedure.",
+      "order_catalog_candidates": [],
+      "quantity": 1,
+      "quantity_evidence": []
+    },
+    {
+      "code": "96127",
+      "system": "CPT",
+      "description": "Standardized instrument assessment",
+      "justification": "Synthetic example documenting two separately administered and scored standardized emotional/behavioral instruments.",
+      "modifiers": [],
+      "linked_diagnosis": [],
+      "quantity": 2,
+      "quantity_evidence": [
+        "Synthetic example: two distinct standardized emotional/behavioral instruments were separately administered, scored and documented during the encounter. One unit per completed instrument gives 2 instruments \u00d7 1 unit = 2 units."
+      ],
+      "order_catalog_candidates": [
+        {
+          "CATALOG_CD": "31003",
+          "description": "Clinic instrument assessment",
+          "justification": "Supplied catalog for the synthetic instrument-assessment code. The two documented units do not create additional catalog candidates."
+        }
+      ]
+    }
+  ],
+  "em": [
+    {
+      "code": "99213",
+      "system": "CPT",
+      "description": "Ambulatory E/M visit",
+      "justification": "Synthetic example of the predicted E/M code."
+    }
+  ],
+  "diagnosis": [],
+  "ambulatory_em_order_catalog_candidates": [
+    {
+      "code": "99212",
+      "system": "CPT",
+      "order_catalog_candidates": [
+        {
+          "CATALOG_CD": "21012",
+          "description": "Clinic visit - 99212",
+          "justification": "Supplied catalog for this alternative E/M code."
+        }
+      ]
+    },
+    {
+      "code": "99213",
+      "system": "CPT",
+      "order_catalog_candidates": [
+        {
+          "CATALOG_CD": "21013",
+          "description": "Clinic visit - 99213",
+          "justification": "Supplied catalog for the predicted E/M code."
+        },
+        {
+          "CATALOG_CD": "22013",
+          "description": "Specialty clinic visit - 99213",
+          "justification": "Another supplied catalog for the predicted E/M code."
+        }
+      ]
+    },
+    {
+      "code": "99214",
+      "system": "CPT",
+      "order_catalog_candidates": [
+        {
+          "CATALOG_CD": "21014",
+          "description": "Clinic visit - 99214",
+          "justification": "Supplied catalog for this alternative E/M code."
+        }
+      ]
+    }
+  ]
+}

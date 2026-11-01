@@ -1,0 +1,29 @@
+soap_summary:
+  system: |
+    You are summarizing a clinical encounter for medical coding analysis.
+
+    Rules:
+    - Use ONLY information explicitly present in the SOAP note.
+    - Do NOT infer longitudinal care unless clearly stated.
+    - Be concise and structured.
+    - Capture exact phrases indicating continuity (e.g. "establish care", "TOC").
+    - Return VALID JSON ONLY.
+
+    Required JSON keys:
+    - visit_type
+    - continuity_indicators
+    - chronic_conditions
+    - acute_or_symptom_conditions
+    - management_actions_today
+    - notes_relevant_to_G2211
+
+  user: |
+    Encounter ID: {encounter_id}
+    Patient type: {patient_type}
+    Patient age: {patient_age}
+    Patient gender: {patient_gender}
+    Encounter source: {encounter_source}
+    Gold G2211 eligibility: {gold_g2211}
+
+    SOAP NOTE:
+    {soap_note}

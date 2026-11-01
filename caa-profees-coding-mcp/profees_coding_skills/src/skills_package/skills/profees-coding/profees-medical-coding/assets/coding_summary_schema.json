@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProfeesCodingSummary",
+  "type": "object",
+  "required": [
+    "em",
+    "procedure",
+    "diagnosis"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "em": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/EMItem"
+      }
+    },
+    "procedure": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Procedure"
+      }
+    },
+    "diagnosis": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ICD10CM"
+      }
+    }
+  },
+  "$defs": {
+    "Modifier": {
+      "type": "object",
+      "required": [
+        "code"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "justification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "ICD10CM": {
+      "type": "object",
+      "required": [
+        "code",
+        "is_primary",
+        "system",
+        "description"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "is_primary": {
+          "type": "boolean"
+        },
+        "system": {
+          "type": "string",
+          "enum": [
+            "ICD-10-CM"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "justification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "LinkedDiagnosis": {
+      "$ref": "#/$defs/ICD10CM"
+    },
+    "EMItem": {
+      "type": "object",
+      "required": [
+        "code",
+        "system"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "system": {
+          "type": "string",
+          "enum": [
+            "CPT"
+          ]
+        },
+        "justification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Modifier"
+          }
+        },
+        "linked_diagnosis": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/LinkedDiagnosis"
+          }
+        },
+        "mdm_complexity": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "level": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "justification": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "dc_complexity": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "level": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "justification": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "pc_complexity": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "level": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "justification": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "rc_complexity": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "level": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "justification": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "Procedure": {
+      "type": "object",
+      "required": [
+        "code",
+        "system"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "system": {
+          "type": "string",
+          "enum": [
+            "CPT",
+            "HCPCS"
+          ]
+        },
+        "justification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Modifier"
+          }
+        },
+        "linked_diagnosis": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/LinkedDiagnosis"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

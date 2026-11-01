@@ -1,0 +1,153 @@
+{
+  "procedure": [
+    {
+      "description": "Arthrocentesis, aspiration and/or injection, major joint or bursa (eg, shoulder, hip, knee, subacromial bursa); without ultrasound guidance",
+      "code": "20610",
+      "system": "CPT",
+      "justification": "The note explicitly states that a left shoulder injection was performed during the encounter, which supports a major joint injection code.",
+      "modifiers": [
+        {
+          "code": "LT",
+          "description": "Left side (used to identify procedures performed on the left side)",
+          "justification": "Performed injection explicitly tied to left shoulder."
+        }
+      ],
+      "linked_diagnosis": [
+        {
+          "code": "M75.112",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Incomplete rotator cuff tear or rupture of left shoulder, not specified as traumatic",
+          "justification": "The plan states the left shoulder injection was performed for left shoulder pain with partial rotator cuff tear and to pursue improvement before invasive intervention."
+        },
+        {
+          "code": "M67.814",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Other specified disorders of tendon, left shoulder",
+          "justification": "The plan identifies biceps tendinosis as part of the left shoulder condition for which the injection was performed."
+        },
+        {
+          "code": "M25.512",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Pain in left shoulder",
+          "justification": "The note states the patient presented for left shoulder pain and the injection was performed as treatment for the ongoing symptomatic shoulder condition."
+        }
+      ]
+    }
+  ],
+  "em": [
+    {
+      "code": "99204",
+      "description": "Office o/p new mod 45 min",
+      "source": "MDM",
+      "system": "CPT",
+      "justification": "Encounter type: Evaluated chronic shoulder pain; performed therapeutic injection plan.\nPatient type: New. Visit history support the prediction.\nProblem Complexity: Moderate. 1 chronic illness with exacerbation, progression, or side effects of treatment\nData Complexity: Low. Tests & Documents: 2 elements present.\nRisk Of Complications: Moderate. Performed left shoulder steroid injection procedure.\nTime statement: No clinician time statement is documented.",
+      "modifiers": [
+        {
+          "code": "25",
+          "description": "Significant, separately identifiable evaluation and management service by the same physician or other qualified health care professional on the same day of the procedure or other service",
+          "justification": "Separate problem E/M supported beyond routine injection work"
+        }
+      ],
+      "encounter_type": {
+        "encounter_type": "Office or Other Outpatient Service",
+        "justification": "Evaluated chronic shoulder pain; performed therapeutic injection plan."
+      },
+      "problem_complexity": {
+        "level": "Moderate",
+        "detailed_justification": "1 chronic illness with exacerbation, progression, or side effects of treatment: Chronic left shoulder pain with stiffness due to partial rotator cuff tear and biceps tendinosis (post-surgical shoulder).\nChronic left shoulder pain with stiffness due to partial rotator cuff tear and biceps tendinosis (post-surgical shoulder): A&P manages persistent chronic shoulder condition with failed prior treatment and escalation: \u201cChronic left shoulder pain with stiffness; \u2026 prior injection without benefit; plan for repeat injection to pursue further improvement before invasive intervention.\u201d Persistent symptoms despite PT and a prior injection with no relief support poor control/progression rather than stable chronic.",
+        "justification": "1 chronic illness with exacerbation, progression, or side effects of treatment",
+        "confidence": 0.6
+      },
+      "data_complexity": {
+        "level": "Low",
+        "detailed_justification": "Limited Data Elements Present. Tests & Documents: 2 elements present. 1 unique test result reviewed: left shoulder MRI report (12/12/2025). 1 unique test ordered: CBC panel. Medication orders and procedures are excluded from T&D.",
+        "justification": "Tests & Documents: 2 elements present.",
+        "confidence": 1.0
+      },
+      "risk_of_complications": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": "Performed left shoulder steroid injection procedure.",
+        "confidence": 1.0
+      },
+      "pc_critic_response": "The original assessment undercoded Problems as Low (stable chronic). The A&P documents chronic symptoms with lack of response to prior conservative therapy (PT) and prior injection \u201cwithout benefit,\u201d and proceeds with repeat injection to improve before invasive intervention\u2014this is best classified as a chronic illness not at goal/poorly controlled (moderate). No separate A&P management exists for other conditions (e.g., hypertension/lisinopril) so they are not counted as problems addressed.",
+      "rc_critic_response": "",
+      "dc_critic_response": "1) DISC: I looked for explicit wording such as \"discussed with\" another clinician about management/test interpretation; the note only mentions prior evaluations by named providers and a referral back, which is not a same-encounter discussion, so DISC is not present. 2) Intpr: I checked radiology tests (MRI) mentioned; the note states MRI findings but does not document the provider independently interpreting the images (only referencing the report), so Intpr is not supported. 3) IHx: I checked for any history provided by someone other than the patient (e.g., spouse/parent report) or inability of patient to provide history; none is documented, so IHx is not present. 4) Tests & Documents counting: I excluded medication orders (lisinopril) and physical exam from data. I counted one unique test reviewed (left shoulder MRI report dated 12/12/2025, performed outside this visit but explicitly reviewed for current management) and one unique test ordered (CBC panel) for a total of 2 items; no other external notes/labs/imaging results are documented.",
+      "mdm_complexity": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": null,
+        "confidence": null
+      },
+      "time_spent": {
+        "time_spent_minutes": 0,
+        "evidence": "",
+        "justification": "No clinician time statement is documented."
+      },
+      "linked_diagnosis": [
+        {
+          "code": "M75.112",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Incomplete rotator cuff tear or rupture of left shoulder, not specified as traumatic",
+          "justification": "Assessment documents a low-grade partial undersurface tear of the left supraspinatus/conjoined superior cuff tendon and management discussion with plan for injection before more invasive intervention."
+        },
+        {
+          "code": "M67.814",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Other specified disorders of tendon, left shoulder",
+          "justification": "Assessment explicitly includes moderate intra-articular biceps tendinosis of the left shoulder as part of the evaluated and managed shoulder condition during this visit."
+        },
+        {
+          "code": "M25.512",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Pain in left shoulder",
+          "justification": "Assessment states chronic left shoulder pain was the presenting problem evaluated and managed at this encounter."
+        },
+        {
+          "code": "M25.612",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Stiffness of left shoulder, not elsewhere classified",
+          "justification": "Assessment documents left shoulder stiffness as an ongoing symptom considered in evaluation and management of the shoulder condition."
+        }
+      ],
+      "confidence": null
+    }
+  ],
+  "diagnosis": [
+    {
+      "code": "M75.112",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Incomplete rotator cuff tear or rupture of left shoulder, not specified as traumatic",
+      "justification": "Assessment documents a low-grade partial undersurface tear of the left supraspinatus/conjoined superior cuff tendon and management discussion with plan for injection before more invasive intervention."
+    },
+    {
+      "code": "M67.814",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Other specified disorders of tendon, left shoulder",
+      "justification": "Assessment explicitly includes moderate intra-articular biceps tendinosis of the left shoulder as part of the evaluated and managed shoulder condition during this visit."
+    },
+    {
+      "code": "M25.512",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Pain in left shoulder",
+      "justification": "Assessment states chronic left shoulder pain was the presenting problem evaluated and managed at this encounter."
+    },
+    {
+      "code": "M25.612",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Stiffness of left shoulder, not elsewhere classified",
+      "justification": "Assessment documents left shoulder stiffness as an ongoing symptom considered in evaluation and management of the shoulder condition."
+    }
+  ]
+}

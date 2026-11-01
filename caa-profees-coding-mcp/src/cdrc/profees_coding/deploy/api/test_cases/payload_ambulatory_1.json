@@ -1,0 +1,132 @@
+{
+    "encounter_id": "ascdsdfrwegergfvavdafv", 
+    "encounter_metadata": {
+      "client_name": "Hudson",
+      "type": "Ambulatory",
+      "service_dates": [
+        "2025-01-16"
+      ]
+    },
+    "soap_text": "Visit Note Subjective/HPI CC No data available. HPI - The patient is a 69-year-old male with a history of multiple prior shoulder surgeries, presenting for evaluation of left shoulder pain. Shoulder pain and stiffness: - He has a long history of left shoulder problems and reports prior shoulder surgeries, including an initial procedure performed in Denver followed by two additional surgeries by Dr. Shenton, including AC joint resection; he has also been evaluated by Barry Smith. He is right-handed. He has completed physical therapy and was referred back for ongoing symptoms. He reports a prior shoulder injection about 1.5 months ago that provided no relief. Left shoulder MRI dated 12/12/2025 showed a low-grade partial undersurface tear of the supraspinatus and conjoined superior cuff tendon, moderate intra-articular biceps tendinosis, and mild asymmetric atrophy of the teres minor muscle. He reports having a list of medication allergies but denies allergy to typical injection components, including lidocaine, marcaine, dexamethasone, and Depo-Medrol. Past Medical History No data available. Surgical History No data available. Family History No data available. Social History No data available. Immunization History No data available. List of Allergies No data available. List of Current Rx No data available. Review of Systems Musculoskeletal: Positive for left shoulder pain. Positive for left shoulder stiffness. Objective/Physical Exam Vital Signs No data available. Laboratory Results No data available. Physical Examination Musculoskeletal: Decreased range of motion and stiffness of the right shoulder Assessment and Plan Summary Patient is a 69-year-old male with history of multiple left shoulder surgeries presenting today for evaluation and management of left shoulder pain. Text Left shoulder pain with partial rotator cuff tear and biceps tendinosis - Chronic left shoulder pain with stiffness; MRI left shoulder 12-12-25 shows low-grade partial undersurface tear of supraspinatus and conjoined superior cuff tendon, moderate intra-articular biceps tendinosis, mild asymmetric teres minor atrophy; prior injection without benefit; plan for repeat injection to pursue further improvement before invasive intervention. - Proceeded with left shoulder injection using lidocaine, marcaine, dexamethasone, and Depo-Medrol after confirming no allergy to these medications. - Advised patient to report response to injection. Diagnoses No data available. Diagnostics Studies - MRI of the left shoulder (12-12-25):Low-grade partial undersurface tear in the supraspinatus and conjoined superior cuff tendon - Moderate interarticular biceps tendinosis - Mild asymmetric atrophy of the teres minor muscle",
+    "orders": [
+        {
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display_line": "Tablet",
+          "mnemonic": "Lisinopril"
+        },
+        {
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display_line": "Blood Test",
+          "mnemonic": "CBC Panel"
+        }
+    ],
+    "patient_type": "New",
+    "appointment_type": "New",
+    "patient_birthdate": "1958-02-10T00:00:00Z",
+    "patient_sex": "male",
+    "current_encounter_period": {
+      "start": "2023-10-03T14:15:00Z",
+      "end": "2023-10-03T14:15:00Z"
+    },
+    "health_plan": [
+      {
+        "health_plan": "medicare advantag part b",
+        "active_status": "Active",
+        "health_plan_effective_date": "2025-01-01"
+      }
+    ],
+    "awv_history": [
+      {
+        "hcpcs_code": "G0439",
+        "claim_date": "2024-02-12"
+      }
+    ],
+    "facility_info": [
+      {
+        "patient_loc": "Clinic Room 3",
+        "nurse_unit_loc": "Primary Care",
+        "building_loc": "Medical Office Building A",
+        "facility_loc": "Main Campus",
+        "ccn_name": "General Hospital",
+        "ccn_number": 123456.0,
+        "pos_code": 11,
+        "cms_submission_type": "Professional",
+        "beg_effective_dt_tm": "2025-01-01T00:00:00Z",
+        "end_effective_dt_tm": "2026-12-31T23:59:59Z",
+        "is_excepted": true
+      }
+    ],
+    "provider_info": [
+      {
+        "physician_ind": 1,
+        "position": "Attending Physician",
+        "physician_status": "In",
+        "encntr_prsnl_r": "Primary"
+      }
+    ],
+    "lab_info": [
+      {
+        "facility_location": "Main Campus Lab",
+        "service_location": "Outpatient Lab",
+        "lab_name": "Hospital Core Lab",
+        "clia_number_txt": "12D4567890"
+      }
+    ],
+    "anaesthesia_staff_info": [
+      {
+        "role_performed": "Anesthesiologist",
+        "signing_indicator": 1,
+        "in_time": "2025-01-16T09:00:00Z",
+        "out_time": "2025-01-16T10:00:00Z"
+      }
+    ],
+    "anaesthesia_concurrent_staff_info": [
+      {
+        "relationship": "Anesthesia Coverage",
+        "concurrent_encounter_count": 2
+      }
+    ],
+    "anaesthesia_record_info": [
+      {
+        "asa_display_value": "ASA 2",
+        "asa_structured_status": "Final",
+        "result_date": "2025-01-16T10:05:00Z"
+      }
+    ],
+    "problem_list": [
+      {
+        "description": "Vertigo",
+        "code": "R42",
+        "status": "active",
+        "priority": "2"
+      },
+      {
+        "description": "Acute depression",
+        "code": "F32.A",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Brain concussion",
+        "code": "S06.0XAA",
+        "status": "inactive",
+        "priority": "2"
+      },
+      {
+        "description": "Benign essential hypertension",
+        "code": "I10",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Acute insomnia",
+        "code": "G47.00",
+        "status": "future",
+        "priority": "2"
+      }
+    ]
+}

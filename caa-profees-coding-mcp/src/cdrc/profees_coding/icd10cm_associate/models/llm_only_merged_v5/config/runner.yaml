@@ -1,0 +1,19 @@
+prompt_path: ./cdrc/profees_coding/icd10cm_associate/models/llm_only_merged_v5/config/prompts.yaml
+prompt_key: outpatient # outpatient, ed
+prompt_version: v3
+enhancer_type: none
+enhancer_prompt_version: v1
+diagnosis_regenerator: true
+regenerator_key: diagnosis_regenerator
+regenerator_version: v1
+cpt_icd_mapping_path: ./cdrc/profees_coding/icd10cm_associate/data/2026/cpt_icd10_supported_2026.json
+hcpcs_icd_mapping_path: ./cdrc/profees_coding/icd10cm_associate/data/2026/hcpcs_icd10_supported_2026.json
+cpt_icd_noncovered_mapping_path: ./cdrc/profees_coding/icd10cm_associate/data/2026/cpt_icd10_noncovered_2026.json
+hcpcs_icd_noncovered_mapping_path: ./cdrc/profees_coding/icd10cm_associate/data/2026/hcpcs_icd10_noncovered_2026.json
+icd10_validity_path: ./cdrc/profees_coding/icd10cm_associate/data/2026/icd10_validity_2026.json
+icd10_billable_path: ./cdrc/profees_coding/icd10cm_associate/data/2026/icd10_billable_2026.json
+icd10_descriptions_path: ./cdrc/profees_coding/icd10cm_associate/data/2026/icd10_descriptions_2026.json
+#model_name: oracle-gpt-4o-2024-05-13
+model_kwargs:
+  temperature: 0.0
+  seed: 1234

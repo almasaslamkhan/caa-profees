@@ -1,0 +1,282 @@
+[
+  {
+    "input": {
+  "example_id": "qwef7db8b8dcefb0b0892b50cfb69f1a8c497880a955de882684db23a1b6e5a",
+  "source": "BAYCARE",
+  "encounter_metadata": {
+    "client_name": "BayCare",
+    "type": "inpatient",
+    "admit_time": "2025-01-16T13:20:00Z",
+    "discharge_time": "2025-01-24T10:00:00Z",
+    "service_dates": [
+      "2025-01-16",
+      "2025-01-17"
+    ]
+  },
+
+  "patient_type": "New",
+  "patient_age": "22",
+  "patient_sex": "male",
+  "patient_id": "pt_001",
+
+  "text": null,
+  "transcript": "",
+  "documents": [
+    {
+      "document_id": "1101",
+      "service_date": "2025-01-16",
+      "document_type": "History & Physical",
+      "document_status": "signed",
+      "time_created": "2025-01-16T15:40:00Z",
+      "signature_time": "2025-01-16T15:40:00Z",
+      "attestation_time": "2025-01-16T15:40:00Z",
+      "text": "Admit H&P: 68F with severe community-acquired pneumonia, sepsis, acute hypoxic respiratory failure requiring O2. Hyperglycemia on arrival. Plan: IV ceftriaxone, azithro, IVF cautious, insulin, cultures, CXR/CT, labs, O2 titration.",
+      "provider_participants": [
+        {
+          "practitioner_id": "prac_hosp_1",
+          "role": "author",
+          "participation_time": "2025-01-16T15:40:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": "grp_hm_1",
+          "is_physician_or_qhp": true
+        },
+        {
+          "practitioner_id": "prac_hosp_1",
+          "role": "attester",
+          "participation_time": "2025-01-16T15:40:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": "grp_hm_1",
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1102",
+      "service_date": "2025-01-17",
+      "document_type": "History & Physical",
+      "document_status": "signed",
+      "time_created": "2025-01-16T15:40:00Z",
+      "signature_time": "2025-01-16T15:40:00Z",
+      "attestation_time": "2025-01-16T15:40:00Z",
+      "text": "Admit H&P: 68F with severe community-acquired pneumonia, sepsis, acute hypoxic respiratory failure requiring O2. Hyperglycemia on arrival. Plan: IV ceftriaxone, azithro, IVF cautious, insulin, cultures, CXR/CT, labs, O2 titration.",
+      "provider_participants": [
+        {
+          "practitioner_id": "prac_hosp_2",
+          "role": "author",
+          "participation_time": "2025-01-16T15:40:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": "grp_hm_1",
+          "is_physician_or_qhp": true
+        },
+        {
+          "practitioner_id": "prac_hosp_2",
+          "role": "attester",
+          "participation_time": "2025-01-16T15:40:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": "grp_hm_1",
+          "is_physician_or_qhp": true
+        }
+      ]
+    }
+  ],
+
+  "orders": [
+    {
+      "order_type": "Medication Order",
+      "status": "active",
+      "time_created": "2025-01-16T15:45:00Z",
+      "time_last_updated": "2025-01-16T15:45:00Z",
+      "catalog_type": "Inpatient Medication",
+      "display": {
+        "hna_mnemonic": "Ceftriaxone IV",
+        "ordered_as": "ceftriaxone 2 g IV q24h"
+      }
+    }
+  ],
+
+  "all_patient_problems": [
+    {
+      "name": "Pneumonia, unspecified organism"
+    },
+    {
+      "name": "Sepsis, unspecified organism"
+    },
+    {
+      "name": "Acute respiratory failure with hypoxia"
+    }
+  ]
+    },
+  "gold": [
+    {
+      "service_date": "2025-01-16",
+
+      "charge_decision": {
+        "billing_provider_id": "prac_hosp_1",
+        "billing_provider_role": "attester",
+        "billing_rationale": "Signed initial H&P by physician attester supports initial inpatient E/M for this date."
+      },
+
+      "em": [
+        {
+          "code": "99223",
+          "system": "CPT",
+          "description": "Initial hospital inpatient or observation care, level 3",
+          "encounter_type": {
+            "encounter_type": "Initial Hospital Inpatient or Observation Care",
+            "justification": "..."
+          },
+          "source": "MDM",
+          "confidence": 0.9,
+          "modifiers": [],
+          "time_spent": {
+            "time_spent_minutes": 70,
+            "evidence": "Initial evaluation, plan of care, orders, and documentation."
+          },
+          "problem_complexity": { "level": "Low", "justification": "..." },
+          "data_complexity": { "level": "Minimal", "justification": "N/A" },
+          "risk_of_complications": { "level": "Minimal", "justification": "..." },
+          "mdm_complexity": { "level": "Minimal" },
+          "linked_diagnosis": [
+            {
+              "code": "J18.9",
+              "system": "ICD-10-CM",
+              "description": "Pneumonia, unspecified organism",
+              "is_primary": true
+            },
+            {
+              "code": "A41.9",
+              "system": "ICD-10-CM",
+              "description": "Sepsis, unspecified organism",
+              "is_primary": false
+            },
+            {
+              "code": "J96.01",
+              "system": "ICD-10-CM",
+              "description": "Acute respiratory failure with hypoxia",
+              "is_primary": false
+            }
+          ],
+          "justification": "Initial admission H&P documents high-complexity inpatient evaluation and management."
+        }
+      ],
+
+      "procedure": [],
+
+      "diagnosis": [
+        {
+          "code": "J18.9",
+          "system": "ICD-10-CM",
+          "description": "Pneumonia, unspecified organism",
+          "is_primary": true,
+          "justification": "Primary admitting problem."
+        },
+        {
+          "code": "A41.9",
+          "system": "ICD-10-CM",
+          "description": "Sepsis, unspecified organism",
+          "is_primary": false,
+          "justification": "Documented active systemic infection."
+        },
+        {
+          "code": "J96.01",
+          "system": "ICD-10-CM",
+          "description": "Acute respiratory failure with hypoxia",
+          "is_primary": false,
+          "justification": "Required oxygen and inpatient monitoring."
+        }
+      ]
+    },
+    {
+      "service_date": "2025-01-17",
+
+      "charge_decision": {
+        "billing_provider_id": "prac_hosp_2",
+        "billing_provider_role": "attester",
+        "billing_rationale": "Signed initial H&P by physician attester supports initial inpatient E/M for this date."
+      },
+      "em": [
+        {
+          "code": "99224",
+          "system": "CPT",
+          "description": "Subsequent Hospital Inpatient or Observation Care, level 4",
+          "encounter_type": {
+            "encounter_type": "Subsequent Hospital Inpatient or Observation Care",
+            "justification": "..."
+          },
+          "source": "MDM",
+          "confidence": 0.9,
+          "modifiers": [],
+          "time_spent": {
+            "time_spent_minutes": 70,
+            "evidence": "Initial evaluation, plan of care, orders, and documentation."
+          },
+          "problem_complexity": { "level": "Low", "justification": "..." },
+          "data_complexity": { "level": "Minimal", "justification": "N/A" },
+          "risk_of_complications": { "level": "Minimal", "justification": "..." },
+          "mdm_complexity": { "level": "Minimal" },
+          "linked_diagnosis": [
+            {
+              "code": "J18.9",
+              "system": "ICD-10-CM",
+              "description": "Pneumonia, unspecified organism",
+              "is_primary": true
+            },
+            {
+              "code": "A41.9",
+              "system": "ICD-10-CM",
+              "description": "Sepsis, unspecified organism",
+              "is_primary": false
+            },
+            {
+              "code": "J96.01",
+              "system": "ICD-10-CM",
+              "description": "Acute respiratory failure with hypoxia",
+              "is_primary": false
+            }
+          ],
+          "justification": "Initial admission H&P documents high-complexity inpatient evaluation and management."
+        }
+      ],
+
+      "procedure": [],
+
+      "diagnosis": [
+        {
+          "code": "J18.9",
+          "system": "ICD-10-CM",
+          "description": "Pneumonia, unspecified organism",
+          "is_primary": true,
+          "justification": "Primary admitting problem."
+        },
+        {
+          "code": "A41.9",
+          "system": "ICD-10-CM",
+          "description": "Sepsis, unspecified organism",
+          "is_primary": false,
+          "justification": "Documented active systemic infection."
+        },
+        {
+          "code": "J96.01",
+          "system": "ICD-10-CM",
+          "description": "Acute respiratory failure with hypoxia",
+          "is_primary": false,
+          "justification": "Required oxygen and inpatient monitoring."
+        }
+      ]
+    }
+  ]
+}
+  
+]

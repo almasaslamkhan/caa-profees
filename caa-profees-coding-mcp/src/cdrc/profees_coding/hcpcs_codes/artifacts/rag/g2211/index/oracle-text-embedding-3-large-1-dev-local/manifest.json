@@ -1,0 +1,8 @@
+{
+  "embedding_model": "oracle-text-embedding-3-large-1-dev-local",
+  "vector_count": 188,
+  "normalize_embeddings": true,
+  "metadata_file": "metadata.jsonl",
+  "faiss_index": "index.faiss",
+  "full_sidecar": "full_summary_sidecar.jsonl"
+}

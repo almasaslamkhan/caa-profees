@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "profees-coding-ehrm-skills"
+version = "0.0.0"  # will be set during build
+description = "Reusable EHRM ProFees ambulatory-coding skill resources."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["profees_ambulatory_coding_ehrm_skills*"]
+
+[tool.setuptools.package-data]
+"profees_ambulatory_coding_ehrm_skills" = ["skills/**"]
+
+[tool.setuptools.exclude-package-data]
+"*" = [
+  "skills/**/__pycache__/*",
+]

@@ -1,0 +1,17 @@
+{
+  "components": [
+    {
+      "id": "ambulatoryCodingPluginRoot",
+      "component": {
+        "CaafPluginComponent": {
+          "pluginName": {
+            "path": "/pluginName"
+          },
+          "parameters": {
+            "path": "/launchParameters"
+          }
+        }
+      }
+    }
+  ]
+}

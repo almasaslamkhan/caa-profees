@@ -1,0 +1,21 @@
+model_variant: baseline_llm
+retrieval_enabled: false
+prompt_path: ./cdrc/profees_coding/hcpcs_codes/models/baseline_llm/config/prompts.yaml
+model_name: caa-gpt-5.2-2025-12-11-dev-aifactory
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: low
+  seed: 42
+g2211_prompt_version: v4.4
+awv_prompt_version:
+  name: AWV only
+  version: v5.1.2
+  codes_supported:
+    - G0402
+    - G0438
+    - G0439
+other_prompt_version:
+  name: Other HCPCS facility
+  version: v6.1
+  codes_supported:
+    - Other HCPCS codes

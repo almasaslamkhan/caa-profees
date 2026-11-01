@@ -1,0 +1,4 @@
+interface:
+  display_name: "HCPCS G2211 Coding"
+  short_description: "Decide whether to append HCPCS G2211"
+  default_prompt: "Use $hcpcs-coding to decide whether G2211 applies for this encounter."

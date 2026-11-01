@@ -1,0 +1,132 @@
+{
+    "encounter_id": "ascdsdfrwegergfvavdafv", 
+    "encounter_metadata": {
+      "client_name": "Hudson",
+      "type": "Ambulatory",
+      "service_dates": [
+        "2025-01-16"
+      ]
+    },
+    "soap_text": "Chief Complaint\nPatient presents via telehealth for follow up on lab results and bladder infection, [STAFF]\n\nHistory of Present Illness\nPatient consented to use of documentation assistance. The patient is a [AGE] female with a history of recent UTI and hand pain/numbness, presenting for follow-up of laboratory results and ongoing urinary and neurological symptoms. Bladder Infection/Urinary Symptoms The patient was recently diagnsoed with a bladder infection. She experienced mild, intermittent burning sensations, which became more noticeable prior to starting antibiotics. She completed a seven-day course of nitrofurantoin two days ago. Although the primary symptoms have improved, she continues to experience brief, mild burning without pain or itching. She notes that the symptoms are not constant and do not cause significant discomfort. Recent urine culture grew over 100,000 E. coli, which was sensitive to nitrofurantoin. She uses D-mannose gummies (200 mg) and drinks cranberry juice to help prevent infections. She does not take probiotics but consumes yogurt. Hand Numbness, Pain, and Laboratory Findings The patient describes numbness and pain affecting both hands, with symptoms worse in the right hand and involving all fingers. She is right-handed and reports symptoms are worse in the right hand. The symptoms are sometimes severe enough to interfere with sleep but may resolve spontaneously. She manages the discomfort with Aleve and by attempting to rest. The symptoms have worsened recently. There is a family history of arthritis. She denies isolated joint pain. Laboratory evaluation for autoimmune arthritis was negative, and vitamin B12 and folate levels were normal. A previously abnormal blood count has normalized. Flow cytometry revealed a high CD4:CD8 ratio. All other blood counts and inflammatory markers were within normal limits, and there was no evidence of anemia or active infection.\n\nReview of Systems\nAll pertinent positives noted in HPI, all others negative.\n\nPhysical Exam\nGENERAL: Overall appearance: normal, alert and oriented, no acute distress EYE: nonicteric, non injected ENT: symmetric facial movement; hearing grossly at baseline LUNGS: non-labored respiration NEUROLOGIC: Awake, alert PSYCHIATRIC: Cooperative, appropriate mood and affect, The patient demonstrates understanding, is able to follow multiple step instructions\n\nAssessment/Plan\nPatient is a [AGE] female with type 2 diabetes, hypertension, hyperlipidemia, and history of hand numbness presenting for follow-up of lab results and management of bladder infection. 1. UTI (urinary tract infection) (N39.0: Urinary tract infection, site not specified) Completed 7-day course of nitrofurantoin for E. coli UTI; organism was sensitive to nitrofurantoin per urine culture. Mild residual intermittent burning symptoms; no pain or itching reported. - Ordered repeat urinalysis at [DIAGNOSTIC_LABS] after antibiotic completion to assess for infection clearance, allowing time for antibiotic activity to subside. - Recommended hydration and use of D-mannose daily; advised to switch from gummies to capsules to reduce sugar intake. - Advised use of women's probiotic supplement for urinary tract health 2. High CD4 T cell count determined by flow cytometry (D72.828: Other elevated white blood cell count) Borderline high CD4:CD8 ratio noted on flow cytometry; blood counts have normalized and no evidence of infection, anemia, or autoimmune disease. - Referred to hematologist for evaluation and ongoing monitoring; staff to provide referral information for local hematologist. - Clinic will provide referral details and coordinate follow-up as needed. 3. Numbness in both hands (R20.0: Anesthesia of skin) Chronic, intermittent. Uncontrolled. R>L hand pain and numbness Assessment suggests nerve pain likely due to carpal tunnel syndrome and ulnar nerve involvement, related to overuse, age, and family history; autoimmune arthritis ruled out based on negative inflammatory markers and absence of joint-specific pain. - Recommended wrist splint to reduce nerve compression and allow rest. - Advised use of anti-inflammatory medications (ibuprofen, Aleve, Naproxen) as needed for symptom control. - Recommended icing the wrist and applying heat to the palm to reduce inflammation and improve blood flow. - Referred to neurologist for further evaluation and possible nerve testing; patient to arrange neurology consult locally. RTC for SAWE in 1 year. The patient has consented to the use of AI technology. AI-powered tools may record conversations during the consultation to assist in generating accurate medical records. Occasionally, minor typographical errors may occur due to voice recognition limitations; however, the chart is reviewed for clinical accuracy and substance. Please return as directed, or return sooner if your condition(s) does not improve.\n\nAdditional Information\nProblem List/Past Medical History Ongoing Adult general medical exam Hyperlipidemia Hypertension Hypertension associated with type 2 diabetes mellitus Long-term insulin use Medicare annual wellness visit, subsequent Multiple nevi Numbness in both hands Obesity, morbid, BMI 40.0-49.9 Osteoporosis screening Type 2 diabetes mellitus with hyperlipidemia Urine incontinence UTI (urinary tract infection) Historical No qualifying data Procedure/Surgical History \u2022 Dilation and curettage of uterus (D&C) ([DATE]) \u2022 Dilation and curettage of uterus (D&C) ([DATE]) \u2022 Nasal septoplasty (nose surgery) ([DATE]) Medications Unchanged atorvastatin (atorvastatin 10 mg oral tablet)1 tablet(s) by mouth once daily. Refills: 2. blood glucose monitorAccu-chek Guide Meter Check blood glucose seven times a day. DX: E11.69. Refills: 0. blood glucose monitoring stripsAccu- Check Guide Test Strips Test blood glucose Seven times a day , Medical Necessity Dx:E11.69 Diabetes. Refills: 3. insulin aspart (NovoLOG FlexPen 100 units/mL injectable solution)INJECT 15-30 UNITS SUBCUTANEOUSLY 3 TIMES DAILY BEFORE MEALS PER SCALE. Refills: 1. insulin glargine (Lantus Solostar Pen 100 units/mL subcutaneous solution)INJECT 35 TO 50 UNITS SUBCUTANEOUSLY 2 TIMES DAILY PER TITRATION. Refills: 0. insulin pen needles 31g - 5 mmuse 5x/day. Refills: 1. lancetsSoft Clix Lancets -Test blood glucose 7 Times daily, Medical Necessity Dx:E11.69 Diabetes. Refills: 3. metFORMIN (MetFORMIN (Eqv-Glucophage XR) 500 mg oral tablet, extended release)4 tablet(s) by mouth once daily. GENERIC FOR EQV-GLUCOPHAGE XR.. Refills: 2. Non-Formulary Medication ()500 unknown unit use 5 times daily. Refills: 0. Non-Formulary Medication (ACCU-CHEK AVIVA PLUS TEST STRP)CHECK 7 TIMES A DAY. Refills: 0. Non-Formulary Medication (BD UF MINI PEN NEEDLE 5MMX31G)USE 5 TIMES DAILY WITH INSULINS. Refills: 2. Non-Formulary Medication (Droplet Pen NDL 31G 3/16in (5MM))Use to administrate Insulin 5 times a day. DX: E11.69. Refills: 3. Non-Formulary Medication (Embecta Pen Needle/Ultra-Fine/31g X 5mm Mis Embe)Use to administer Insulin 5 times a day. DX: E11.69. Refills: 4. pseudoephedrine (Sudafed 12-Hour)by mouth once daily. semaglutide (Ozempic 2 mg/3 mL (0.25 mg or 0.5 mg dose) subcutaneous solution)0.5 Milligram by subcutaneous injection once a week. rotate injection sites. dx E11.9. Refills: 2. valsartan (valsartan 80 mg oral tablet)2 tablet(s) by mouth once daily. Refills: 1. Opioid Review No qualifying data available. Allergies NKA Social History Alcohol Alcohol Use: None. Home/Environment Marital Status of Patient if Patient Independent Adult [MARITAL_STATUS]. Nutrition/Health Type of diet Regular. Caffeine intake amount soda - 24 oz a day. Tobacco Tobacco Use: Never (less than 100 in lifetime). Did the patient use tobacco anytime during the past 12 months prior to hospital arrival? No. Family History Congestive heart failure: Father. Coronary artery disease: Mother. Diagnostic Results Health Maintenance Recommendation Last Done Frequency Next Due Additional Information Bone Density Screening (Pending) Variable Now Depression Screening Variable Now Diabetes Maintenance - Eye Exam Variable Now Diabetes Maintenance - Foot Exam Variable Now Diabetes Maintenance - HgbA1C (Pending) Variable Now Colon Cancer Screening [DATE] 1 year(s) [DATE] Influenza Vaccine [DATE] 1 year(s) [DATE] BP Codes Needed Diastolic [DATE] 6 month(s) [DATE] BP Codes Needed Systolic [DATE] 6 month(s) [DATE] DM Kidney Health Alb/Creat Ratio (Pending) [DATE] 1 year(s) [DATE] DM Kidney Health eGFR (Pending) [DATE] 1 year(s) [DATE] Functional Assessment Outside SAWE [DATE] 1 year(s) [DATE] Medication Reconciliation Outside SAWE [DATE] 1 year(s) [DATE] Annual Wellness Exam [DATE] 1 year(s) [DATE] Breast Cancer Screening [DATE] 2 year(s) [DATE] Portions of this chart may have been created with Dragon voice recognition software. Occasionally, there may be minor typographical errors due to the inherent limitation of voice recognition software. However, the chart is reviewed for clinical accuracy/substance.\n\nSignature Line:\nElectronically Signed on [DATE] [TIME]________________________________________________________ [PERSON]\n\n",
+    "orders": [
+        {
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display_line": "Tablet",
+          "mnemonic": "Lisinopril"
+        },
+        {
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display_line": "Blood Test",
+          "mnemonic": "CBC Panel"
+        }
+    ],
+    "patient_type": "New",
+    "appointment_type": "New",
+    "patient_birthdate": "1958-02-10T00:00:00Z",
+    "patient_sex": "male",
+    "current_encounter_period": {
+      "start": "2023-10-03T14:15:00Z",
+      "end": "2023-10-03T14:15:00Z"
+    },
+    "health_plan": [
+      {
+        "health_plan": "medicare advantag part b",
+        "active_status": "Active",
+        "health_plan_effective_date": "2025-01-01"
+      }
+    ],
+    "awv_history": [
+      {
+        "hcpcs_code": "G0439",
+        "claim_date": "2024-02-12"
+      }
+    ],
+    "facility_info": [
+      {
+        "patient_loc": "Clinic Room 3",
+        "nurse_unit_loc": "Primary Care",
+        "building_loc": "Medical Office Building A",
+        "facility_loc": "Main Campus",
+        "ccn_name": "General Hospital",
+        "ccn_number": 123456.0,
+        "pos_code": 11,
+        "cms_submission_type": "Professional",
+        "beg_effective_dt_tm": "2025-01-01T00:00:00Z",
+        "end_effective_dt_tm": "2026-12-31T23:59:59Z",
+        "is_excepted": true
+      }
+    ],
+    "provider_info": [
+      {
+        "physician_ind": 1,
+        "position": "Attending Physician",
+        "physician_status": "In",
+        "encntr_prsnl_r": "Primary"
+      }
+    ],
+    "lab_info": [
+      {
+        "facility_location": "Main Campus Lab",
+        "service_location": "Outpatient Lab",
+        "lab_name": "Hospital Core Lab",
+        "clia_number_txt": "12D4567890"
+      }
+    ],
+    "anaesthesia_staff_info": [
+      {
+        "role_performed": "Anesthesiologist",
+        "signing_indicator": 1,
+        "in_time": "2025-01-16T09:00:00Z",
+        "out_time": "2025-01-16T10:00:00Z"
+      }
+    ],
+    "anaesthesia_concurrent_staff_info": [
+      {
+        "relationship": "Anesthesia Coverage",
+        "concurrent_encounter_count": 2
+      }
+    ],
+    "anaesthesia_record_info": [
+      {
+        "asa_display_value": "ASA 2",
+        "asa_structured_status": "Final",
+        "result_date": "2025-01-16T10:05:00Z"
+      }
+    ],
+    "problem_list": [
+      {
+        "description": "Vertigo",
+        "code": "R42",
+        "status": "active",
+        "priority": "2"
+      },
+      {
+        "description": "Acute depression",
+        "code": "F32.A",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Brain concussion",
+        "code": "S06.0XAA",
+        "status": "inactive",
+        "priority": "2"
+      },
+      {
+        "description": "Benign essential hypertension",
+        "code": "I10",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Acute insomnia",
+        "code": "G47.00",
+        "status": "future",
+        "priority": "2"
+      }
+    ]
+}

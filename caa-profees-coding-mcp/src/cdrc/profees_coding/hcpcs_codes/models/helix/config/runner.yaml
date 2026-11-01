@@ -1,0 +1,36 @@
+model_variant: helix
+retrieval_enabled: false
+prompt_path: ./cdrc/profees_coding/hcpcs_codes/models/helix/config/prompts.yaml
+model_name: caa-gpt-5.2-2025-12-11-dev-aifactory
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: low
+  seed: 42
+g2211_prompt_version: v4.4
+awv_prompt_version:
+  name: AWV only
+  version: v5.1.6_soap_user_facing_justification
+  codes_supported:
+    - G0402
+    - G0438
+    - G0439
+awv_eligibility_prompt_version: v5.4
+awv_precheck_mode: deterministic
+other_prompt_version:
+  name: Other HCPCS facility
+  version: v6.1
+  codes_supported:
+    - Other HCPCS codes
+rag:
+  feature_name: G2211
+  artifact_selection: latest_registry
+  artifact_root: ./cdrc/profees_coding/hcpcs_codes/artifacts/rag/g2211
+  artifact_build_id:
+  summary_cache_path: ./cdrc/profees_coding/hcpcs_codes/artifacts/rag/g2211/summaries.jsonl
+  vdb_dir: ./cdrc/profees_coding/hcpcs_codes/artifacts/rag/g2211/index/oracle-text-embedding-3-large-1-dev-local
+  embedding_model_override:
+  retrieval_top_k: 4
+  retrieval_candidate_pool_size: 24
+  positive_example_limit: 2
+  negative_example_limit: 2
+  prompt_max_examples: 4

@@ -1,0 +1,11 @@
+prompt_path: ./cdrc/profees_coding/modifiers/models/decision_rules/config/prompts.yaml
+guidelines_path: ./cdrc/profees_coding/modifiers/models/parallel_modifiers_v3/config/modifier_guidelines.yaml
+modifiers_in_scope: "25,50,LT,RT,95,CO,CQ,GP,GO,GN,QK,QX,P1,P2,P3,P4,P5,P6,PO,PN,QW,90,GY,UD,GC"
+# model_name: caa-gpt-5-2025-08-07-dev-sds
+model_name: caa-gpt-5.4-2026-03-05-dev-sds
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: none
+  seed: 2
+prompt_version: v2
+prompt_versions: '{"ALL": "v3", "25": "v3", "50_LT_RT": "v2", "95": "v3", "QW_90": "v1", "GP_GO_GN_CQ_CO": "v1", "GY_UD": "v1", "P1-P6": "v1", "PO-PN": "v1", "QK-QX": "v2"}'

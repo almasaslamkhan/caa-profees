@@ -1,0 +1,11 @@
+feature_name: G2211
+artifact_selection: latest_registry
+artifact_root: ./cdrc/profees_coding/hcpcs_codes/artifacts/rag/g2211
+artifact_build_id:
+summary_cache_path: ./cdrc/profees_coding/hcpcs_codes/artifacts/rag/g2211/summaries.jsonl
+vdb_dir: ./cdrc/profees_coding/hcpcs_codes/artifacts/rag/g2211/index/oracle-text-embedding-3-large-1-dev-local
+embedding_model_override:
+retrieval_top_k: 4
+retrieval_candidate_pool_size: 24
+positive_example_limit: 2
+negative_example_limit: 2

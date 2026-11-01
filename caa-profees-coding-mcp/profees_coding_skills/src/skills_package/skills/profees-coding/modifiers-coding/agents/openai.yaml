@@ -1,0 +1,4 @@
+interface:
+  display_name: "Modifiers Coding"
+  short_description: "Apply CPT and HCPCS modifiers"
+  default_prompt: "Use $modifiers-coding to apply modifiers after diagnosis association."

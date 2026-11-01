@@ -1,0 +1,8 @@
+prompt_path: ./cdrc/profees_coding/icd10cm/models/llm_only/config/prompts.yaml
+model_name: oracle-gpt-4o-2024-05-13
+embedding_model: text-embedding-3-large
+model_kwargs:
+  temperature: 0.0
+  seed: 2
+prompt_version: v1
+icl_mode: knowledge_base

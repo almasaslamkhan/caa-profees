@@ -1,0 +1,19 @@
+prompt_path: ./cdrc/profees_coding/modifiers/models/parallel_modifiers_v5/config/prompts.yaml
+guidelines_path: ./cdrc/profees_coding/modifiers/models/parallel_modifiers_v5/config/modifier_guidelines.yaml
+modifiers_in_scope: "25,50,LT,RT,95,90,GC,GN,GO,GN,GY,CO,CQ,QK,QX,P1,P2,P3,P4,PO,PN,QW,UD"
+# model_name: caa-gpt-5-2025-08-07-dev-sds
+model_name: caa-gpt-5.4-2026-03-05-dev-sds
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: none
+  seed: 2
+num_repeats: 1  
+branch_selection_retry_enabled: false
+ehr_data_in_scope: "patient_sex,patient_age,payer_name,encounter_metadata,health_plan,facility_info,provider_info,lab_info,anaesthesia_staff_info,anaesthesia_concurrent_staff_info"
+# prompt_versions: '{"ALL": "v3", "25": "v3", "50": "v3", "LT": "v3", "RT": "v3", "CO": "v1", "CQ": "v1", "GC": "v3", "GY": "v4", "95": "v3", "P1-P6": "v2", "PO-PN": "v2", "QK-QX": "v2"}'
+# prompt_versions: '{"ALL": "v2", "25": "v1", "50": "v1", "LT": "v1", "RT": "v1", "CO": "v1", "CQ": "v1", "GC": "v1", "GY": "v3", "95": "v2", "P1-P6": "v1", "PO-PN": "v1", "QK-QX": "v1"}'
+# prompt_versions: '{"ALL": "v3", "25": "v3", "50": "v3", "LT": "v3", "RT": "v3", "95": "v3", "90": "v2", "CO": "v1", "CQ": "v1", "GC": "v3", "GY": "v3", "GP": "v2", "QW": "v2", "UD": "v2", "P1-P6": "v1", "PO-PN": "v1", "QK-QX": "v2"}' # Working well
+# prompt_versions: '{"ALL": "v3", "25": "v3", "50_LT_RT": "v2", "95": "v3", "QW_90": "v1", "GP_GO_GN_CQ_CO": "v1", "GY_UD": "v1", "P1-P6": "v1", "PO-PN": "v1", "QK-QX": "v2"}'
+# prompt_versions: '{"branch_selection": "v1", "branch_selection_retry": "v1", "ALL": "v4", "25": "v4", "50_LT_RT": "v3", "GC": "v4", "95": "v4", "QW_90": "v2", "GP_GO_GN_CQ_CO": "v2", "GY_UD": "v2", "P1-P6": "v2", "PO-PN": "v2", "QK-QX": "v3"}'
+
+prompt_versions: '{"branch_selection": "v8", "branch_selection_retry": "v8", "ALL": "v4", "25": "v9", "50_LT_RT": "v7", "GC": "v7", "95": "v6", "QW_90": "v6", "GP_GO_GN_CQ_CO": "v2", "GY_UD": "v4", "P1-P6": "v4", "PO-PN": "v2", "QK-QX": "v5"}'

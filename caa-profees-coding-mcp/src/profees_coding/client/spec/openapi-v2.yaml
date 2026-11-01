@@ -1,0 +1,486 @@
+openapi: 3.0.1
+info:
+  title: HIM Coding Service API
+  description: OpenAPI specification for HIM Coding service.
+  contact:
+    name: HIM Coding
+    url: https://devops.oci.oraclecorp.com/t/WUEhzd
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: http://127.0.0.1:9000/ehrclinical/him/20250901
+- url: https://127.0.0.1:9000/ehrclinical/him/20250901
+tags:
+- name: HimCoding
+  description: Operations related to HIM Coding service
+paths:
+  /hello/{user}:
+    get:
+      tags:
+      - HimCoding
+      description: Returns a greeting to the user!
+      parameters:
+      - name: user
+        in: path
+        description: The name of the user to greet.
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Returns the greeting.
+          content:
+            application/json:
+              schema:
+                type: string
+        "400":
+          description: Invalid characters in "user" were provided.
+          content: {}
+  /patients/{id}:
+    get:
+      tags:
+      - HimCoding
+      description: Use SI query to find a patient by patient ID.
+      parameters:
+      - name: id
+        in: path
+        description: The patient ID in SO database.
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Returns the patient info or empty if the patient is not found.
+          content:
+            application/json:
+              schema:
+                type: string
+        "500":
+          description: Failed to run SI query.
+          content: {}
+  /billingCodes:
+    get:
+      tags:
+      - HimCoding
+      description: Return list of billing codes from SI.
+      operationId: listBillingCodes
+      parameters:
+      - name: encounterId
+        in: query
+        description: "Numeric Id of encounter, visit, or appointment."
+        required: true
+        schema:
+          type: string
+      - name: status
+        in: query
+        description: "The status of billing code (e.g. PROPOSED, SAVED, SUBMITTED)."
+        schema:
+          type: string
+          x-obmcs-enumref: '#/definitions/Status'
+        x-obmcs-enumref: '#/definitions/Status'
+      - name: type
+        in: query
+        description: "The type of billing code (e.g. EM, DIAGNOSIS, PROCEDURE)."
+        schema:
+          type: string
+          x-obmcs-enumref: '#/definitions/Type'
+        x-obmcs-enumref: '#/definitions/Type'
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillingCodeSummary'
+        default:
+          description: Error response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    post:
+      tags:
+      - HimCoding
+      description: Save list of billing codes to SI.
+      operationId: saveBillingCodes
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BillingCodeSummary'
+        required: true
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillingCodeSummary'
+        default:
+          description: Error response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      x-codegen-request-body-name: body
+  /billingCodes/{encounterId}/submit:
+    put:
+      tags:
+      - HimCoding
+      description: Submit list of billing codes.
+      operationId: submitBillingCodes
+      parameters:
+      - name: encounterId
+        in: path
+        description: "Numeric Id of encounter, visit, or appointment."
+        required: true
+        schema:
+          type: string
+      responses:
+        "201":
+          description: Successfully submit billing codes
+          content:
+            application/json:
+              schema:
+                type: string
+        default:
+          description: Error response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Error code
+        message:
+          type: string
+          description: Error message
+    BillingCodeSummary:
+      type: object
+      properties:
+        encounterId:
+          type: string
+        patientId:
+          type: string
+        ownerId:
+          type: string
+        start_date:
+          type: string
+        end_date:
+          type: string
+        duration:
+          type: integer
+        recode_version:
+          type: string
+          description: Version identifier for re-coding workflow runs. Example "0".
+        isProposed:
+          type: boolean
+        procedure:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProcedureCode'
+        em:
+          type: array
+          items:
+            $ref: '#/components/schemas/Em'
+        diagnosis:
+          type: array
+          items:
+            $ref: '#/components/schemas/Diagnosis'
+        grouper:
+          type: array
+          items:
+            $ref: '#/components/schemas/Grouper'
+        preventive:
+          type: array
+          items:
+            $ref: '#/components/schemas/Preventive'
+      description: |
+        Summary of billing codes grouped by type for encounterId.
+    BillingCode:
+      type: object
+      properties:
+        type:
+          type: string
+          description: |
+            Classification tag. Common values include DIAGNOSIS, EM, PROCEDURE, PREVENTIVE. For program-specific classifications, this may also be "G-code" (e.g., under diagnosis) or "Z-code" (e.g., under preventive), depending on workflow needs.
+        code:
+          type: string
+        description:
+          type: string
+        system:
+          type: string
+        justification:
+          type: string
+        status:
+          $ref: '#/components/schemas/Status'
+        sub_type:
+          $ref: '#/components/schemas/SubType'
+      description: |
+        The billing code details common for all types.
+    ProcedureCode:
+      description: |
+        The procedure code details.
+      allOf:
+      - $ref: '#/components/schemas/BillingCode'
+      - type: object
+        properties:
+          modifiers:
+            type: array
+            items:
+              $ref: '#/components/schemas/Modifier'
+          linked_diagnosis:
+            type: array
+            items:
+              $ref: '#/components/schemas/LinkedDiagnosis'
+    Preventive:
+      description: |
+        Preventive procedure code details.
+      allOf:
+      - $ref: '#/components/schemas/ProcedureCode'
+      - type: object
+        properties:
+          is_primary:
+            type: boolean
+    Em:
+      description: |
+        The E/M code details.
+      allOf:
+      - $ref: '#/components/schemas/BillingCode'
+      - type: object
+        properties:
+          modifiers:
+            type: array
+            items:
+              $ref: '#/components/schemas/Modifier'
+          problem_complexity:
+            $ref: '#/components/schemas/Complexity'
+          data_complexity:
+            $ref: '#/components/schemas/Complexity'
+          risk_of_complications:
+            $ref: '#/components/schemas/Complexity'
+          mdm_complexity:
+            $ref: '#/components/schemas/Complexity'
+          linked_diagnosis:
+            type: array
+            items:
+              $ref: '#/components/schemas/LinkedDiagnosis'
+    Diagnosis:
+      description: |
+        The diagnosis code details.
+      allOf:
+      - $ref: '#/components/schemas/BillingCode'
+      - type: object
+        properties:
+          is_primary:
+            type: boolean
+          diagnosisDetails:
+            $ref: '#/components/schemas/DiagnosisDetails'
+          generativeDetails:
+            $ref: '#/components/schemas/GenerativeDetails'
+          supportingEvidence:
+            type: array
+            items:
+              type: string
+    Grouper:
+      description: |
+        The grouper code details.
+      allOf:
+      - $ref: '#/components/schemas/BillingCode'
+      - type: object
+        properties:
+          coding_type:
+            $ref: '#/components/schemas/CodeableConcept'
+          risk_of_mortality:
+            $ref: '#/components/schemas/CodeableConcept'
+          severity_of_illness:
+            $ref: '#/components/schemas/CodeableConcept'
+          major_diagnostic_category:
+            $ref: '#/components/schemas/CodeableConcept'
+          amount:
+            type: number
+            format: double
+          weight:
+            type: number
+            format: double
+          low_trim:
+            type: number
+            format: double
+          high_trim:
+            type: number
+            format: double
+          length_of_stay_arithmetic_mean:
+            type: number
+            format: double
+          length_of_stay_geometric_mean:
+            type: number
+            format: double
+          hospital_acquired_condition_indicator:
+            type: number
+            format: double
+    Modifier:
+      type: object
+      properties:
+        code:
+          type: string
+        description:
+          type: string
+        justification:
+          type: string
+    LinkedDiagnosis:
+      type: object
+      properties:
+        code:
+          type: string
+        justification:
+          type: string
+      description: |
+        Diagnosis linked to a procedure or E/M code.
+    Complexity:
+      type: object
+      properties:
+        level:
+          type: string
+        justification:
+          type: string
+      description: |
+        Complexity level for a specific E/M category.
+    SubType:
+      type: object
+      properties:
+        code:
+          type: string
+        display:
+          type: string
+      description: |
+        Identifier for proposed or accepted code.
+    Status:
+      type: string
+      enum:
+      - PROPOSED
+      - SAVED
+      - SUBMITTED
+      - PROPOSED_SAVED
+      - PROPOSED_SUBMITTED
+    Type:
+      type: string
+      enum:
+      - DIAGNOSIS
+      - EM
+      - PROCEDURE
+      - PREVENTIVE
+    DiagnosisDetails:
+      type: object
+      properties:
+        sequence:
+          type: number
+          format: double
+        presentOnAdmission:
+          type: string
+        type:
+          type: string
+      description: |
+        Diagnosis detailed information
+    GenerativeDetails:
+      type: object
+      properties:
+        confidence:
+          type: string
+        justification:
+          type: string
+      description: |
+        Diagnosis generated detailed information
+    CodeableConcept:
+      required:
+      - code
+      type: object
+      properties:
+        text:
+          type: string
+          description: Textual value of the code used for display.
+        code:
+          type: string
+          description: Code value in the specified code set.
+        codingKey:
+          type: string
+          description: Code key.
+        userSelected:
+          type: boolean
+          description: Indicates if this coding was chosen directly by the user.
+        meaning:
+          type: string
+          description: Meaning of the code.
+        conceptCki:
+          type: string
+          description: Cerner key identifier of the code.
+      description: Concept - reference to a terminology or just text.
+  responses:
+    Error:
+      description: Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+  parameters:
+    opcRequestId:
+      name: opc-request-id
+      in: header
+      description: Optional request ID.
+      schema:
+        type: string
+    ifMatch:
+      name: if-match
+      in: header
+      description: Optional.
+      schema:
+        type: string
+    EncounterIdQueryParam:
+      name: encounterId
+      in: query
+      description: "Numeric Id of encounter, visit, or appointment."
+      required: true
+      schema:
+        type: string
+    StatusQueryParam:
+      name: status
+      in: query
+      description: "The status of billing code (e.g. PROPOSED, SAVED, SUBMITTED)."
+      schema:
+        type: string
+        x-obmcs-enumref: '#/definitions/Status'
+      x-obmcs-enumref: '#/definitions/Status'
+    TypeQueryParam:
+      name: type
+      in: query
+      description: "The type of billing code (e.g. EM, DIAGNOSIS, PROCEDURE)."
+      schema:
+        type: string
+        x-obmcs-enumref: '#/definitions/Type'
+      x-obmcs-enumref: '#/definitions/Type'
+    EncounterIdPathParam:
+      name: encounterId
+      in: path
+      description: "Numeric Id of encounter, visit, or appointment."
+      required: true
+      schema:
+        type: string
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+x-obmcs-endpoint-template: "https://sample-service.{region}.oci.{secondLevelDomain}"
+x-oh-issue-routing-table:
+  email: hkalley_org_ww@oracle.com
+  jiraBoardUrl: https://jira.oci.oraclecorp.com/projects/OHMO/summary
+  oceanTeamName: ohai_health_information_management
+  phonebookId: ohai_health_information_management
+  slackChannel: null
+  xMattersGroup: ProFile_IP
+x-original-swagger-version: "2.0"

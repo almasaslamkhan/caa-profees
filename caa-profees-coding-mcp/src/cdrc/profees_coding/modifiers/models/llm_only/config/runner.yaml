@@ -1,0 +1,10 @@
+prompt_path: ./cdrc/profees_coding/modifiers/models/llm_only/config/prompts.yaml
+guidelines_path: ./cdrc/profees_coding/modifiers/models/llm_only/config/modifier_guidelines.yaml
+modifiers_in_scope: "25,50,LT,RT,GC,P1,P2,P3,P4,"
+model_name: caa-gpt-5-2025-08-07-dev-sds
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: minimal
+  seed: 2
+num_repeats: 1  
+prompt_version: v9

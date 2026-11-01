@@ -1,0 +1,34 @@
+{
+  "baseline_imported_files": [
+    "code_filtering.py",
+    "combo_rules.yaml"
+  ],
+  "baseline_source": "standalone_combocode",
+  "generated_at": "2026-06-04T09:33:11+00:00",
+  "guideline_reference": "FY2026 ICD-10-CM Official Guidelines, updated October 1, 2025",
+  "icd10cm_dataset": "ICD-10-CM FY2026 April 1, 2026 update",
+  "icd10cm_effective_end": "2026-09-30",
+  "icd10cm_effective_start": "2026-04-01",
+  "icd10cm_fiscal_year": "FY2026",
+  "rules_version": "0.9.0",
+  "runtime_files": [
+    "combo_rules.yaml",
+    "metadata.json"
+  ],
+  "source_files": [
+    "icd10cm-codes-April-1-2026.txt",
+    "icd10cm-order-April-1-2026.txt",
+    "icd10c-tabular-April-1-2026.xml",
+    "icd10cm-index-April-1-2026-XML.xml",
+    "icd10cm-eindex-April-1-2026-XML.xml",
+    "icd10cm-drug-April-1-2026-XML.xml",
+    "icd10cm-neoplasm-April-1-2026-XML.xml",
+    "combo_rules.yaml"
+  ],
+  "source_urls": [
+    "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2026-update/icd10cm-April-1-2026-XML.zip",
+    "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2026-update/icd10cm-table-and-index-April-1-2026.zip",
+    "https://www.cms.gov/files/document/fy-2026-icd-10-cm-coding-guidelines.pdf",
+    "https://www.cms.gov/medicare/coding-billing/icd-10-codes"
+  ]
+}

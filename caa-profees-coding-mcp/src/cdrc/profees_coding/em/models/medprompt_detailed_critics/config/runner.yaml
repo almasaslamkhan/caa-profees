@@ -1,0 +1,32 @@
+prompt_path: ./cdrc/profees_coding/em/models/medprompt_detailed_critics/config/prompts.yaml
+embedding_model: oracle-text-embedding-3-large-1-dev
+vdb_index_path: cdrc/profees_coding/em/models/medprompt_detailed_critics/vdb/vdb_icl_knowledge_base_v0.1_pla_cga_dis_209_oracle-text-embedding-3-large-1-dev
+# model_name: oracle-gpt-4.1-2025-04-14-dev-sds
+# model_kwargs:
+#   temperature: 0.0
+#   seed: 2
+
+# model_name: caa-gpt-5-2025-08-07-dev-sds
+model_name: caa-gpt-5.2-2025-12-11-dev-sds
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: none
+  seed: 2
+num_few_shot_examples: 3
+predict_mdm_complexity: false
+num_repeats: 3  # number of times for medprompt ensemble
+use_intermediate_complexities: false  # not applicable to medprompt detailed preprocessing
+prompt_version: v9
+rci_mode: simple  # one of 'none', 'single', 'multiple'
+rci_prompt_version_pc: v14  # only applicable for rci_mode = 'multiple'
+rci_prompt_version_dc: v11  # only applicable for rci_mode = 'multiple'
+rci_prompt_version_rc: v28  # only applicable for rci_mode = 'multiple'
+rci_rc_mode: simple  # one of 'none', 'single', 'multiple'
+rci_pc_mode: simple  # one of 'none', 'single', 'multiple'
+rci_dc_mode: simple  # one of 'none', 'single', 'multiple'
+encounter_type_prompt_version: v9
+time_statement_prompt_version: v2
+skip_additional_info: false
+omit_soap_note: true
+omit_patient_problems: true
+icl_mode: knowledge_base

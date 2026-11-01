@@ -1,0 +1,7 @@
+prompt_path: ./cdrc/profees_coding/icd10cm_associate/models/llm_only_merged_v1/config/prompts.yaml
+prompt_version: v4
+icd_10_cm_prompt_version: v1
+#model_name: oracle-gpt-4o-2024-05-13
+model_kwargs:
+  temperature: 0.0
+  seed: 1234

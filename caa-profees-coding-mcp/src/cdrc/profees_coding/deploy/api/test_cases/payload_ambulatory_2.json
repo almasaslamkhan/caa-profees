@@ -1,0 +1,132 @@
+{
+    "encounter_id": "ascdsdfrwegergfvavdafv", 
+    "encounter_metadata": {
+      "client_name": "Hudson",
+      "type": "Ambulatory",
+      "service_dates": [
+        "2025-01-16"
+      ]
+    },
+    "soap_text": "Chief Complaint\nEstablish care\n\nHistory of Present Illness\nThe patient is a [AGE] female with a history of fibromyalgia, depression, hypothyroidism, and a past stroke, presenting for an established care visit. Fibromyalgia and Torn Rotator Cuff The patient reports worsening fibromyalgia symptoms, particularly exacerbated by the current weather. She states that neither her pain patch nor Oxycodone are providing adequate relief. She is interested in trying new treatments. The patient is aware of the importance of aerobic exercise but is limited due to a torn rotator cuff. She engages in stretching and as much exercise as she can tolerate. She is scheduled to start therapy at [ORGANIZATION] soon, as referred by [PERSON]. Depression The patient has been on sertraline for depression for 30 years, which she reports is working well. She is willing to try duloxetine for her fibromyalgia. Hypothyroidism The patient continues to manage her hypothyroidism with medication. She did not report any new issues related to this condition during the visit. Stroke The patient had a stroke approximately [AGE], which resulted in left-sided paralysis for three to four days. She still experiences some left-sided weakness. She was not on any medication for stroke prevention, including aspirin. Cholesterol The patient has a history of high cholesterol, with markedly elevated total cholesterol and LDL on prior testing. She had been on statins but was taken off them by a previous doctor. Sleep Apnea The patient has sleep apnea and uses a CPAP machine. She reports some memory issues. The patient has a family history of Alzheimer's, Parkinson's, and dementia, which she is concerned about. Toenail Issues The patient has been using antifungal treatment for her toenails, which are raising up. She finds it difficult to trim her nails due to her hip issues.\n\nPhysical Exam\nVitals & Measurements HR: 59 BP: 118/74 SpO2: 96% HT: 163.9 cm WT: 69.30 kg BMI: 25.8 No acute distress. Normocephalic. Conjunctiva not injected. Cooperative affect. She does have some mild nail thickening (L foot #1, 3,4) and mild pincer changes on L #1.\n\nAssessment/Plan\nPatient is a [AGE] female with a history of fibromyalgia, hypothyroidism, and a past CVA, presenting today for fibromyalgia management and routine care. Orders (Last 48 Hours): \u2022 DULoxetine, 20 mg = 1 capsule(s), Oral, bid, # 60 capsule(s), Refill(s) 4, Pharmacy: [PHARMACY] 51, 163.9, cm, [DATE] [TIME], Height (cm), kg, [DATE] [TIME], Weight (kg), 69.3 \u2022 pneumococcal 20-valent conjugate vaccine, 0.5 mL, form: Injection, IM, Once, Routine, first dose [DATE] [TIME], Physician Stop, stop date [DATE] [TIME] \u2022 Comprehensive Metabolic Panel \u2022 Lipid Profile \u2022 Return to Clinic - [ORGANIZATION] \u2022 Thyroid Stimulating Hormone 3rd Generation Apparent history of a CVA. Sounds like this last happened in [YEAR] - several days of symptoms, including speech and mobility. Not currently on aspirin. I would recommend she take 1 of those. Baby aspirin daily. Hyperlipidemia. Her last lipids showed LDL greater than 200\u2013repeat in consider lipid-lowering agents. GERD\u2013doing okay off medications as well. Hypothyroidism. Last thyroid level showed mild suppression of her TSH\u2013will repeat. Opioid use. No change in her fentanyl and oxycodone. Fibromyalgia. She reports increasing pain from this. Trial of duloxetine 20 mg twice daily consider tapering up if works okay. Depression\u2013doing well on her EsCitalopram\u2013we will cut that down to 100 mg daily and consider tapering further if we taper off duloxetine. Asthma\u2013very infrequent use of her inhaler even during this current allergy season\u2013follow-up. Sleep apnea\u2013continues on CPAP and tolerating okay. Memory problems. I did point out that her opioids may have an effect here. She is getting neurology evaluation in the future. Health maintenance\u2013PCV immunization today. I spent over 30 minutes in the face-to-face, and documentation of this visit today. Problem List/Past Medical History Ongoing ASHD - Atherosclerotic heart disease Benign Essential Hypertension Breast lump CVA - Cerebral infarction DJD (degenerative joint disease), cervical Fibromyalgia Gastroparesis GERD (gastroesophageal reflux disease) Hip osteoarthritis Hypothyroid Neck pain Occipital headache Opioid use agreement exists OSA treated with BiPAP S/P hip replacement S/P right knee arthroscopy Status post cervical spinal fusion Thyroid nodule Weight loss [D]Chronic intractable pain Procedure/Surgical History \u2022 LEFT cataract extraction| Service Date: [DATE]\u2022 Right total hip arthroplasty.| Service Date: [DATE]\u2022 R Total knee replacement| Service Date: [DATE]\u2022 Rt Hip scope with labral repair and osteoplasty| Service Date: [DATE]\u2022 R knee scope| Service Date: [DATE]\u2022 Hysterectomy - ovaries remain\u2022 Bilateral knee scopes\u2022 R hand surgery x 7 - reconstruction from trauma (hand caught in log splitter) - hardware has been removed\u2022 Remote cholecystectomy\u2022 Bladder Repair\u2022 Right achilles tendon repair\u2022 Left breast lumpectom (benign)\u2022 Cardiac cath x 2 - no stents. most recent cath in prior records\u2022 L Carpal Tunnel release\u2022 Colonoscopy\u2022 neck surgery with hardware\u2022 left eye lens implant Medications acetaminophen(acetaminophen 500 mg oral tablet), 1000 mg= 2 Tablet(s), Oral, q6h, PRN cycloSPORINE ophthalmic(Restasis 0.05% MultiDose), 1 Drop(s), Each Eye, q12h, 3 refills DULoxetine(DULoxetine 20 mg oral delayed release capsule), 20 mg= 1 capsule(s), Oral, bid, 4 refills fentaNYL(fentaNYL 75 mcg/hr transdermal film, extended release), 1 Patch, Transdermal, q72h levothyroxine(levothyroxine 125 mcg (0.125 mg) oral tablet), 1 Tablet(s), Oral, qAM, 3 refills lidocaine topical(Lidoderm 5% topical film), 1 Patch, Topical, Daily magnesium oxide(magnesium oxide 250 mg oral tablet), 250 mg= 1 Tablet(s), Oral, Daily, 7 refills metoprolol(metoprolol tartrate 25 mg oral tablet), 25 mg= 1 Tablet(s), Oral, bid, 3 refills Miscellaneous Medication(Zinc oral tablet), 1 Tablet(s), Oral, Daily Miscellaneous Medication(Vitamin D (cholecalciferol oral tablet)), 1 Tablet(s), Oral, Daily Miscellaneous Medication(Vitamin C (ascorbic acid oral tablet)), 1 Tablet(s), Oral, Daily oxyCODONE(_oxyCODONE 10 mg oral tablet), 1 Tablet(s), Oral, bid oxyCODONE(_oxyCODONE 10 mg oral tablet), 1 Tablet(s), Oral, bid sertraline(sertraline 100 mg oral tablet), 1.5 Tablet(s), Oral, qAM valACYclovir(valACYclovir 1 g oral tablet), 2 Tablet(s), Oral, bid, 6 refills Allergies Banana(Severe) \"breathing issues/stomach issues\" Lyrica(Severe) swelling Novocain(Severe) swelling penicillin(Severe) breathing issues shellfish(Severe) rash/ throat swelling traMADol (Moderate) \"leg cramping\" Contrast Dye rash No Known Latex Allergy Oxacillin codeine hurts stomach doxycycline SEVERE N/V Social History Smoking Status Never smoker Alcohol - Denies Alcohol Use Employment/School Description:[OCCUPATION] Home/Environment Lives with:Significant other Substance Abuse - Denies Substance Abuse Tobacco - Denies Tobacco Use Family History Arthritis: Mother. Dementia: Mother. Hypertension: Mother and Father. Ischemic heart disease: Father. Skin cancer: Aunt, Grandmother, Maternal and Grandmother, Paternal. Health Status Family Member(s) Immunizations VaccineDateStatus pneumococcal 20-valent conjugate vaccine04/07/2025Given influenza virus vaccine inactivated-Not Given influenza virus vaccine inactivated10/10/2024Given influenza virus vaccine inactivated09/15/2023Given influenza virus vaccine inactivated10/04/2022Given zoster vaccine, inactivated10/23/2021Recorded influenza virus vaccine inactivated10/23/2021Recorded zoster vaccine, inactivated08/23/2021Recorded SARS-CoV-2 (COVID-19) Ad26 vaccine06/07/2021Recorded diphtheria/pertussis acel/tetanus adult02/21/2020Given influenza virus vaccine inactivated01/14/2019Given influenza virus vaccine inactivated10/09/2017Given influenza virus vaccine inactivated09/14/2016Given pneumococcal 13-valent vaccine08/31/2015Given influenza virus vaccine inactivated08/31/2015Given influenza virus vaccine inactivated10/17/2014Given influenza virus vaccine inactivated10/15/2013Given influenza virus vaccine inactivated11/15/2012Given influenza virus vaccine inactivated11/19/2010Given influenza virus vaccine inactivated01/26/2010Given Tdap (Adacel)*01/26/2010Given Diagnostic Results Event monitor: Isolated PVCs and isolated PACs Premature heartbeats Visit Information Attending Physician: [PERSON] Primary Care Physician: [PERSON] Visit Date: [DATE]\n\n",
+    "orders": [
+        {
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display_line": "Tablet",
+          "mnemonic": "Lisinopril"
+        },
+        {
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display_line": "Blood Test",
+          "mnemonic": "CBC Panel"
+        }
+    ],
+    "patient_type": "New",
+    "appointment_type": "New",
+    "patient_birthdate": "1958-02-10T00:00:00Z",
+    "patient_sex": "male",
+    "current_encounter_period": {
+      "start": "2023-10-03T14:15:00Z",
+      "end": "2023-10-03T14:15:00Z"
+    },
+    "health_plan": [
+      {
+        "health_plan": "medicare advantag part b",
+        "active_status": "Active",
+        "health_plan_effective_date": "2025-01-01"
+      }
+    ],
+    "awv_history": [
+      {
+        "hcpcs_code": "G0439",
+        "claim_date": "2024-02-12"
+      }
+    ],
+    "facility_info": [
+      {
+        "patient_loc": "Clinic Room 3",
+        "nurse_unit_loc": "Primary Care",
+        "building_loc": "Medical Office Building A",
+        "facility_loc": "Main Campus",
+        "ccn_name": "General Hospital",
+        "ccn_number": 123456.0,
+        "pos_code": 11,
+        "cms_submission_type": "Professional",
+        "beg_effective_dt_tm": "2025-01-01T00:00:00Z",
+        "end_effective_dt_tm": "2026-12-31T23:59:59Z",
+        "is_excepted": true
+      }
+    ],
+    "provider_info": [
+      {
+        "physician_ind": 1,
+        "position": "Attending Physician",
+        "physician_status": "In",
+        "encntr_prsnl_r": "Primary"
+      }
+    ],
+    "lab_info": [
+      {
+        "facility_location": "Main Campus Lab",
+        "service_location": "Outpatient Lab",
+        "lab_name": "Hospital Core Lab",
+        "clia_number_txt": "12D4567890"
+      }
+    ],
+    "anaesthesia_staff_info": [
+      {
+        "role_performed": "Anesthesiologist",
+        "signing_indicator": 1,
+        "in_time": "2025-01-16T09:00:00Z",
+        "out_time": "2025-01-16T10:00:00Z"
+      }
+    ],
+    "anaesthesia_concurrent_staff_info": [
+      {
+        "relationship": "Anesthesia Coverage",
+        "concurrent_encounter_count": 2
+      }
+    ],
+    "anaesthesia_record_info": [
+      {
+        "asa_display_value": "ASA 2",
+        "asa_structured_status": "Final",
+        "result_date": "2025-01-16T10:05:00Z"
+      }
+    ],
+    "problem_list": [
+      {
+        "description": "Vertigo",
+        "code": "R42",
+        "status": "active",
+        "priority": "2"
+      },
+      {
+        "description": "Acute depression",
+        "code": "F32.A",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Brain concussion",
+        "code": "S06.0XAA",
+        "status": "inactive",
+        "priority": "2"
+      },
+      {
+        "description": "Benign essential hypertension",
+        "code": "I10",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Acute insomnia",
+        "code": "G47.00",
+        "status": "future",
+        "priority": "2"
+      }
+    ]
+}

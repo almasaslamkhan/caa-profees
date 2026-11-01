@@ -1,0 +1,16 @@
+feature_name: G2211
+artifact_root: ./cdrc/profees_coding/hcpcs_codes/artifacts/rag/g2211
+prompt_path: ./cdrc/profees_coding/hcpcs_codes/rag/g2211/config/prompts.yaml
+model_name: caa-gpt-5.4-2026-03-05-dev-aifactory
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: low
+  seed: 42
+embedding_model_name: oracle-text-embedding-3-large-1-dev
+data_paths:
+  - /mnt/home/shared/data/cdrc/eval_data_latest/all_in_one_annotation_uom_signed_agreed_v0.7.json
+  - /mnt/home/shared/data/cdrc/eval_data_latest/all_in_one_annotation_hudson_signed_agreed_v0.8.json
+  - /mnt/home/shared/data/cdrc/eval_data_latest/all_in_one_annotation_stjohns_signed_agreed_v0.5.json
+  - /mnt/home/shared/data/cdrc/eval_data_latest/uom_cga_hcpcs_signed_v0.6.json
+  - /mnt/home/shared/data/cdrc/eval_data_latest/all_in_one_annotation_torrance_signed_agreed_v0.2.cleaned.json
+  - /mnt/home/shared/data/cdrc/ED/billings_ed_20250901-20260228_signed_v0.6.json

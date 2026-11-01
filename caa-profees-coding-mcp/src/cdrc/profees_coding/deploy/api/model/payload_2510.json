@@ -1,0 +1,61 @@
+{
+    "encounter_id": "ascdsdfrwegergfvavdafv", 
+    "encounter_metadata": {
+      "client_name": "Hudson",
+      "type": "Ambulatory",
+      "service_dates": [
+        "2025-01-16"
+      ]
+    },
+    "ambient_note": {
+      "subjective": {
+          "cc": "for wellness exam",
+          "hpi": "The patient is a 29-year-old female with no significant past medical history, presenting for a routine check-up with a complaint of right knee pain.<br/>\n<br/>\nRight Knee Pain<br/>\nThe patient reports right knee pain that began three to four days ago after starting cycling exercise classes, which involve spin activities. The pain is localized to the right knee, described as dull and intermittent, and does not occur all day. It is aggravated by standing for long periods, walking uphill, running, and climbing stairs, and is relieved by sitting or resting. She took a painkiller once at the onset, which provided some relief, though she is unsure if improvement was due to rest or medication. She is not regularly using ice or a knee wrap. The patient denies any prior knee injuries or surgeries and has not experienced the knee giving out. She is generally healthy, does not take any regular medications, and has no allergies. Family history is notable for hypertension in her father and low blood pressure in her mother. She has had one prior surgery for a dental cyst, unrelated to her current complaint.<br/>\n<br/>\n",
+          "pastMedicalHistory": "",
+          "surgicalHistory": "",
+          "familyHistory": "",
+          "socialHistory": "",
+          "immunizationHistory": "",
+          "listOfAllergies": "",
+          "listOfCurrentRx": ""
+      },
+      "reviewOfSystems": "Musculoskeletal: Positive for knee pain and problems climbing stairs. Negative for knee giving out.",
+      "objective": {
+          "vitalSigns": "",
+          "laboratoryResults": "",
+          "physicalExamination": "Extremities:<br/>\nLeft knee exam within normal limits<br/>\n<br/>\nMusculoskeletal:<br/>\nNo pain with right knee extension<br/>\nNo pain with right knee flexion<br/>\nMild pain with right knee abduction or external rotation<br/>\n<br/>\nNeurological:<br/>\nDeep tendon reflexes 2+ to 4+ throughout<br/>\n<br/>\n"
+      },
+      "assessmentAndPlan": {
+          "summary": "Patient is a 29-year-old female presenting for evaluation of right knee pain following recent increase in physical activity.<br/><br/>",
+          "text": " 69210 (instrumentation) was performed during encounter note no diagnosis for this procedure and I perform it per patient request. Time: A total of 40 minutes was spent on this visit. Time spent with patient: 20 minutes This time was spent with patient obtaining HPI, performing a physical exam, and counseling the patient on presenting illness, diagnoses, further workup and testing, plan/treatment/risks and complications, refilling medications and ordering labs for further evaluation and medical management decision making, and/or for monitoring chronic disease.   Visit Prep: 5 minutes Documentation time: 10 minutes Post Visit Follow up within 24 hrs: 5 minutes  Right knee sprain (initial encounter).Exam findings consistent with mild sprain without structural injury. A therapeutic corticosteroid injection was performed to reduce inflammation and facilitate improved function. During today’s wellness visit, the patient initiated and reaffirmed an ongoing, continuous primary care relationship. Management of her musculoskeletal complaint requires longitudinal oversight, including monitoring response to conservative therapy, guidance on graded return to exercise, injury-prevention counseling, and assessment for potential escalation if symptoms do not improve. Her care plan will require personalized follow-up to support her long-term health goals, integrate preventive services, and proactively manage emerging issues. The complexity and continuity of this relationship extend beyond today’s singular knee complaint and involve a holistic, patient-specific approach to ongoing primary care. Wellness exam done ;Right knee sprain<br/>- Assessment consistent with right knee sprain based on localized pain, exam findings, and recent increase in physical activity; no evidence of structural injury requiring imaging.<br/>- Recommend rest and avoidance of spinning or strenuous activity for at least one week.<br/>- Gradual return to exercise, starting with walking.<br/>- Use knee brace when resuming exercise.<br/>- Over-the-counter pain medications (Ibuprofen, Motrin, Advil) as needed.<br/>- Nurse to provide knee exercises.<br/><br/>",
+          "diagnoses": []
+      },
+      "diagnosticsStudies": ""
+    },
+    "soap_text": "Office Visit Note Chief Complaint 3 mo wt f/u, no concerns History of Present Illness The patient is a [AGE] male with a history of obesity and hypertension, presenting for 3-month weight follow-up while using semaglutide. Obesity and weight loss management Weight decreased from 229.5 lb to 220 lb since the last visit. He is using compounded semaglutide and reports being on the 2.5 dose, with a planned transition to 0.5 mg without restarting. He reports no significant nausea and notes reduced appetite without intentionally changing his eating habits. He also feels it has helped reduce drinking. He notes sticky stools while on the medication. PSA monitoring and family history of prostate cancer PSA results reviewed: 0.82 in November 2024 with a subsequent value of 0.97, which he describes as a gradual rise over the past 3 years. He reports a strong family history of prostate cancer, with his father diagnosed at age [AGE] and his grandfather diagnosed at age [AGE]; his grandfather underwent surgery and later felt he would not have chosen surgery. He asked whether PSA values can decrease over time. Physical Exam Vitals & Measurements T: 36.5 \u00b0C HR: 81 RR: 16 BP: 134/90 SpO2: 96% HT: 175.26 cm WT: 100.000 kg (Dosing) WT: 100 kg BMI: 32.6 General: awake, alert, no acute distress HEENT: Head: atruamatic, normocephalic, no rashes noted Eyes: no redness, discharge or swelling Nose: No redness, swelling, discharge deformity or crusting Skin: no lesions wounds or cyanosis noted Cardiopulmonary: no increased work of breathing MSK: normal ROM in neck Neuro: speech is normal rate and rhythm Psychiatric: Appearance is well groomed. Attitude is pleasant. cooperative. Assessment/Plan Patient is a [AGE] male with obesity and strong family history of prostate cancer presenting today for follow-up of GLP-1 weight-loss therapy and discussion of PSA results. 1. Obesity - chronic problem, not at goal. Does report side effect from treatment--Change in stool. - Weight decreased from 229.5 lb to 220 lb on compounded semaglutide; tolerating current dose without significant nausea. - Sent prescription for Wegovy 0.5 mg weekly to [PHARMACY]; patient to try TrumpRx coupon and report cost. (had been getting compouned semaglutide through [PHARMACY]). - Patient may uptitrate dose as desired; instructed to message via portal or call if requesting dose increase. - For sticky stool on GLP-1 therapy: increase dietary fiber; consider fiber supplement; some patients require stool softener or fiber to regulate bowels. - Counseling: healthy living and clean diet; obesity is a cancer risk factor. Ordered: semaglutide(semaglutide (Wegovy 0.5 mg dose) 0.5 mg/0.5 mL subcutaneous solution), 0.5 mg, Subcutaneous, qWeek, 1 refills 2. HTN (hypertension) wt loss advised. Screening for prostate cancer - PSA rise from 0.82 to 0.97 from Nov 2024 to present is not concerning; 4 is typical cutoff for high PSA and PSA velocity of 0.7 or more per year would prompt earlier recheck. - Recommended PSA recheck at annual visit; earlier testing only if rapid rise. - Discussed PSA limitations and that many prostate cancers are slow-growing; reviewed active surveillance and that treatment can cause urinary incontinence, erectile dysfunction, and fecal incontinence. - Discussed that higher-risk patients with strong family history often continue PSA screening; prostate MRI may help target biopsy but may not be insurance-covered. Primary care: I am the continuing focal point for all needed services for this patient. Problem List/Past Medical History Ongoing Alcohol use disorder Annual physical exam At risk for cardiovascular event Chronic GERD ED (erectile dysfunction) Obesity Penile rash Screening for prostate cancer Umbilical hernia Procedure/Surgical History \u2022 colonoscopy with polypectomy| Service Date: 09/08/2025 \u2022 cardiac cathx 2 \u2022 appendectomy Medications celecoxib(CeleBREX 100 mg oral capsule), 100 mg= 1 capsule(s), Oral, bid Misc. Medication(compounded semaglutide/naicinamide), See Instructions, 2 refills naltrexone(naltrexone 50 mg oral tablet), 50 mg= 1 Tablet(s), Oral, Daily, 3 refills semaglutide(semaglutide (Wegovy 0.5 mg dose) 0.5 mg/0.5 mL subcutaneous solution), 0.5 mg, Subcutaneous, qWeek, 1 refills tadalafil(tadalafil 5 mg oral tablet), 1 Tablet(s), Oral, Daily Allergies penicillin Social History Smoking Status Never smoker Alcohol Frequency:1-2 times per week Substance Abuse - Denies Substance Abuse Tobacco - Denies Tobacco Use Family History Alzheimer dementia: Mother. CA - Cancer of prostate: Father. Hypertension: Father. Neuropathy: Mother. Immunizations Vaccine Date Status influenza virus vaccine inactivated 01/05/2026 Given pneumococcal 21-valent conjugate vaccine 10/06/2025 Given zoster vaccine, inactivated 12/18/2023 Recorded tetanus-diphtheria toxoids 05/12/2022 Given SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vax 11/26/2021 Recorded SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vax 04/20/2021 Recorded SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vax 03/30/2021 Recorded Tdap (Boostrix)* 04/08/2015 Recorded pneumococcal 23-valent vaccine 10/16/2014 Recorded hepatitis A adult vaccine 10/16/2014 Recorded Visit Information Attending Physician: [PERSON] Primary Care Physician: [PERSON] Visit Date: 02/26/2026",    
+    "orders": [
+        {
+          "verifiedOrder": true,
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display_line": "Tablet",
+          "mnemonic": "Lisinopril"
+        },
+        {
+          "verifiedOrder": true,
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display_line": "Blood Test",
+          "mnemonic": "CBC Panel"
+        }
+    ],
+    "patient_type": "New",
+    "patient_birthdate": "1958-02-10T00:00:00Z",
+    "patient_sex": "male",
+    "current_encounter_period": {
+      "start": "2023-10-03T14:15:00Z",
+      "end": "2023-10-03T14:15:00Z"
+    }
+}

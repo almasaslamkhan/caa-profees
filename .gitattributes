@@ -1,0 +1,7 @@
+/caa-profees-coding-mcp/profees_coding_skills/src/skills_package/skills/profees-coding/icd-10-association/assets/cpt_icd10_eligibility.json filter=lfs diff=lfs merge=lfs -text
+/caa-profees-coding-mcp/src/cdrc/profees_coding/cpt_procedure/rag/vdb/vdb_cpt_long_descriptions_oracle-text-embedding-3-large-1-dev-local/index.faiss filter=lfs diff=lfs merge=lfs -text
+/caa-profees-coding-mcp/src/cdrc/profees_coding/icd10cm_associate/data/2024/cpt_icd10_supported_2024.json filter=lfs diff=lfs merge=lfs -text
+/caa-profees-coding-mcp/src/cdrc/profees_coding/icd10cm_associate/data/2025/cpt_icd10_supported_2025.json filter=lfs diff=lfs merge=lfs -text
+/caa-profees-coding-mcp/src/cdrc/profees_coding/icd10cm_associate/data/2026/cpt_icd10_supported_2026.json filter=lfs diff=lfs merge=lfs -text
+/caa-profees-coding-mcp/src/cdrc/profees_coding/icd10cm_associate/data/cpt_icd10_eligibility.json filter=lfs diff=lfs merge=lfs -text
+/caa-profees-coding-mcp/src/cdrc/profees_coding/modifiers/data/clia_listing1770764607002.csv filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,466 @@
+# Diabetes with CKD (all types, all stages, including unspecified CKD)
+"E08.9,N18.1": E08.22
+"E08.9,N18.2": E08.22
+"E08.9,N18.3": E08.22
+"E08.9,N18.30": E08.22
+"E08.9,N18.31": E08.22
+"E08.9,N18.32": E08.22
+"E08.9,N18.33": E08.22
+"E08.9,N18.4": E08.22
+"E08.9,N18.5": E08.22
+"E08.9,N18.6": E08.22
+"E08.9,N18.9": E08.22
+
+"E09.9,N18.1": E09.22
+"E09.9,N18.2": E09.22
+"E09.9,N18.3": E09.22
+"E09.9,N18.30": E09.22
+"E09.9,N18.31": E09.22
+"E09.9,N18.32": E09.22
+"E09.9,N18.33": E09.22
+"E09.9,N18.4": E09.22
+"E09.9,N18.5": E09.22
+"E09.9,N18.6": E09.22
+"E09.9,N18.9": E09.22
+
+"E10.9,N18.1": E10.22
+"E10.9,N18.2": E10.22
+"E10.9,N18.3": E10.22
+"E10.9,N18.30": E10.22
+"E10.9,N18.31": E10.22
+"E10.9,N18.32": E10.22
+"E10.9,N18.33": E10.22
+"E10.9,N18.4": E10.22
+"E10.9,N18.5": E10.22
+"E10.9,N18.6": E10.22
+"E10.9,N18.9": E10.22
+
+"E11.9,N18.1": E11.22
+"E11.9,N18.2": E11.22
+"E11.9,N18.3": E11.22
+"E11.9,N18.30": E11.22
+"E11.9,N18.31": E11.22
+"E11.9,N18.32": E11.22
+"E11.9,N18.33": E11.22
+"E11.9,N18.4": E11.22
+"E11.9,N18.5": E11.22
+"E11.9,N18.6": E11.22
+"E11.9,N18.9": E11.22
+
+"E13.9,N18.1": E13.22
+"E13.9,N18.2": E13.22
+"E13.9,N18.3": E13.22
+"E13.9,N18.30": E13.22
+"E13.9,N18.31": E13.22
+"E13.9,N18.32": E13.22
+"E13.9,N18.33": E13.22
+"E13.9,N18.4": E13.22
+"E13.9,N18.5": E13.22
+"E13.9,N18.6": E13.22
+"E13.9,N18.9": E13.22
+
+# Diabetes with Hyperglycemia
+"E08.9,R73.9": E08.65
+"E09.9,R73.9": E09.65
+"E10.9,R73.9": E10.65
+"E11.9,R73.9": E11.65
+"E13.9,R73.9": E13.65
+
+# Diabetes with Neuropathy (various G-codes)
+"E08.9,G63.2": E08.40
+"E09.9,G63.2": E09.40
+"E10.9,G63.2": E10.40
+"E11.9,G63.2": E11.40
+"E13.9,G63.2": E13.40
+
+"E08.9,G62.9": E08.42
+"E09.9,G62.9": E09.42
+"E10.9,G62.9": E10.42
+"E11.9,G62.9": E11.42
+"E13.9,G62.9": E13.42
+
+"E08.9,G63.0": E08.44
+"E09.9,G63.0": E09.44
+"E10.9,G63.0": E10.44
+"E11.9,G63.0": E11.44
+"E13.9,G63.0": E13.44
+
+# Diabetes with Retinopathy / Ophthalmic Complications (various H-codes)
+"E08.9,H36.0": E08.39
+"E09.9,H36.0": E09.39
+"E10.9,H36.0": E10.39
+"E11.9,H36.0": E11.39
+"E13.9,H36.0": E13.39
+
+"E08.9,H35.00": E08.319
+"E09.9,H35.00": E09.319
+"E10.9,H35.00": E10.319
+"E11.9,H35.00": E11.319
+"E13.9,H35.00": E13.319
+
+"E08.9,H35.31": E08.359
+"E09.9,H35.31": E09.359
+"E10.9,H35.31": E10.359
+"E11.9,H35.31": E11.359
+"E13.9,H35.31": E13.359
+
+# Diabetes with Other Specified Complications
+"E08.9,E88.8": E08.8
+"E09.9,E88.8": E09.8
+"E10.9,E88.8": E10.8
+"E11.9,E88.8": E11.8
+"E13.9,E88.8": E13.8
+
+# Diabetes with Hypoglycemia
+"E08.9,E16.2": E08.649
+"E09.9,E16.2": E09.649
+"E10.9,E16.2": E10.649
+"E11.9,E16.2": E11.649
+"E13.9,E16.2": E13.649
+
+# Diabetes with Dermatitis
+"E08.9,L30.9": E08.620
+"E09.9,L30.9": E09.620
+"E10.9,L30.9": E10.620
+"E11.9,L30.9": E11.620
+"E13.9,L30.9": E13.620
+
+# Diabetes with Osteomyelitis
+"E08.9,M86.9": E08.69
+"E09.9,M86.9": E09.69
+"E10.9,M86.9": E10.69
+"E11.9,M86.9": E11.69
+"E13.9,M86.9": E13.69
+
+# Diabetes with Periodontal Disease
+"E08.9,K05.6": E08.630
+"E09.9,K05.6": E09.630
+"E10.9,K05.6": E10.630
+"E11.9,K05.6": E11.630
+"E13.9,K05.6": E13.630
+
+# Diabetes with Cataract
+"E08.9,H26.9": E08.36
+"E09.9,H26.9": E09.36
+"E10.9,H26.9": E10.36
+"E11.9,H26.9": E11.36
+"E13.9,H26.9": E13.36
+
+
+# Diabetes with foot ulcer
+"E08.9,L97.4": E08.621
+"E09.9,L97.4": E09.621
+"E10.9,L97.4": E10.621
+"E11.9,L97.4": E11.621
+"E13.9,L97.4": E13.621
+
+# Diabetes with other skin ulcers (example for leg ulcer)
+"E08.9,L97.5": E08.622
+"E09.9,L97.5": E09.622
+"E10.9,L97.5": E10.622
+"E11.9,L97.5": E11.622
+"E13.9,L97.5": E13.622
+
+# Diabetes with gangrene
+"E08.9,I96": E08.52
+"E09.9,I96": E09.52
+"E10.9,I96": E10.52
+"E11.9,I96": E11.52
+"E13.9,I96": E13.52
+
+# Diabetes with other skin infection/complications
+"E08.9,L08.9": E08.628
+"E09.9,L08.9": E09.628
+"E10.9,L08.9": E10.628
+"E11.9,L08.9": E11.628
+"E13.9,L08.9": E13.628
+
+# Diabetes with Charcot joint (arthropathy)
+"E08.9,M14.69": E08.61
+"E09.9,M14.69": E09.61
+"E10.9,M14.69": E10.61
+"E11.9,M14.69": E11.61
+"E13.9,M14.69": E13.61
+
+# Diabetes with peripheral angiopathy (without gangrene)
+"E08.9,I73.9": E08.51
+"E09.9,I73.9": E09.51
+"E10.9,I73.9": E10.51
+"E11.9,I73.9": E11.51
+"E13.9,I73.9": E13.51
+
+# Diabetes with mononeuropathy (example)
+"E08.9,G56.9": E08.43
+"E09.9,G56.9": E09.43
+"E10.9,G56.9": E10.43
+"E11.9,G56.9": E11.43
+"E13.9,G56.9": E13.43
+
+# Diabetes with ketoacidosis
+"E08.9,E87.2": E08.10
+"E09.9,E87.2": E09.10
+"E10.9,E87.2": E10.10
+"E11.9,E87.2": E11.10
+"E13.9,E87.2": E13.10
+
+# Diabetes with hyperosmolarity
+"E08.9,E87.0": E08.00
+"E09.9,E87.0": E09.00
+"E10.9,E87.0": E10.00
+"E11.9,E87.0": E11.00
+"E13.9,E87.0": E13.00
+
+# Diabetes with nephropathy
+"E08.9,N08": E08.21
+"E09.9,N08": E09.21
+"E10.9,N08": E10.21
+"E11.9,N08": E11.21
+"E13.9,N08": E13.21
+
+# Diabetes with macular edema
+"E08.9,H35.81": E08.311
+"E09.9,H35.81": E09.311
+"E10.9,H35.81": E10.311
+"E11.9,H35.81": E11.311
+"E13.9,H35.81": E13.311
+
+# Diabetes with unspecified coma (not DKA, not hyperosmolar)
+"E08.9,R40.20": E08.99
+"E09.9,R40.20": E09.99
+"E10.9,R40.20": E10.99
+"E11.9,R40.20": E11.99
+"E13.9,R40.20": E13.99
+
+# Diabetes with other specified complications (rare, T88.8)
+"E08.9,T88.8": E08.8
+"E09.9,T88.8": E09.8
+"E10.9,T88.8": E10.8
+"E11.9,T88.8": E11.8
+"E13.9,T88.8": E13.8
+
+# Diabetes with arthropathy (non-Charcot)
+"E08.9,M25.50": E08.620
+"E09.9,M25.50": E09.620
+"E10.9,M25.50": E10.620
+"E11.9,M25.50": E11.620
+"E13.9,M25.50": E13.620
+
+# Diabetes with amyotrophy
+"E08.9,G72.9": E08.44
+"E09.9,G72.9": E09.44
+"E10.9,G72.9": E10.44
+"E11.9,G72.9": E11.44
+"E13.9,G72.9": E13.44
+
+# Diabetes with other skin ulcers (other site)
+"E08.9,L98.499": E08.628
+"E09.9,L98.499": E09.628
+"E10.9,L98.499": E10.628
+"E11.9,L98.499": E11.628
+"E13.9,L98.499": E13.628
+
+# Diabetes with oral complication (such as stomatitis)
+"E08.9,K12.1": E08.638
+"E09.9,K12.1": E09.638
+"E10.9,K12.1": E10.638
+"E11.9,K12.1": E11.638
+"E13.9,K12.1": E13.638
+
+# Diabetes with other specified circulatory complications
+"E08.9,I99.8": E08.59
+"E09.9,I99.8": E09.59
+"E10.9,I99.8": E10.59
+"E11.9,I99.8": E11.59
+"E13.9,I99.8": E13.59
+
+# Diabetes with skin changes (thickening, keratinization)
+"E08.9,L85.9": E08.620
+"E09.9,L85.9": E09.620
+"E10.9,L85.9": E10.620
+"E11.9,L85.9": E11.620
+"E13.9,L85.9": E13.620
+
+# Diabetes with hearing loss (auditory complication)
+"E08.9,H91.90": E08.49
+"E09.9,H91.90": E09.49
+"E10.9,H91.90": E10.49
+"E11.9,H91.90": E11.49
+"E13.9,H91.90": E13.49
+
+# Diabetes with pruritus
+"E08.9,L29.9": E08.620
+"E09.9,L29.9": E09.620
+"E10.9,L29.9": E10.620
+"E11.9,L29.9": E11.620
+"E13.9,L29.9": E13.620
+
+# Diabetes with necrobiosis lipoidica (dermopathy/lipoidica)
+"E08.9,L92.2": E08.620
+"E09.9,L92.2": E09.620
+"E10.9,L92.2": E10.620
+"E11.9,L92.2": E11.620
+"E13.9,L92.2": E13.620
+
+# Diabetes with other specified neurologic complication
+"E08.9,G99.8": E08.49
+"E09.9,G99.8": E09.49
+"E10.9,G99.8": E10.49
+"E11.9,G99.8": E11.49
+"E13.9,G99.8": E13.49
+
+# Diabetes with muscle wasting/atrophy
+"E08.9,M62.50": E08.44
+"E09.9,M62.50": E09.44
+"E10.9,M62.50": E10.44
+"E11.9,M62.50": E11.44
+"E13.9,M62.50": E13.44
+
+# Diabetes with nephrotic syndrome
+"E08.9,N04.9": E08.29
+"E09.9,N04.9": E09.29
+"E10.9,N04.9": E10.29
+"E11.9,N04.9": E11.29
+"E13.9,N04.9": E13.29
+
+# CAD (atherosclerosis of bypass graft) with angina combos
+"I25.810,I20.0": I25.811
+"I25.810,I20.1": I25.812
+"I25.810,I20.8": I25.818
+"I25.810,I20.9": I25.819
+
+# CAD of transplanted heart with angina
+"I25.750,I20.0": I25.751
+"I25.750,I20.1": I25.752
+"I25.750,I20.8": I25.758
+"I25.750,I20.9": I25.759
+
+# Atherosclerosis native artery of transplanted heart with angina
+"I25.760,I20.0": I25.761
+"I25.760,I20.1": I25.762
+"I25.760,I20.8": I25.768
+"I25.760,I20.9": I25.769
+
+# Autologous vein bypass with angina
+"I25.820,I20.0": I25.821
+"I25.820,I20.1": I25.822
+"I25.820,I20.8": I25.828
+"I25.820,I20.9": I25.829
+
+# Rare: Decubitus angina combo
+"I25.10,I20.2": I25.112
+
+
+# COPD + Bronchitis (combo code takes precedence)
+"J44.0,J20.9": J44.0
+"J44.0,J20.8": J44.0
+"J44.0,J40": J44.0
+
+# Cholecystitis/gallbladder (combo excludes component)
+"K80.00,K81.0": K80.00
+"K80.01,K81.0": K80.01
+"K80.10,K81.0": K80.10
+"K80.20,K81.0": K80.20
+
+# Pneumonia + organism (organism not coded in addition)
+"J15.212,B95.62": J15.212
+"J15.211,B95.61": J15.211
+
+# Asthma status (combo code for acute status asthmaticus)
+"J45.909,J46": J45.902
+"J45.901,J46": J45.902
+"J45.9,J46": J45.902
+"J45.909,J46,J45.901": J45.902
+
+# Severe sepsis (with septic shock) -- code R65.2x only
+"A41.9,R65.20": R65.20
+"A41.51,R65.20": R65.20
+"A41.9,R65.20,R65.21": R65.21
+
+# Dementia (only code F01.x/F02.x and not F03.x at same time)
+"F03.90,F01.50": F01.50
+"F03.90,F02.80": F02.80
+"F03.90,F01.50,F02.80": F02.80
+
+
+# Hypertensive heart/renal hierarchy (additional, if not in existing rules)
+"I13.0,I11.9,I12.9,I10": I13.0
+"I13.2,I11.0,I12.0,I10": I13.2
+"I11.0,I10": I11.0
+"I12.0,I10": I12.0
+
+# In situ vs. malignant neoplasm (breast, cervix, uterus examples)
+"D05.90,C50.911": D05.90
+"D06.9,C53.9": D06.9
+"D07.0,C54.1": D07.0
+
+# Diabetes in pregnancy (use O-codes, not E-codes)
+"O24.419,E11.9": O24.419
+"O24.419,E08.9": O24.419
+"O24.419,E09.9": O24.419
+"O24.419,E10.9": O24.419
+"O24.419,E13.9": O24.419
+
+# Hypertensive disorders in pregnancy (use O-codes, not I-codes)
+"O10.919,I10": O10.919
+"O14.90,I10": O14.90
+"O15.9,I10": O15.9
+
+# HIV and TB - (you may want to add logic for B20/A15.0 depending on policy, EXCLUDES1)
+"B20,A15.0": B20
+
+# Smoking
+"Z87.891,Z72.0": Z72.0
+
+
+# COPD with acute exacerbation (exacerbation code takes precedence)
+"J44.9,J44.1": J44.1
+"J44.0,J44.1": J44.1
+"J44.1,J20.9": J44.1
+
+# Heart failure hierarchy (most specific/severe wins)
+"I50.9,I50.32": I50.32
+"I50.9,I50.22": I50.22
+"I50.20,I50.22": I50.22
+"I50.40,I50.43": I50.43
+
+# CKD stage hierarchy (highest stage wins)
+"N18.3,N18.5": N18.5
+"N18.4,N18.5": N18.5
+"N18.6,N18.1": N18.6
+
+# Pneumonia specificity hierarchy
+"J18.9,J15.9": J15.9
+"J18.9,J13": J13
+
+# Stroke specificity hierarchy
+"I63.9,I63.031": I63.031
+"I63.9,I63.50": I63.50
+
+# VTE: embolism vs. thrombosis (embolism takes precedence)
+"I82.409,I82.439": I82.409
+
+# Obstetric code hierarchy (pregnancy-related takes precedence)
+"O12.03,N00.0": O12.03
+"O24.419,E11.9": O24.419
+
+# Malnutrition hierarchy (most severe wins)
+"E44.0,E43": E43
+"E44.1,E44.0": E44.0
+
+# Pressure ulcer stage hierarchy (highest stage at site wins)
+"L89.95,L89.93": L89.95
+"L89.132,L89.131": L89.132
+
+# Hypothyroid specificity hierarchy
+"E03.9,E03.2": E03.2
+
+# Cancer code hierarchy (overlapping lesion takes precedence)
+"C50.8,C50.4": C50.8
+
+# Rheumatic vs. nonrheumatic valve (rheumatic takes precedence)
+"I34.0,I05.0": I05.0
+"I35.0,I06.0": I06.0
+
+# Obesity hierarchy (more severe or specific code wins)
+"E66.01,E66.9": E66.01
+"E66.2,E66.9": E66.2

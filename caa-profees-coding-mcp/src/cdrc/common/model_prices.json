@@ -1,0 +1,90 @@
+{
+  "gpt-5.5-2026-04-23": {
+    "match_pattern": "(?i)^(gpt-5.5-2026-04-23)$",
+    "price": {
+      "input": 5e-6,
+      "input_cached_tokens": 0.5e-6,
+      "input_cache_read": 0.5e-6,
+      "output": 30e-6,
+      "output_reasoning_tokens": 30e-6,
+      "output_reasoning": 30e-6
+    }
+  },
+  "gpt-5.4-2026-03-05": {
+    "match_pattern": "(?i)^(gpt-5.4-2026-03-05)$",
+    "price": {
+      "input": 2.5e-6,
+      "input_cached_tokens": 0.25e-6,
+      "input_cache_read": 0.25e-6,
+      "output": 15e-6,
+      "output_reasoning_tokens": 15e-6,
+      "output_reasoning": 15e-6
+    }
+  },
+  "gpt-5.4-mini-2026-03-17": {
+    "match_pattern": "(?i)^(gpt-5.4-mini(-2026-03-17)?)$",
+    "price": {
+      "input": 0.75e-6,
+      "input_cached_tokens": 0.075e-6,
+      "input_cache_read": 0.075e-6,
+      "output": 4.5e-6,
+      "output_reasoning_tokens": 4.5e-6,
+      "output_reasoning": 4.5e-6
+    }
+  },
+  "gpt-5.4-nano-2026-03-17": {
+    "match_pattern": "(?i)^(gpt-5.4-nano(-2026-03-17)?)$",
+    "price": {
+      "input": 0.20e-6,
+      "input_cached_tokens": 0.02e-6,
+      "input_cache_read": 0.02e-6,
+      "output": 1.25e-6,
+      "output_reasoning_tokens": 1.25e-6,
+      "output_reasoning": 1.25e-6
+    }
+  },
+  "gpt-5.2-2025-12-11": {
+    "match_pattern": "(?i)^(gpt-5-2025-12-11)$",
+    "price": {
+        "input": 1.75e-6,
+        "input_cached_tokens": 0.175e-6,
+        "input_cache_read": 0.175e-6,
+        "output": 14e-6,
+        "output_reasoning_tokens": 14e-6,
+        "output_reasoning": 14e-6
+    }
+  },
+  "gpt-5.1-2025-11-13": {
+    "match_pattern": "(?i)^(gpt-5.1-2025-11-13)$",
+    "prices": {
+      "input": 0.00000125,
+      "input_cached_tokens": 1.25e-7,
+      "output": 0.00001,
+      "input_cache_read": 1.25e-7,
+      "output_reasoning_tokens": 0.00001,
+      "output_reasoning": 0.00001
+    }
+  },
+  "gpt-5-2025-08-07": {
+    "match_pattern": "(?i)^(gpt-5-2025-08-07)$",
+    "price": {
+      "input": 1.25e-6,
+      "input_cached_tokens": 0.125e-6,
+      "input_cache_read": 0.125e-6,
+      "output": 10.0e-6,
+      "output_reasoning_tokens": 10.0e-6,
+      "output_reasoning": 10.0e-6
+    }
+  },
+  "gpt-5-mini-2025-08-07": {
+    "match_pattern": "(?i)^(gpt-5-mini-2025-08-07)$",
+    "price": {
+      "input": 0.25e-6,
+      "input_cached_tokens": 0.025e-6,
+      "input_cache_read": 0.025e-6,
+      "output": 2.0e-6,
+      "output_reasoning_tokens": 2.0e-6,
+      "output_reasoning": 2.0e-6
+    }
+  }
+}

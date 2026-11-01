@@ -1,0 +1,190 @@
+{
+  "procedure": [
+    {
+      "description": "Arthrocentesis, aspiration and/or injection, major joint or bursa (eg, shoulder, hip, knee, subacromial bursa); without ultrasound guidance",
+      "code": "20610",
+      "system": "CPT",
+      "justification": "Left knee intra-articular corticosteroid injection was explicitly performed today, which supports injection of a major joint without ultrasound guidance.",
+      "modifiers": [
+        {
+          "code": "LT",
+          "description": "Left side (used to identify procedures performed on the left side)",
+          "justification": "Procedure performed on documented left knee."
+        }
+      ],
+      "linked_diagnosis": [
+        {
+          "code": "M17.12",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Unilateral primary osteoarthritis, left knee",
+          "justification": "Assessment explicitly states left knee osteoarthritis with worsening pain and documents that a left knee intra-articular corticosteroid injection was performed today."
+        }
+      ]
+    },
+    {
+      "description": "Visit complexity inherent to evaluation and management associated with medical care services that serve as the continuing focal point for all needed health care services and/or with medical care services that are part of ongoing care related to a patient's single, serious condition or a complex condition",
+      "code": "G2211",
+      "system": "HCPCS",
+      "justification": "Ongoing primary care managed diabetes, CKD, hypertension, and osteoarthritis with follow-up planning and risk-constrained decisions.",
+      "modifiers": [],
+      "linked_diagnosis": [
+        {
+          "code": "E11.22",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "justification": "Combo code from E11.65 and N18.32.\nE11.65: The visit documents ongoing longitudinal management of uncontrolled type 2 diabetes, including medication continuation, adherence counseling, planned repeat labs, and diabetic foot monitoring.\nN18.32: The visit documents ongoing management of chronic kidney disease with continued renal monitoring, medication-related precautions, and consideration of specialty referral if function worsens."
+        },
+        {
+          "code": "E11.65",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Type 2 diabetes mellitus with hyperglycemia",
+          "justification": "The visit documents ongoing longitudinal management of uncontrolled type 2 diabetes, including medication continuation, adherence counseling, planned repeat labs, and diabetic foot monitoring."
+        },
+        {
+          "code": "I12.9",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+          "justification": "Combo code from I10 and N18.32.\nI10: The visit includes ongoing management of hypertension with blood pressure review, continuation of treatment, and request for home monitoring.\nN18.32: The visit documents ongoing management of chronic kidney disease with continued renal monitoring, medication-related precautions, and consideration of specialty referral if function worsens."
+        },
+        {
+          "code": "N18.32",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Chronic kidney disease, stage 3b",
+          "justification": "The visit documents ongoing management of chronic kidney disease with continued renal monitoring, medication-related precautions, and consideration of specialty referral if function worsens."
+        }
+      ]
+    }
+  ],
+  "em": [
+    {
+      "code": "99204",
+      "description": "Office o/p new mod 45 min",
+      "source": "MDM",
+      "system": "CPT",
+      "justification": "Encounter type: Active management of diabetes, CKD, HTN; knee injection performed.\nPatient type: New. Patient visit history supports the prediction.\nProblem Complexity: Moderate. 1 stable, chronic illness. 3 chronic illness with exacerbation, progression, or side effects of treatment\nData Complexity: Minimal. Tests & Documents: 1 elements present.\nRisk Of Complications: Moderate. Prescription drug management: continue insulin glargine.\nTime statement: No clinician time statement is documented.",
+      "modifiers": [
+        {
+          "code": "25",
+          "description": "Significant, separately identifiable evaluation and management service by the same physician or other qualified health care professional on the same day of the procedure or other service",
+          "justification": "Separate chronic disease E/M beyond same-day knee injection."
+        }
+      ],
+      "encounter_type": {
+        "encounter_type": "Office or Other Outpatient Service",
+        "justification": "Active management of diabetes, CKD, HTN; knee injection performed."
+      },
+      "problem_complexity": {
+        "level": "Moderate",
+        "detailed_justification": "1 stable, chronic illness: Chronic kidney disease. 3 chronic illness with exacerbation, progression, or side effects of treatment: Type 2 diabetes mellitus with hyperglycemia (not at goal), Left knee osteoarthritis with worsening pain, Hypertension (above goal).\nType 2 diabetes mellitus with hyperglycemia (not at goal): A&P documents poor control and active management: \"A1c elevated at 8.9%; home glucose readings 180 to 240 mg/dL\" with medication management plan \"Continue insulin glargine 28 units nightly\" and adherence intervention \"Reviewed adherence strategies for missed evening insulin doses.\" Not-at-goal diabetes being actively managed meets chronic illness with exacerbation/poor control (Moderate).\nChronic kidney disease: A&P addresses ongoing CKD management/monitoring: \"Continue renal monitoring. Avoid NSAIDs. Consider nephrology referral if renal function worsens.\" No documentation of acute worsening or complications requiring escalation today, so chronic and treated as stable for problem-type classification.\nLeft knee osteoarthritis with worsening pain: A&P explicitly states worsening symptoms and provides active treatment: \"Left knee osteoarthritis with worsening pain\" and corticosteroid injection performed; worsening symptomatic OA qualifies as chronic illness with exacerbation (Moderate).\nHypertension (above goal): A&P documents not-at-goal status and ongoing management: \"BP above goal today at 148/86. Continue lisinopril. Home BP log requested.\" Hypertension above goal being actively managed meets chronic illness with poor control (Moderate).",
+        "justification": "1 stable, chronic illness. 3 chronic illness with exacerbation, progression, or side effects of treatment",
+        "confidence": 1.0
+      },
+      "data_complexity": {
+        "level": "Minimal",
+        "detailed_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. One unique test ordered: CBC Panel; no other qualifying orders/reviews documented for this encounter.",
+        "justification": "Tests & Documents: 1 elements present.",
+        "confidence": 1.0
+      },
+      "risk_of_complications": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": "Prescription drug management: continue insulin glargine.",
+        "confidence": 1.0
+      },
+      "pc_critic_response": "The prior assessment\u2019s overall level (Moderate) is supportable, but it understated the drivers: diabetes and hypertension are not at goal (poor control), and knee OA is explicitly documented as worsening; each independently meets Moderate (chronic illness with exacerbation/poor control). CKD is also addressed but without documented worsening, so it remains stable chronic. Under the core rule, overall Problem Complexity is Moderate because at least one addressed problem meets the Moderate category (in fact, multiple do). Assumption: CKD treated as stable because A&P lacks explicit worsening/escalation today.",
+      "rc_critic_response": "",
+      "dc_critic_response": "1) DISC: Reviewed A&P for explicit 'discussed with' another clinician (names/addresses). Only a conditional nephrology referral is mentioned, which is not a management discussion; therefore DISC not present. 2) Intpr: Checked for radiology tests (X-ray/CT/MRI) with physician independent interpretation language. Only 'prior imaging showed degenerative joint disease' is referenced without any independent read or current radiology report; therefore Intpr not present. 3) IHx: Confirmed history is provided by the patient with no third-party historian statements; patient is capable of giving history; therefore IHx not present. 4) Tests & Documents count: Count only unique tests/documents ordered/reviewed during this encounter. The EHR shows one non-medication order (CBC) which counts as 1 ordered test. Prior week labs (A1c, eGFR/creatinine, urine albumin/creatinine) are described as outside this visit and not explicitly documented as reviewed as results by the clinician for data credit; planned repeat labs in 3 months are future/conditional and not ordered here; therefore they are not counted.",
+      "mdm_complexity": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": null,
+        "confidence": null
+      },
+      "time_spent": {
+        "time_spent_minutes": 0,
+        "evidence": "",
+        "justification": "No clinician time statement is documented."
+      },
+      "linked_diagnosis": [
+        {
+          "code": "E11.22",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+          "justification": "Combo code from E11.65 and N18.32.\nE11.65: Assessment documents type 2 diabetes with elevated A1c of 8.9% and home glucose readings 180 to 240 mg/dL, with insulin continued and adherence strategies reviewed.\nN18.32: Assessment documents chronic kidney disease with eGFR 38 and ongoing renal monitoring, with advice to avoid NSAIDs and possible nephrology referral if worsening."
+        },
+        {
+          "code": "E11.65",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Type 2 diabetes mellitus with hyperglycemia",
+          "justification": "Assessment documents type 2 diabetes with elevated A1c of 8.9% and home glucose readings 180 to 240 mg/dL, with insulin continued and adherence strategies reviewed."
+        },
+        {
+          "code": "I12.9",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+          "justification": "Combo code from I10 and N18.32.\nI10: Assessment documents hypertension above goal at 148/86 with continuation of lisinopril and request for a home blood pressure log.\nN18.32: Assessment documents chronic kidney disease with eGFR 38 and ongoing renal monitoring, with advice to avoid NSAIDs and possible nephrology referral if worsening."
+        },
+        {
+          "code": "M17.12",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Unilateral primary osteoarthritis, left knee",
+          "justification": "Assessment documents chronic left knee osteoarthritis with worsening pain, exam findings, and treatment planning including injection and conservative measures."
+        },
+        {
+          "code": "N18.32",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Chronic kidney disease, stage 3b",
+          "justification": "Assessment documents chronic kidney disease with eGFR 38 and ongoing renal monitoring, with advice to avoid NSAIDs and possible nephrology referral if worsening."
+        }
+      ],
+      "confidence": null
+    }
+  ],
+  "diagnosis": [
+    {
+      "code": "E11.22",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+      "justification": "Combo code from E11.65 and N18.32.\nE11.65: Assessment documents type 2 diabetes with elevated A1c of 8.9% and home glucose readings 180 to 240 mg/dL, with insulin continued and adherence strategies reviewed.\nN18.32: Assessment documents chronic kidney disease with eGFR 38 and ongoing renal monitoring, with advice to avoid NSAIDs and possible nephrology referral if worsening."
+    },
+    {
+      "code": "E11.65",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Type 2 diabetes mellitus with hyperglycemia",
+      "justification": "Assessment documents type 2 diabetes with elevated A1c of 8.9% and home glucose readings 180 to 240 mg/dL, with insulin continued and adherence strategies reviewed."
+    },
+    {
+      "code": "I12.9",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+      "justification": "Combo code from I10 and N18.32.\nI10: Assessment documents hypertension above goal at 148/86 with continuation of lisinopril and request for a home blood pressure log.\nN18.32: Assessment documents chronic kidney disease with eGFR 38 and ongoing renal monitoring, with advice to avoid NSAIDs and possible nephrology referral if worsening."
+    },
+    {
+      "code": "M17.12",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Unilateral primary osteoarthritis, left knee",
+      "justification": "Assessment documents chronic left knee osteoarthritis with worsening pain, exam findings, and treatment planning including injection and conservative measures."
+    },
+    {
+      "code": "N18.32",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Chronic kidney disease, stage 3b",
+      "justification": "Assessment documents chronic kidney disease with eGFR 38 and ongoing renal monitoring, with advice to avoid NSAIDs and possible nephrology referral if worsening."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CPT E/M Coding"
+  short_description: "Select E/M visit level CPT code"
+  default_prompt: "Use $cpt-em-coding to choose the E/M CPT code for this visit."

@@ -1,0 +1,944 @@
+{
+    "problem_complexity": [
+        {
+            "example_id": 22226,
+            "level": "Low",
+            "gold_justification": "Foot sprain (Uncomplicated injury)",
+            "model_justification": "1 acute, uncomplicated illness or injury: Foot sprain\nThe patient presents with an acute, uncomplicated injury, which is a foot sprain. The injury is recent and does not pose a high risk of morbidity with treatment."
+        },
+        {
+            "example_id": 23869,
+            "level": "Low",
+            "gold_justification": "Ringworm + Tick bite\nLow- acute illness",
+            "model_justification": "2 self-limited or minor problem: Ringworm, Tick Bite\nRingworm is a self-limited or minor problem that typically resolves with over-the-counter antifungal treatment.. The tick bite is expected to resolve on its own as wood ticks do not typically carry Lyme disease."
+        },
+        {
+            "example_id": 40894,
+            "level": "Moderate",
+            "gold_justification": "1.Acute depression- worsening, 2. Vertigo Acute insomnia. 3 Brain Concussion\nModeratechronic illnesses with exacerbation, progressionNot factored b/c it has a lower complexity than 1 and 3.acute complicated injury",
+            "model_justification": "1 stable, chronic illness: Benign essential hypertension. 1 acute, uncomplicated illness or injury: Acute insomnia. 3 acute illness with systemic symptoms: Acute depression, Brain concussion, Vertigo\nThe patient has a history of depression that worsened after the accident, indicating exacerbation. The depression is not self-limited or minor, and there is no evidence that it is chronic. Therefore, it is classified as an acute illness with systemic symptoms.. The patient has ongoing symptoms such as blurred vision, double vision, and tinnitus, which are systemic symptoms. The brain concussion is not self-limited or minor, and it is an acute condition. Therefore, it is classified as an acute illness with systemic symptoms.. The patient experiences vertigo during therapy sessions, which is a systemic symptom. The vertigo is not self-limited or minor, and it is an acute condition. Therefore, it is classified as an acute illness with systemic symptoms.. Hypertension is inherently chronic. The note mentions that the blood pressure is under good control, indicating that it is stable. Therefore, it is classified as a stable, chronic illness.. The insomnia is due to the recent head injury, indicating that it is related to an acute condition. The insomnia is not self-limited or minor, and it is an acute condition. Therefore, it is classified as an acute, uncomplicated illness or injury."
+        },
+        {
+            "example_id": 24011,
+            "level": "Low",
+            "gold_justification": "Ingrown toenail with infection\nLow= acute illness",
+            "model_justification": "1 acute, uncomplicated illness or injury: Ingrown toenail with infection\nThe patient presents with an ingrown toenail with infection, which is an acute condition that requires medical intervention but does not involve high-risk treatment, potential long-term functional impairment, or severe systemic symptoms."
+        },
+        {
+            "example_id": 29256,
+            "level": "Moderate",
+            "gold_justification": "Chronic hepatitis C Chronic pain syndrome , Generalized anxiety disorder, Osteoarthritis\nModerate for more than one chronic condition stable",
+            "model_justification": "3 stable, chronic illness: Moderate persistent asthma, Generalized anxiety disorder, Depression. 2 chronic illness with exacerbation, progression, or side effects of treatment: Chronic hepatitis C, Osteoarthritis. 1 undiagnosed new problem with uncertain prognosis: Skin lesion\nThe patient reported improvement in breathing after quitting smoking and switching to vaping. The condition is being managed with current asthma medications.. The patient expressed desire to treat hepatitis C. The condition has not been treated since diagnosis 2 years ago, indicating progression.. The patient reported knee swelling due to arthritis, indicating progression.. The patient reported occasional forgetfulness with medication due to past head injury. The condition is stable on current medications.. The condition is stable on current medications.. The patient reported a changing skin lesion that requires further evaluation and possible biopsy."
+        },
+        {
+            "example_id": 40467,
+            "level": "Moderate",
+            "gold_justification": "Severe obstructive sleep apnea|\nModerate: 1 or more chronic illnesses with exacerbation, progression, or side effects of treatment",
+            "model_justification": "1 chronic illness with exacerbation, progression, or side effects of treatment: Severe obstructive sleep apnea\nThe patient has severe obstructive sleep apnea, which is a chronic condition diagnosed through a sleep study. The condition is not stable as the patient's respiratory events are significantly above the target. The condition is severe and has significant symptoms such as snoring, choking, and stopping breathing during sleep."
+        },
+        {
+            "example_id": 26806,
+            "level": "Low",
+            "gold_justification": "ADHD\nLow (1 chronic condition)",
+            "model_justification": "1 stable, chronic illness: ADHD\nThe patient has a history of ADHD since childhood, and the condition is currently stable without any signs of exacerbation or progression."
+        },
+        {
+            "example_id": 21729,
+            "level": "Moderate",
+            "gold_justification": "DiabetesCOPD without exacerbation\nModerate: 2 chronic conditions",
+            "model_justification": "1 stable, chronic illness: COPD without exacerbation. 2 acute, uncomplicated illness or injury: Viral URI, Rash. 1 chronic illness with exacerbation, progression, or side effects of treatment: Diabetes\nThe patient's A1C is 8.1, which is an improvement but still not at the target level, indicating that the condition is not stable.. The patient is experiencing symptoms such as coughing up blood and mucus, but there is no indication of exacerbation or progression in the note.. The patient has been treated with antibiotics for upper respiratory symptoms, and there is no indication of systemic symptoms or complications.. The patient has a rash that has not responded to initial treatment, but there is no indication of systemic symptoms or complications."
+        },
+        {
+            "example_id": 21491,
+            "level": "Moderate",
+            "gold_justification": "Hypogonadism maleObesity\nModerate: 2 Chronic conditions",
+            "model_justification": "4 stable, chronic illness: Hypogonadism, Acid reflux, Obesity, Prediabetes\nHypogonadism is a chronic condition requiring ongoing management with testosterone injections. There is no indication of exacerbation or progression in the note.. Acid reflux is a chronic condition requiring ongoing management with medication. There is no indication of exacerbation or progression in the note.. Obesity is a chronic condition requiring ongoing management and lifestyle changes. There is no indication of exacerbation or progression in the note.. Prediabetes is a chronic condition requiring ongoing management and monitoring of blood sugar levels. There is no indication of exacerbation or progression in the note."
+        },
+        {
+            "example_id": 48442,
+            "level": "Moderate",
+            "gold_justification": "Essential hypertension (Patient's blood pressure has been consistently high)\nModerate: Chronic illnesses with exacerbation, progression. Patient's BP is consistently high.",
+            "model_justification": "2 acute, uncomplicated illness or injury: Post-Colonoscopy Pain, Colon Polyps. 1 chronic illness with exacerbation, progression, or side effects of treatment: Essential Hypertension. 1 undiagnosed new problem with uncertain prognosis: Cardiac Concerns\nThe patient's blood pressure is consistently high, indicating exacerbation.. The pain is significant but localized and does not involve high-risk treatment or potential long-term functional impairment.. The polyps were identified and removed without complications.. The patient reports racing heart and plans to follow up with a cardiologist, indicating uncertainty about the underlying cause."
+        },
+        {
+            "example_id": 21293,
+            "level": "Moderate",
+            "gold_justification": "Severe obstructive sleep apnea\nModerate: Chronic condition that is not improving.",
+            "model_justification": "1 chronic illness with exacerbation, progression, or side effects of treatment: Severe obstructive sleep apnea\nThe patient has severe obstructive sleep apnea, which is a chronic condition. The condition is not stable as the patient is experiencing issues with the CPAP machine and eye irritation, indicating that the treatment goals are not being met. The condition has side effects of treatment (eye irritation) and issues with the CPAP machine, but there is no mention of severe exacerbations or progression."
+        },
+        {
+            "example_id": 43624,
+            "level": "Moderate",
+            "gold_justification": "Type 2 diabetes mellitusObeseHypothyroidismHyperlipidemia\nModerate- chronic conditions stable",
+            "model_justification": "1 self-limited or minor problem: Encounter for administration of vaccine. 3 stable, chronic illness: Type 2 diabetes mellitus, Hypothyroidism, Hyperlipidemia. 1 acute, uncomplicated illness or injury: Myalgia. 2 chronic illness with exacerbation, progression, or side effects of treatment: Obesity, Elevated liver enzymes\nThis is a chronic condition as it is inherently chronic and has been managed with medication. The patient's A1c is 6.9, which is close to the target range, indicating that the condition is currently stable.. This is a chronic condition as it is inherently chronic and has been managed with medication. The current treatment plan is ongoing, indicating that the condition is stable.. This is a chronic condition as it is inherently chronic and has been managed with medication. The current treatment plan is ongoing, indicating that the condition is stable.. This is a chronic condition as it is inherently chronic and has been managed with medication and lifestyle changes. The patient is being prescribed semaglutide to help with weight loss, indicating that the condition is not yet at the treatment goal.. This condition is related to the patient's diabetes and obesity, which are chronic conditions. The elevated liver enzymes indicate a potential exacerbation related to these chronic conditions.. This condition is acute and uncomplicated as it is related to hand cramps and does not involve high-risk treatment or potential long-term functional impairment.. This is a self-limited or minor problem as it involves routine vaccination and does not impact the patient's overall health status."
+        },
+        {
+            "example_id": "29abffe04081a53ec40b3fc36ba832f13932909f99957b63029325c026b17efc",
+            "level": "Low",
+            "gold_justification": "Obstructive sleep apnea | One chronic condition is documented without mentioning the decline. This meets the AMA definition for low complexity in the \"problem addressed\" due to being stable.",
+            "model_justification": "1 stable, chronic illness: Obstructive sleep apnea\nThe patient has obstructive sleep apnea, which is a chronic condition. The condition is stable and well-managed with the BiPAP machine, with respiratory events below the target of 5 per hour."
+        },
+        {
+            "example_id": "570ddc2195b3f0fad9a8fec41b7805563eda06bfed118b3f7fe172a3607407c7",
+            "level": "Low",
+            "gold_justification": "Anal FissureLow Back Pain | Acute uncomplicated Injury/Illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "2 acute, uncomplicated illness or injury: Anal Fissure, Low Back Pain\nThe anal fissure is an acute condition that has been persistent for a couple of months. It is uncomplicated as there is no indication of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ.. The low back pain is an acute condition that has been persistent for a couple of months. It is uncomplicated as there is no indication of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ."
+        },
+        {
+            "example_id": "f4c5fd627367157a2b8ff84352b96997568e0afa426e1f130bc0961960aae18e",
+            "level": "Low",
+            "gold_justification": "Vaginal AdhesionsMenstrual Cramps and Heavy Periods | Acute uncomplicated illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 stable, chronic illness: Menstrual Cramps and Heavy Periods. 1 acute, uncomplicated illness or injury: Vaginal Adhesions\nThe patient has vaginal adhesions that have not resolved with medication and require a minor surgical intervention. This is an acute condition that is uncomplicated as it requires a minor surgical procedure without high-risk treatment or potential long-term functional impairment.. The patient has a history of significant menstrual cramps and heavy periods that have been ongoing since her first period. This is a chronic condition that is currently stable as the patient is not interested in resuming birth control pills and the symptoms are being monitored."
+        },
+        {
+            "example_id": "4783e6195f6896e19afd68f0b6a2ce5c038b56fbfd11ca440fbfa5ee2b31aa1c",
+            "level": "Low",
+            "gold_justification": "Wellness examination|(Z00.00: Encounter for general adult medical examination without abnormal findings)| - goes to the preventative code which is incorrect because there were abnormal findings)Nasal congestion|Back strain | Acute uncomplicated Injury/Illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 stable, chronic illness: Nasal congestion. 1 acute, uncomplicated illness or injury: Back strain\nThe patient has been experiencing nasal congestion and reduced sense of smell for almost two years, indicating a chronic condition. There is no indication of exacerbation or progression, making it a stable, chronic illness.. The patient reported a previous back injury. There is no indication of high-risk treatment or potential long-term functional impairment, making it an acute, uncomplicated injury."
+        },
+        {
+            "example_id": "74f72c9e5b8ca9254bc906065376b680413557e4beec861b0310517499e3f4db",
+            "level": "Moderate",
+            "gold_justification": "Adolescent idiopathic scoliosis | Lumbar spine More than one chronic condition is documented mentioning the decline.",
+            "model_justification": "3 stable, chronic illness: Adolescent idiopathic scoliosis, Cervical spondylosis without myelopathy, Disc displacement, lumbar. 1 chronic illness with exacerbation, progression, or side effects of treatment: Chronic neck and back pain\nScoliosis is a chronic condition that has been ongoing and is not indicated as unstable or exacerbating in the note.. Cervical spondylosis is a chronic condition that has been ongoing and is not indicated as unstable or exacerbating in the note.. The patient's chronic neck and back pain continues to flare up despite physical therapy, indicating it is not stable.. Disc displacement is a chronic condition that has been ongoing and is not indicated as unstable or exacerbating in the note."
+        },
+        {
+            "example_id": "51a5e4ce097964fa969b8f8167373dd4ed0286e35ef794c3e1af3836ac6c7d33",
+            "level": "Moderate",
+            "gold_justification": "Arthritis of right sacroiliac jointLumbosacral radiculopathy at S1 | One or more chronic condition is documented as worsening meeting the AMA definition for moderate complexity in the \u201cproblems addressed\u201d category. Evidence of not improving is extracted from, \u201cPain of right sacroiliac joint \u201c.",
+            "model_justification": "1 chronic illness with exacerbation, progression, or side effects of treatment: Arthritis of right sacroiliac joint with lumbosacral radiculopathy\nThe patient has a history of SI joint issues and ongoing therapy for the last two years. The current episode of pain is affecting daily activities and sleep, indicating a chronic illness with exacerbation."
+        },
+        {
+            "example_id": "6bcc45c69961625982f196787ed311d250e14315eba77bb17411faa58a8eb810",
+            "level": "Low",
+            "gold_justification": "Facial cellulitis | ",
+            "model_justification": "1 acute, uncomplicated illness or injury: Facial cellulitis\nThe patient has facial cellulitis, an acute condition characterized by facial swelling, sensitivity to touch, fever, and gum soreness. These are mild localized symptoms, so they should not elevate the complexity of the condition to acute illness with systemic symptoms."
+        },
+        {
+            "example_id": "326d7fc2ab9c0fc88e3b82c8ee9590606475ecf2b2645ec52b0fc29f1be1e943",
+            "level": "Low",
+            "gold_justification": "Left foot pain | Acute uncomplicated Injury/Illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Left foot pain/Bursitis\nThe patient presents with an acute, uncomplicated illness (bursitis) which is a recent short-term problem with low risk of morbidity. The condition is not serious, and the patient can move her feet and toes without difficulty."
+        },
+        {
+            "example_id": "92aa3832eb128027edd04c4b47a7a036195a45174ca7de4c54232543a9e930d5",
+            "level": "Moderate",
+            "gold_justification": "Cervical radiculopathy(M54.12)Chronic pain syndrome(G89.4)DJD (degenerative joint disease) of knee(M17.9)Gout(M10.9)Hypertension(I10)Hyperlipidemia (E78.5)Liver Function Abnormality (New Diagnosis) | One or more chronic condition is documented as not improving meeting the AMA definition for moderate complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 stable, chronic illness: Hypertension. 5 chronic illness with exacerbation, progression, or side effects of treatment: Chronic pain syndrome, Hyperlipidemia, Cervical radiculopathy, DJD (degenerative joint disease) of knee, Gout\nThe patient is experiencing ongoing pain and requires medication adjustments, indicating exacerbation or progression.. The patient's cholesterol levels are high and require medication management, indicating exacerbation or progression.. The patient is experiencing ongoing symptoms and requires an MRI, indicating exacerbation or progression.. The patient is experiencing significant discomfort and functional impairment, indicating exacerbation or progression.. The patient's blood pressure is well-controlled with medication, indicating stability.. The patient is experiencing worsening symptoms and requires medication management, indicating exacerbation or progression."
+        },
+        {
+            "example_id": "06ec8e0ffc81f94edf02a82a71dc0cbaac81c75b4ff5a4c71fcbf48fd1e5532d",
+            "level": "Low",
+            "gold_justification": "Metatarsalgia of left foot | Acute uncomplicated Injury/Illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category..",
+            "model_justification": "2 acute, uncomplicated illness or injury: Metatarsalgia of left foot, Right foot pain\nMetatarsalgia of the left foot is an acute condition that requires medical intervention but does not involve high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ.. Right foot pain is an acute condition that requires medical intervention but does not involve high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ."
+        },
+        {
+            "example_id": "2cdaf8c911ac655c2a4c3926a0020214a3e01b55ac06342c6b87d1385d3fa5d9",
+            "level": "Low",
+            "gold_justification": "ADHD | One chronic condition is documented without mentioning the decline. This meets the AMA definition for low complexity in the \"problem addressed\" due to being stable.",
+            "model_justification": "1 stable, chronic illness: ADHD. 1 acute, uncomplicated illness or injury: Sinus Headaches\nADHD is a chronic condition that is currently well-managed with Adderall, with no reported exacerbations or progression.. The sinus headaches are treated with Tramadol and there is no indication of complications or severe systemic symptoms."
+        },
+        {
+            "example_id": "2110758ecf2bacab19d1d16501b38a0a19609820e08a1fab16bf858f590c5638",
+            "level": "Low",
+            "gold_justification": "Epididymitis | Acute uncomplicated illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 self-limited or minor problem: Normal cysts. 1 acute, uncomplicated illness or injury: Epididymitis\nThe patient presented with testicular discomfort diagnosed as epididymitis, which is an acute condition requiring antibiotic treatment. There is no mention of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ. Therefore, it is classified as an acute, uncomplicated illness.. The patient mentioned the presence of small dots on the penis, which were previously diagnosed as normal cysts. These do not require treatment and are considered a self-limited or minor problem."
+        },
+        {
+            "example_id": "efacef63146912623e7ccc5688e0021b769861a6102b8ad4fc4df87ed5c4b72c",
+            "level": "Moderate",
+            "gold_justification": "Low back pain | One chronic condition worsening. \"flare-up of chronic low back pain\"",
+            "model_justification": "1 chronic illness with exacerbation, progression, or side effects of treatment: Low back pain\nThe patient presents with a flare-up of chronic low back pain, with associated numbness and tingling in the feet and legs. This indicates an exacerbation of a chronic condition."
+        },
+        {
+            "example_id": "9f3e878a6ba52efc0c9e1f66588969f30870d19ca06c88e4188b38a76aa59cc0",
+            "level": "Moderate",
+            "gold_justification": "Lumbar stenosis with neurogenic claudication (M48.062)Anterolisthesis of lumbar spine (M43.16)Lumbar radiculopathy (M54.16) | 2 or more chronic conditions.",
+            "model_justification": "1 chronic illness with exacerbation, progression, or side effects of treatment: Lumbar stenosis with neurogenic claudication, Anterolisthesis of lumbar spine, Lumbar radiculopathy\nThe patient presents with multiple chronic conditions including lumbar stenosis with neurogenic claudication, anterolisthesis of the lumbar spine, and lumbar radiculopathy. These conditions are chronic and have been persisting for a significant period, with ongoing symptoms and treatment. The patient's symptoms are impacting daily activities, indicating a moderate level of complexity."
+        },
+        {
+            "example_id": "20e68d446263d08496dbdfcf1207bc3d8f43bcdcc59c090c2cd20dbce100d8ec",
+            "level": "Low",
+            "gold_justification": "Ingrown hair | Acute uncomplicated illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.Generally considered self-limited. OTC recommended which moves it to low.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Ingrown hair\nThe patient has two persistent ingrown hairs causing significant discomfort. These ingrown hairs have been present since June, which is less than a year, making it an acute condition. There is no indication that they require high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ. Therefore, it is an acute, uncomplicated condition."
+        },
+        {
+            "example_id": "6524bc2b61f793a861575748c88bfc1e876c6e2edbe47c0680b9c5054c59a7d0",
+            "level": "Moderate",
+            "gold_justification": "Rule out strep throat | Uncertain",
+            "model_justification": "1 acute, uncomplicated illness or injury: Nasal congestion. 1 undiagnosed new problem with uncertain prognosis: Pharyngitis\nPharyngitis is an acute condition with uncertainty about the underlying cause as the physician is ruling out strep throat, which requires additional diagnostic workup.. Nasal congestion is an acute condition that is uncomplicated as there is no indication of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ."
+        },
+        {
+            "example_id": "21a5b4e9827d69bfeed93ec2004cc6268591d8f8cc00d488501a37b65eec9bbe",
+            "level": "Moderate",
+            "gold_justification": "URI, Undiagnosed",
+            "model_justification": "1 undiagnosed new problem with uncertain prognosis: URI, acute\nThe URI is an acute condition with an uncertain underlying cause, as multiple tests are ordered to identify the cause of symptoms. This indicates an undiagnosed new problem with uncertain prognosis."
+        },
+        {
+            "example_id": "2419086940c647b2569ab922ada1e5d558966c58419f36982bb50c693477b697",
+            "level": "Low",
+            "gold_justification": "Hives | Acute uncomplicated illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.If OTC management was not mentioned this would be a self-limited/ minor problem.",
+            "model_justification": "1 stable, chronic illness: Anemia. 1 acute, uncomplicated illness or injury: Hives\nThe patient presents with a rash (hives) that is itchy and has spread over the body. There is no indication of systemic symptoms or complications that would elevate the problem complexity.. The patient was recently diagnosed with anemia following lab work. There is no indication of exacerbation, progression, or side effects of treatment in the note. Therefore, it should be classified as a stable, chronic illness."
+        },
+        {
+            "example_id": "9e3591024eda30ee516e81bb38d0aa44dd40dea47b092b8db0e4b8afe20b60cf",
+            "level": "Low",
+            "gold_justification": "Right ankle pain | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Right ankle pain\nThe patient presents with an acute, uncomplicated injury (right ankle pain) which is a recent short-term problem with low risk of morbidity. The x-ray results showed no fractures, and the management plan includes using an ankle brace and activity as tolerated."
+        },
+        {
+            "example_id": "15b7b4e3725eb425c99ac4c9e655b50548bc653ea72fc2dd15168b4b93efa53c",
+            "level": "Low",
+            "gold_justification": "Buckle fracture of left wrist | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Left wrist injury\nThe left wrist injury is an acute condition that occurred suddenly due to a specific event (fall on the trampoline). It is being treated as a wrist sprain, and there are no signs of systemic symptoms or complications. The treatment plan involves relative rest and monitoring, with no high-risk treatment or potential long-term functional impairment."
+        },
+        {
+            "example_id": "09931323336f7c665ec8db11bdb30eca8897f039cabb62730d03cd35aaf397a4",
+            "level": "Low",
+            "gold_justification": "Left knee pain | Acute uncomplicated Injury/Illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Left knee pain\nThe patient has been experiencing left knee pain with inflammation, stiffness, and fatigue for a little over a month. The condition is acute and uncomplicated as there is no indication of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ."
+        },
+        {
+            "example_id": "8f82878b7a2f02b9357869849a9b6f32eef7e9c01d952f6e658c013a90388643",
+            "level": "Low",
+            "gold_justification": "Insect bite|(W57.XXXA: Bitten or stung by nonvenomous insect and other nonvenomous arthropods, initial encounter)| Onset: Sep 20, 2024Insect bite (W57.XXXA) | Acute uncomplicated Injury/Illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.This problem is typically classified as self-limited or minor, but I am moving it to acute uncomplicated because the physician prescribed medication, increasing the complexity. If no prescription or OTC management was provided, it would remain self-limited or minor.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Insect bite\nThe patient presented with a suspected tick bite, which is categorized as an acute, uncomplicated illness or injury. There were no systemic symptoms or complications reported."
+        },
+        {
+            "example_id": "54334b5123e8fa418f0c69c3e897234484f632aee9b3e6624dc9337374bc41fe",
+            "level": "Moderate",
+            "gold_justification": "Suspected Lyme disease | Undiagnosed: This problem aligns with the AMA definition because it involves uncertainty regarding the underlying cause, requiring further investigation to determine the appropriate diagnosis and management.",
+            "model_justification": "2 undiagnosed new problem with uncertain prognosis: Joint pain and swelling, Sore throat\nThe joint pain and swelling are suspected to be related to Lyme disease, which is an undiagnosed new problem with uncertain prognosis. The condition requires further diagnostic workup and has potential for significant morbidity if not treated.. The sore throat is being evaluated for strep throat, which is an undiagnosed new problem with uncertain prognosis. The condition requires further diagnostic workup and has potential for significant morbidity if not treated."
+        },
+        {
+            "example_id": "22ef7868afbbd6f282ee9b66c5546757f234cc3c42b19953229025da4c7e0b3d",
+            "level": "Low",
+            "gold_justification": "Laceration of forehead | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 self-limited or minor problem: Minor skin abrasions from thorny plant. 1 acute, uncomplicated illness or injury: Laceration of forehead\nThe laceration of the forehead is an acute condition resulting from a crowbar accident. It is uncomplicated as there is no indication of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ.. The minor skin abrasions from the thorny plant are self-limited and will resolve on their own without significant medical intervention."
+        },
+        {
+            "example_id": "d4be4cbd88ae7279af01c306b0910ffd1d5832bcac8aaed3392ed3099a184b0d",
+            "level": "High",
+            "gold_justification": "Peritoneal carcinomatosis | Chronic condition that fits the \"high risk diagnosis\" list.",
+            "model_justification": "3 chronic illness with exacerbation, progression, or side effects of treatment: CHF (congestive heart failure), COPD (chronic obstructive pulmonary disease), Urinary problem. 1 acute or chronic illness or injury that poses a threat to life or bodily function: Peritoneal carcinomatosis\nThe patient reports chronic dyspnea and BLE edema at baseline that are stable today. Therefore, it is a chronic illness with exacerbation, progression, or side effects of treatment.. The patient reports chronic dyspnea that is currently unchanged. Therefore, it is a chronic illness with exacerbation, progression, or side effects of treatment.. This is a new diagnosis and poses a significant threat to the patient's health. Therefore, it is an acute or chronic illness or injury that poses a threat to life or bodily function.. The patient reports a history of overactive bladder and wishes to discontinue oxybutynin due to side effects. This is a chronic condition with side effects of treatment."
+        },
+        {
+            "example_id": "bfcf4c5e69cbebec267edb2051260c7286299700529c309bc88ddb2b84a7a4d7",
+            "level": "Low",
+            "gold_justification": "Femoroacetabular impingement of left hip | The complexity of the problem in this not could take two paths. Femoroacetablular impingement of left hip is typically a chronic condition unless the patient undergoes surgery. Since the patient has been experiencing hip pain for the past three weeks, it could indicate worsening chronic condition for a moderate complexity. However, it is unclear whether this was diagnosed during this encounter or if it was previously established by another provider. There is no indication that this is a pre-existing diagnosis, and the patient is now seeing a new provider for pain.This is a case where a physician query would be helpful for more context. for now, I will classify it as acute.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Left hip pain with Femoroacetabular impingement\nThe patient presents with left hip pain and femoroacetabular impingement, which are acute, uncomplicated illnesses. The pain has been present for three weeks and is exacerbated by activities but has shown slight improvement with rest. There is no indication of systemic symptoms or complications."
+        },
+        {
+            "example_id": "a1abe6991918767317de28e498a4e19a96d7db3247038d23627c05675aa831f4",
+            "level": "Low",
+            "gold_justification": "Phalanx, distal fracture of finger | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.Does not fall under moderate because the treatment plan does not fit a moderate complexity level. These fractures can take 6 weeks to heal. It would be considered moderate if surgical intervention with wire was recommended.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Phalanx, distal fracture of finger\nThe patient presents with an acute injury (distal phalanx tuft fracture) which is being managed with conservative treatment (splinting and pain management). The injury does not involve high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ."
+        },
+        {
+            "example_id": "b0bfad4c393506ed8aef9d146b35e9f3664c59c95f88bba5ecf11dce1dff5403",
+            "level": "Moderate",
+            "gold_justification": "Suspect primary concern of rib tenderness likely from direct impact and strain. | Undiagnosed: This problem aligns with the AMA definition because it involves uncertainty regarding the underlying cause, requiring further investigation to determine the appropriate diagnosis and management.",
+            "model_justification": "1 undiagnosed new problem with uncertain prognosis: MVA restrained driver\nThe patient presents with multiple acute injuries from a motor vehicle accident, including pain in the right hand, right torso/chest/ribs, and muscular ache to the right arm. The pain is severe and affects her ability to move and breathe deeply. The physician suspects the primary concern of rib tenderness so it is an undiagnosed new problem with uncertain prognosis."
+        },
+        {
+            "example_id": "441ba3661d95701c6d3b5e1aa2221c117e283b0c94238f33313a18fa161fc23a",
+            "level": "Low",
+            "gold_justification": "Contusion of lumbar spinal regionLumbar spine strain | Acute uncomplicated Injury/Illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "2 acute, uncomplicated illness or injury: Contusion of lumbar spinal region, Lumbar spine strain\nThe patient presents with an acute, uncomplicated injury (contusion of lumbar spinal region) that occurred during a football game. The injury is localized to the lower back and does not involve systemic symptoms or complications.. The patient presents with an acute, uncomplicated injury (lumbar spine strain) that occurred during a football game. The injury is localized to the lower back and does not involve systemic symptoms or complications."
+        },
+        {
+            "example_id": "cf17a41bb215d5f677e0a3a9421f5632a01fbaf11fd535c8cccb7c31e4b4f0fa",
+            "level": "Low",
+            "gold_justification": "Protracted URIRecurrent epistaxis | Acute uncomplicated illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "2 acute, uncomplicated illness or injury: Protracted URI, Recurrent epistaxis\nThe patient has been experiencing a cough for a couple of weeks, which is not improving. Diagnosed as a protracted URI. It is an acute condition and is uncomplicated as there is no evidence of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ.. The patient has had around 10 episodes of nosebleeds over the last month. It is an acute condition and is uncomplicated as there is no evidence of high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ."
+        },
+        {
+            "example_id": "31076d30066c70f8c81125091ced3431e651b227a57be125a98e3b407a1f2073",
+            "level": "Low",
+            "gold_justification": "DysuriaUncertain is offset by second statement.Patient's symptoms suggest a possible uncomplicated urinary tract infection (UTI)- however, did discuss that her UA results today do not strongly suggest UTI. | Acute uncomplicated illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Dysuria\nThe patient presents with dysuria, which is an acute condition with a recent onset. The symptoms suggest a possible uncomplicated urinary tract infection (UTI)."
+        },
+        {
+            "example_id": "c6ed7f5ee8db72cd4ad3e6429af3392a5736c6a15a444bba7da48356b7f203de",
+            "level": "Low",
+            "gold_justification": "Dog bite of finger- Confirmed minor fracture in the middle phalanx of the finger. | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Dog bite of finger with a confirmed minor fracture, X-ray confirmed no bone damage."
+        },
+        {
+            "example_id": "fca079d386a80f9475a96dfa35eccfc088ec98980e3bbac9c65ca3861b1ffad6",
+            "level": "Low",
+            "gold_justification": "Superficial abrasionWill not countFacial Fracture- No evidence of fracture found during examination.Contradiction | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Facial Injury\nThe patient presents with an acute facial injury due to a fall. The injury is uncomplicated as there is no evidence of fractures or systemic symptoms, and it is being managed with conservative measures such as keeping the scrape moist, monitoring for infection, and using Tylenol for pain management."
+        },
+        {
+            "example_id": "8b2ca4c7d48a32a571457548eefde4578d7f1f042741170bc553313b8b53a96e",
+            "level": "Low",
+            "gold_justification": "AOM (acute otitis media) | Acute uncomplicated illness: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Acute Otitis Media (AOM)\nThe patient presents with acute otitis media (AOM), which is an acute, uncomplicated illness. This fits the criteria for a low complexity problem as it is a recent short-term problem with low risk of morbidity for which treatment is considered."
+        },
+        {
+            "example_id": "464b11b4b31689bcd419fb22b10078f3e084bd076dfb34f7b478eb1db46ab5c6",
+            "level": "Low",
+            "gold_justification": "Right ankle sprain | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Right ankle sprain\nThe patient presents with an acute, uncomplicated injury, which is a right ankle sprain. The patient is able to bear weight on the injured ankle, and there are no overt fractures seen on the initial review of the X-ray. The treatment plan includes wearing an ankle brace, avoiding football activities for a week, and using OTC analgesics as needed."
+        },
+        {
+            "example_id": "8d3f2d64ece87a0717de8c2e7078170b9ecb6eb2eb67a9cffc70c1fa65ced23e",
+            "level": "Moderate",
+            "gold_justification": "rule out a broken rib doesn't count because the x-ray results are discussed in the same encounter. | Acute complicated injury.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Rib pain and rib fracture. 1 acute, complicated injury: Compression fracture of T12 vertebra\nThe patient presents with rib pain and multiple rib fractures, including an acute fracture. These conditions are acute and uncomplicated as there are no associated complications such as pneumothorax or hemothorax.. The patient has a severe compression fracture at T12, which is an acute and complicated injury due to the potential for long-term functional impairment and the need for significant evaluation and management."
+        },
+        {
+            "example_id": "8fe53a382e6c33113c0f67fbe9abd1cb695ae4fae1a8a7b0f1970cd1132467ed",
+            "level": "Low",
+            "gold_justification": "Dog bite | Acute uncomplicated Injury: This problem fits the AMA definition because it is a new condition, limited in scope, with a predictable and straightforward course of treatment and minimal risk to the patient\u2019s overall health. This fits the criteria for low complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 acute, uncomplicated illness or injury: Dog bite with puncture wound\nThe patient presented with a dog bite resulting in a small puncture wound and a few minor nicks. These are considered acute, uncomplicated injuries as they are recent and do not involve high-risk treatment, potential long-term functional impairment, or evaluation of body systems not directly part of the injured organ."
+        },
+        {
+            "example_id": "47b230b22f1bb370e0bbc9524a6a098b880b10f13a671d0ddd07d6d70f596bed",
+            "level": "Moderate",
+            "gold_justification": "AsthmaEvidence of worsening:- Patient experiences wheeziness and coughing, particularly at night, which she believes is related to her environmental allergies. | One or more chronic condition is documented as not improving meeting the AMA definition for moderate complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "1 stable, chronic illness: Environmental allergies. 1 chronic illness with exacerbation, progression, or side effects of treatment: Asthma\nEnvironmental allergies are chronic as they have persisted for more than a year and are related to seasonal changes and environmental factors. They are stable as they are managed with over-the-counter medication and do not show signs of exacerbation or progression.. Asthma is a chronic condition as it has persisted for more than a year and requires ongoing management. The asthma is not stable as the patient experiences nocturnal symptoms and requires a rescue inhaler, indicating exacerbations."
+        },
+        {
+            "example_id": "624a0bde6335f35b42aff71ca4f5e0db1a8e955f6487e1b746e8098912e30543",
+            "level": "Moderate",
+            "gold_justification": "HypertensionMorbid obesity| | 2 or more chronic conditions are documented without mentioning the decline. This meets AMA definition for low complexity in the \"problem addressed\" due to being stable.",
+            "model_justification": "2 self-limited or minor problem: Tobacco use, Methamphetamine use. 3 stable, chronic illness: Hypertension, Central hypothyroidism, Morbid obesity. 1 acute, uncomplicated illness or injury: Foot pain. 1 chronic illness with exacerbation, progression, or side effects of treatment: Heart failure with reduced ejection fraction\nThis is a behavioral issue that can be resolved with cessation.. The note indicates that the patient's blood pressure is under good control, so it is stable.. The note indicates that the patient is continuing on current medication, so it is stable.. The note indicates that the patient is continuing on medication and an echo of the heart is scheduled to assess shortness of breath, indicating that the condition is not stable and has exacerbation.. The note indicates that the patient is advised on diet and exercise, and referred to physical therapy for potential plantar fasciitis, indicating that the condition is stable.. This is a behavioral issue that can be resolved with cessation.. This is a recent problem with low risk of morbidity and full recovery is expected without functional impairment."
+        },
+        {
+            "example_id": "2f8ab0c8d6baf1858a380d51f857a7727ce39285f34f7a0706d022c19a281f58",
+            "level": "Moderate",
+            "gold_justification": "Chronic sinusitis of both maxillary sinusesHeadacheFever | One or more chronic condition is documented as worsening meeting the AMA definition for moderate complexity in the \u201cproblems addressed\u201d category.",
+            "model_justification": "2 self-limited or minor problem: Depression, Urinary changes. 3 acute, uncomplicated illness or injury: Balance problem, Fever, Headache. 2 chronic illness with exacerbation, progression, or side effects of treatment: Seasonal allergies, Chronic sinusitis\nThe patient has had seasonal allergies since last year and continues to experience symptoms despite treatment. This indicates a chronic illness with exacerbation.. The patient has chronic sinusitis with significant symptoms such as severe headaches and facial pain, indicating exacerbation.. The balance problem is acute and associated with multiple falls and injuries, but the injuries are not complicated.. The fever is likely related to the sinus infection and should improve with antibiotic treatment. It does not pose a high risk of morbidity without treatment.. The headache is likely related to the sinus infection and allergies and should improve with antibiotic and allergy treatments. It does not pose a high risk of morbidity without treatment.. The patient reported feeling depressed, but there is no indication that it is chronic or severe.. The patient reported changes in urine smell and frequency, but these symptoms have since improved."
+        }
+    ],
+    "data_complexity": [
+        {
+            "example_id": 22226,
+            "level": "Minimal",
+            "gold_justification": "x-ray will not count until the order is initiated",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": 23869,
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": 40894,
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": 24011,
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": 29256,
+            "level": "Low",
+            "gold_justification": "1, Diabetes mellitus screening. 2. Lipid screening Hemoglobin A1C\nLow: Category 1 with 2 points for labs ordered.",
+            "model_justification": ""
+        },
+        {
+            "example_id": 40467,
+            "level": "Minimal",
+            "gold_justification": "I reviewed the patient's sleep health history form and Epworth sleepiness scale results. These will be added to the patient's chart.\nStraightforward- Minimal.",
+            "model_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. The encounter involved reviewing the patient's sleep study results and ordering a CPAP machine. There are no additional tests, external notes, or independent historian involvement."
+        },
+        {
+            "example_id": 26806,
+            "level": "Low",
+            "gold_justification": "Lipid PanelScreening for hyperlipidemia and Glucose Random Ordered blood sugar test to screen for diabetes",
+            "model_justification": "Limited Data Elements Present. Tests & Documents: 2 elements present. The encounter involved ordering two unique tests: Glucose Random and Lipid Panel. These tests were ordered to screen for diabetes and hyperlipidemia respectively."
+        },
+        {
+            "example_id": 21729,
+            "level": "Minimal",
+            "gold_justification": "Chest x-ray is mentioned in the A/P but it does not contain the context needed to verify that the physician ordered the chest x-ray and reviewed it. Based on the HPI it looks like the physician is describing the patient's description of problem that required a chest x-ray.",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": 21491,
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": 48442,
+            "level": "Low",
+            "gold_justification": "collection capillary blood specimen, prothrombin time\nLow: Limited for 2 points in category 1",
+            "model_justification": "Limited Data Elements Present. Tests & Documents: 2 elements present. The encounter involved ordering two tests: 36416 collection capillary blood specimen and 85610 prothrombin time."
+        },
+        {
+            "example_id": 21293,
+            "level": "Minimal",
+            "gold_justification": "Reviewed data from CPAP\nStraightforward: Minimal for review of CPAP study. Requires-26 modifier to count for the professional component of review that is separate from the technical review.",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": 43624,
+            "level": "Moderate",
+            "gold_justification": "Lipid Panel Basic Metabolic Panel and Thyroid function tests\nModerate: Hit category 1 requirements for ordering tests (3 tests ordered). Credit not given for glucose reading because it does not specify if the physician reviewed it or if that was conveyed to the physician by the patient.",
+            "model_justification": "Moderate Data Elements Present. Tests & Documents: 3 elements present. The data reviewed and ordered include multiple unique tests: Lipid Panel, Basic Metabolic Panel and Thyroid function test (including T4 Free and Thyroid Stimulating Hormone). This involves ordering multiple unique tests and meets the criteria for moderate complexity, which requires any combination of three items from the specified categories."
+        },
+        {
+            "example_id": "29abffe04081a53ec40b3fc36ba832f13932909f99957b63029325c026b17efc",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "570ddc2195b3f0fad9a8fec41b7805563eda06bfed118b3f7fe172a3607407c7",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "f4c5fd627367157a2b8ff84352b96997568e0afa426e1f130bc0961960aae18e",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "4783e6195f6896e19afd68f0b6a2ce5c038b56fbfd11ca440fbfa5ee2b31aa1c",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "74f72c9e5b8ca9254bc906065376b680413557e4beec861b0310517499e3f4db",
+            "level": "Low",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 2, with details: Ordered MRI of the cervical spine and lumbar spine.",
+            "model_justification": "Limited Data Elements Present. Tests & Documents: 2 elements present. The data reviewed and analyzed include ordering of MRI of the cervical spine and lumbar spine. These are two unique tests ordered during the encounter."
+        },
+        {
+            "example_id": "51a5e4ce097964fa969b8f8167373dd4ed0286e35ef794c3e1af3836ac6c7d33",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "6bcc45c69961625982f196787ed311d250e14315eba77bb17411faa58a8eb810",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "326d7fc2ab9c0fc88e3b82c8ee9590606475ecf2b2645ec52b0fc29f1be1e943",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "92aa3832eb128027edd04c4b47a7a036195a45174ca7de4c54232543a9e930d5",
+            "level": "High",
+            "gold_justification": "For Tests & Documents, the number of review of the result(s) of each unique test is 2, with details: Patient's cholesterol levels were high with total cholesterol at 247 and LDL at 145. Triglycerides were also elevated. Lab results showed elevated bilirubin levels, but other liver function tests were normal. the number of ordering of each unique test is 1, with details: Ordered MRI of cervical spine to assess current condition. There is (disc) discussion of management or test interpretation with external physician / other qualified health care professional appropriate source (not separately reported).",
+            "model_justification": "High Data Elements Present. Tests & Documents: 3 elements present. The encounter involved ordering an MRI of the cervical spine and reviewing prior lab results (elevated bilirubin levels, cholesterol levels). 'Discussed potential knee replacement surgery with orthopedic surgeon at [ADDRESS].' in the A/P section suggests that there is (disc) discussion of management or test interpretation with external physician / other qualified health care professional appropriate source."
+        },
+        {
+            "example_id": "06ec8e0ffc81f94edf02a82a71dc0cbaac81c75b4ff5a4c71fcbf48fd1e5532d",
+            "level": "Minimal",
+            "gold_justification": "For Tests & Documents, the number of review of the result(s) of each unique test is 1, with details: labs:XR FOOT LTDetails:EXAM: XR FOOT LTIMPRESSION: No acute fracture or acute finding. Mild degenerative changes of the first MTP joint with mild medial bunion formation.FINDINGS: There is no acute fracture or dislocation. Normal alignment. Mild degenerative narrowing of the first MTP joint. The other joint spaces are preserved. Mild medial bunion formation at the first MTP joint. Small posterior and inferior calcaneal enthesophytes.",
+            "model_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. The data complexity involves the ordering of one unique test (XR FOOT LT 3 View)."
+        },
+        {
+            "example_id": "2cdaf8c911ac655c2a4c3926a0020214a3e01b55ac06342c6b87d1385d3fa5d9",
+            "level": "Minimal",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 1, with details: Urine Drug Screen. ",
+            "model_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. The encounter involved ordering a urine drug screen. This counts as one unique test."
+        },
+        {
+            "example_id": "2110758ecf2bacab19d1d16501b38a0a19609820e08a1fab16bf858f590c5638",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "efacef63146912623e7ccc5688e0021b769861a6102b8ad4fc4df87ed5c4b72c",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "9f3e878a6ba52efc0c9e1f66588969f30870d19ca06c88e4188b38a76aa59cc0",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present."
+        },
+        {
+            "example_id": "20e68d446263d08496dbdfcf1207bc3d8f43bcdcc59c090c2cd20dbce100d8ec",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "6524bc2b61f793a861575748c88bfc1e876c6e2edbe47c0680b9c5054c59a7d0",
+            "level": "Low",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 1, with details: Nasal congestion Strep Group A PCR. there is (ihx) an individual (e., parent, guardian, surrogate, spouse, witness) who provides a hx in addition to patient.",
+            "model_justification": "Limited Data Elements Present. Tests & Documents: 1 elements present. The SOAP note includes the ordering of a Strep Group A PCR test. This is a unique test ordered during the encounter.\nAssessment requiring an independent historian(s): The patient's history and symptoms were provided by the patient's [PERSON], indicating the presence of an independent historian."
+        },
+        {
+            "example_id": "21a5b4e9827d69bfeed93ec2004cc6268591d8f8cc00d488501a37b65eec9bbe",
+            "level": "Moderate",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 4, with details: Tests: strep, COVID, RSV, flu. there is no (ihx) an individual (e., parent, guardian, surrogate, spouse, witness) who provides a hx in addition to patient.",
+            "model_justification": "Moderate Data Elements Present. Tests & Documents: 4 elements present. The encounter involved ordering two unique tests: a strep test and a respiratory viral panel. The respiratory viral panel includes tests for flu, COVID, and RSV, which should be counted as three separate tests. Therefore, the total number of tests ordered is four."
+        },
+        {
+            "example_id": "2419086940c647b2569ab922ada1e5d558966c58419f36982bb50c693477b697",
+            "level": "Low",
+            "gold_justification": "There is (ihx) an individual (e., parent, guardian, surrogate, spouse, witness) who provides a hx in addition to patient. there is no (intpr) independent interpretation of a test performed by another physician/other qualified health care professional (not separately reported).",
+            "model_justification": "Limited Data Elements Present. Assessment requiring an independent historian(s): The patient's parent provided the history, and the patient is a child who likely cannot provide a full history. The parent physically participated in the conversation and provided crucial additional information."
+        },
+        {
+            "example_id": "9e3591024eda30ee516e81bb38d0aa44dd40dea47b092b8db0e4b8afe20b60cf",
+            "level": "Moderate",
+            "gold_justification": "There is 1 (intpr) independent interpretation of a test performed by another physician/other qualified health care professional (not separately reported), with details  with details: labs:XR ANKLE RT 3 VIEWDetails:EXAM: XR ANKLE RT 3 VIEWIMPRESSION: 1. No acute fracture identified in this skeletally immature patient.FINDINGS: Patient is skeletally immature. AP alignment is normal. No definite acute cortical interruption. Vertical lucency in the lateral view in the posterior tibial metaphysis is felt to be artifact related to the anterior cortex of the overlapping fibula. Slight soft tissue prominence anteriorly on the lateral view (x-ray shows no fractures).",
+            "model_justification": "Moderate Data Elements Present. The SOAP note mentions an x-ray ordered and completed during the encounter to assess the extent of the ankle injury. This counts as one unique test.\nIndependent interpretation of tests: The SOAP note discusses the x-ray results, indicating that no fractures were found. This qualifies as an independent interpretation of the test."
+        },
+        {
+            "example_id": "15b7b4e3725eb425c99ac4c9e655b50548bc653ea72fc2dd15168b4b93efa53c",
+            "level": "Moderate",
+            "gold_justification": "There is (intpr) independent interpretation of a test performed by another physician/other qualified health care professional (not separately reported).",
+            "model_justification": "Moderate Data Elements Present.  The encounter involved and review of a single unique test (XR WRIST LT 3 VIEW, ordered and completed).\nIndependent interpretation of tests: The SOAP note mentions the interpretation of the X-ray report, stating 'x-ray report states no fracture noted.'"
+        },
+        {
+            "example_id": "09931323336f7c665ec8db11bdb30eca8897f039cabb62730d03cd35aaf397a4",
+            "level": "Minimal",
+            "gold_justification": "For Tests & Documents, the number of review of the result(s) of each unique test is 1, with details: labs:XR KNEE & SUNRISE VIEW LTDetails:EXAM: XR KNEE AND SUNRISE VIEW LTIMPRESSION: 1. No evidence of acute osseous pathology of the left knee. Mild degenerative bilateral medial compartment joint space narrowing. The number of ordering of each unique test is 0, with details: Next Steps: Knee bracing Formal physical therapy referral Infectious laboratory testing including CBC, ESR, and CRP, deferreddue to improvement of symptoms and low probability of infection at this time Ultrasound-guided left prepatellar bursa aspiration with fluid to be sent to the laboratory for evaluation of Lyme's disease,crystal arthropathy, infection, deferred at this time due to symptomatic improvement as of9/27/2024The Next Steps section will not be counted, as it presents a conditional approach (e.g., \"if xyz is present then orders will be placed\"), which implies uncertainty rather that a definitive decision.",
+            "model_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. The SOAP note mentions the ordering of an X-ray for the left knee. There are no additional tests or documents reviewed or ordered."
+        },
+        {
+            "example_id": "8f82878b7a2f02b9357869849a9b6f32eef7e9c01d952f6e658c013a90388643",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "54334b5123e8fa418f0c69c3e897234484f632aee9b3e6624dc9337374bc41fe",
+            "level": "Moderate",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 3, with details: ANA Rheumatoid Panel, Sore throat Strep Group A PCR, Ordered CBC.",
+            "model_justification": "Moderate Data Elements Present. Tests & Documents: 3 elements present. The data reviewed and analyzed includes ordering of multiple tests (ANA Rheumatoid Panel, CBC w/ Auto Diff, Strep Group A PCR). Each of these tests is unique and contributes to the data complexity."
+        },
+        {
+            "example_id": "22ef7868afbbd6f282ee9b66c5546757f234cc3c42b19953229025da4c7e0b3d",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "d4be4cbd88ae7279af01c306b0910ffd1d5832bcac8aaed3392ed3099a184b0d",
+            "level": "Moderate",
+            "gold_justification": "For Tests & Documents, the number of review or prior external note(s) from each unique source is 0, with details: - Discussed the patient's recent diagnosis of peritoneal carcinomatosis based on CT findings and evaluation of paracentesis fluid (results not available for review) from outside ED visit on 10/6/24. Does not count from \"(result not available\" and \"- no prior medical records available for review at the time of today's visit.\". the number of review of the result(s) of each unique test is 3, with details: ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 10/08/24 9:59:00 CDT CTCHEST/ABD/PELVIS W CONTRAST* (HUD), Priority: Urgent, Instructions: exam/contrast per radiologist discretion, ABN: Not Required, eval of ascites, pleural effusions in s/o new dx peritoneal carcinomatosis Lipid Panel (Request)*. the number of ordering of each unique test is >4. Count: __, with details: Ordered:Hepatitis C Antibody(Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 10/08/24 9:59:00 CDTHIV-1 and 2(Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 10/08/24 9:59:00 CDT36415 collection venous blood venipuncture (Charge)(36415 blood draw, venipuncture (Charge)), Quantity: 1, Encounter to establish care | Peritoneal carcinomatosis | COPD (chronic obstructive pulmonary disease) | CHF (congestive heart failure) | Mobility impairedBasic Metabolic Panel(Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 10/08/24 9:59:00 CDTCBC w/ Auto Diff(Request)*([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 10/08/24 9:59:00 CDT CT CHEST/ABD/PELVIS W CONTRAST* (HUD), Priority: Urgent, Instructions: exam/contrast per radiologist discretion, ABN: Not Required, eval of ascites, pleural effusions in s/o new dx peritoneal carcinomatosisLipid Panel(Request)* ([DIAGNOSTIC_LABS]), Priority Routine, Specimen Type: Miscellaneous Specimen, Specimen Collected at Outside Lab, Collection Date: 10/08/24 9:59:00 CDT Magnesium Level (Request)*. there is (ihx) an individual (e., parent, guardian, surrogate, spouse, witness) who provides a hx in addition to patient.",
+            "model_justification": "Moderate Data Elements Present. Tests & Documents: 10 elements present. The data reviewed and analyzed include ordering of multiple tests such as Basic Metabolic Panel, Magnesium Level, TSH Reflex, CBC w/ Auto Diff, Hepatic Function Panel, Hepatitis C Antibody, HIV-1 and 2, Lipid Panel, Hemoglobin A1C, and CT CHEST/ABD/PELVIS W CONTRAST. Each of these tests is unique and contributes to the data complexity."
+        },
+        {
+            "example_id": "bfcf4c5e69cbebec267edb2051260c7286299700529c309bc88ddb2b84a7a4d7",
+            "level": "Minimal",
+            "gold_justification": "For Tests & Documents, the number of review of the result(s) of each unique test is 1, with details: labs:XR PELVIS & HIP LATERAL LTDetails:EXAM: XR PELVIS AND HIP LATERAL LTIMPRESSION: 1. No radiographic evidence of acute osseous pathology of the bony pelvis or proximal left femur to account for the patient's hip pain. No significant left hip joint space narrowing or radiographic evidence of AVN.",
+            "model_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. The SOAP note includes an order for an X-ray of the left hip. There are no additional unique tests or documents reviewed or ordered."
+        },
+        {
+            "example_id": "a1abe6991918767317de28e498a4e19a96d7db3247038d23627c05675aa831f4",
+            "level": "Moderate",
+            "gold_justification": "There is (intpr) independent interpretation of a test performed by another physician/other qualified health care professional (not separately reported).",
+            "model_justification": "Moderate Data Elements Present. The X-ray for the right index finger was ordered, completed and independently interpreted by the physician.\nIndependent interpretation of tests: The X-ray for the right index finger was independently interpreted by the physician."
+        },
+        {
+            "example_id": "b0bfad4c393506ed8aef9d146b35e9f3664c59c95f88bba5ecf11dce1dff5403",
+            "level": "Moderate",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 3, with details: - X-rays of the ribs, hand and chest were ordered to assess for any fractures or significant internal damage.",
+            "model_justification": "Moderate Data Elements Present. Tests & Documents: 3 elements present. Three unique tests were ordered: XR THUMB RT, XR CHEST PA & LAT, and XR Ribs & Chest RT."
+        },
+        {
+            "example_id": "441ba3661d95701c6d3b5e1aa2221c117e283b0c94238f33313a18fa161fc23a",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "cf17a41bb215d5f677e0a3a9421f5632a01fbaf11fd535c8cccb7c31e4b4f0fa",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "31076d30066c70f8c81125091ced3431e651b227a57be125a98e3b407a1f2073",
+            "level": "Minimal",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 1, with details: Urinalysis.",
+            "model_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. The data reviewed and ordered include a urinalysis and a urine culture and sensitivity test. These tests can be conducted together with the same sample and should be counted as one item."
+        },
+        {
+            "example_id": "c6ed7f5ee8db72cd4ad3e6429af3392a5736c6a15a444bba7da48356b7f203de",
+            "level": "Moderate",
+            "gold_justification": "There is (intpr) independent interpretation of a test performed by another physician/other qualified health care professional (not separately reported).",
+            "model_justification": "Moderate Data Elements Present. The encounter involved an ordered and completed X-ray (XR FINGERS RT) to confirm no bone damage. This counts as one unique test order. 'Fracture of middle phalanx of finger XR FINGERS RT* (HUD)' suggests that there is (intpr) independent interpretation of a test performed by another physician/other qualified health care professional"
+        },
+        {
+            "example_id": "fca079d386a80f9475a96dfa35eccfc088ec98980e3bbac9c65ca3861b1ffad6",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "8b2ca4c7d48a32a571457548eefde4578d7f1f042741170bc553313b8b53a96e",
+            "level": "Low",
+            "gold_justification": "There is (ihx) an individual (e., parent, guardian, surrogate, spouse, witness) who provides a hx in addition to patient.",
+            "model_justification": "Limited Data Elements Present. Assessment requiring an independent historian(s): The SOAP note mentions that the patient is accompanied by her parent who helped provide clinical history. This indicates the presence of an independent historian (iHx). The parent physically participated in the conversation and provided crucial additional information about the patient's symptoms and history."
+        },
+        {
+            "example_id": "464b11b4b31689bcd419fb22b10078f3e084bd076dfb34f7b478eb1db46ab5c6",
+            "level": "Moderate",
+            "gold_justification": "There is (intpr) independent interpretation of a test performed by another physician/other qualified health care professional (not separately reported).",
+            "model_justification": "Moderate Data Elements Present. The SOAP note indicates that an X-ray of the right ankle was ordered and completed. This counts as one unique test. Independent interpretation of tests: The SOAP note mentions that there were no overt fractures seen on the initial review of the X-ray, indicating that the provider independently interpreted the test results."
+        },
+        {
+            "example_id": "8d3f2d64ece87a0717de8c2e7078170b9ecb6eb2eb67a9cffc70c1fa65ced23e",
+            "level": "Moderate",
+            "gold_justification": "There is (intpr) independent interpretation of a test performed by another physician/other qualified health care professional (not separately reported).",
+            "model_justification": "Moderate Data Elements Present. The encounter involved reviewing an X-ray (ordered and completed) of the ribs and chest, which is a unique test.\nIndependent interpretation of tests: The X-ray results were discussed in the note, indicating that the physician reviewed and interpreted the results."
+        },
+        {
+            "example_id": "8fe53a382e6c33113c0f67fbe9abd1cb695ae4fae1a8a7b0f1970cd1132467ed",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present."
+        },
+        {
+            "example_id": "47b230b22f1bb370e0bbc9524a6a098b880b10f13a671d0ddd07d6d70f596bed",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        },
+        {
+            "example_id": "624a0bde6335f35b42aff71ca4f5e0db1a8e955f6487e1b746e8098912e30543",
+            "level": "Moderate",
+            "gold_justification": "For Tests & Documents, the number of ordering of each unique test is 3, with details: Comprehensive Metabolic Panel, TSH Reflex, CBC w/ Auto Diff.",
+            "model_justification": "Moderate Data Elements Present. Tests & Documents: 3 elements present. The data reviewed and analyzed includes ordering of multiple tests (TSH Reflex, CBC w/ Auto Diff, Comprehensive Metabolic Panel). This meets the criteria for limited data review, as it involves the ordering of multiple unique tests."
+        },
+        {
+            "example_id": "2f8ab0c8d6baf1858a380d51f857a7727ce39285f34f7a0706d022c19a281f58",
+            "level": "Minimal",
+            "gold_justification": "",
+            "model_justification": "Minimal Data Elements Present. "
+        }
+    ],
+    "risk_of_complications": [
+        {
+            "example_id": 22226,
+            "level": "Low",
+            "gold_justification": "ibuprofenIceStiff-soled shoes\nLow- OTC",
+            "model_justification": "The patient was recommended ibuprofen for pain and inflammation, which is available over-the-counter, and advised to wear stiff-soled shoes or boots to limit movement and further injury. These are considered low-risk treatments."
+        },
+        {
+            "example_id": 23869,
+            "level": "Low",
+            "gold_justification": "OTC- clotrimazole\nLow: Low risk of morbidity from additional diagnostic testing or treatment",
+            "model_justification": "The risk of complications is low as the management plan involves the use of over-the-counter antifungal treatment (clotrimazole). There is no indication of a need for prescription drug management or other interventions that would increase the risk of morbidity."
+        },
+        {
+            "example_id": 40894,
+            "level": "Moderate",
+            "gold_justification": "Increased sertraline to 75 mg at night,. Plan to increase. trazodone at nightDiscontinue Gabapentin\nModerate",
+            "model_justification": "The patient management involves moderate risk due to the prescription drug management for depression, insomnia, and hypertension. The decision to increase the dosage of sertraline and trazodone also adds to the moderate risk. Additionally, the patient's acute conditions such as brain concussion and vertigo require ongoing management, which contributes to the moderate risk of complications."
+        },
+        {
+            "example_id": 24011,
+            "level": "Moderate",
+            "gold_justification": "Cephalexin\nModerate for Rx",
+            "model_justification": "The risk of complications is moderate due to the prescription drug management (Cephalexin) for the infection associated with the ingrown toenail."
+        },
+        {
+            "example_id": 29256,
+            "level": "Moderate",
+            "gold_justification": "Referral and RX\nModerate",
+            "model_justification": "The management includes prescription drug management with medications such as duloxetine, pregabalin, and omeprazole, which carries a moderate risk of morbidity. Additionally, the patient is being referred for further evaluation and treatment of chronic hepatitis C and a changing skin lesion, which also contributes to the moderate risk level."
+        },
+        {
+            "example_id": 40467,
+            "level": "Moderate",
+            "gold_justification": "CPAP\nModerate- Rx",
+            "model_justification": "The initiation of CPAP therapy involves prescription management, which is considered a moderate risk of morbidity."
+        },
+        {
+            "example_id": 26806,
+            "level": "Moderate",
+            "gold_justification": "Prescribed Wellbutrin\nModerate- Rx",
+            "model_justification": "The patient is prescribed Wellbutrin, which is a prescription medication. Prescription drug management is considered a moderate risk of morbidity."
+        },
+        {
+            "example_id": 21729,
+            "level": "Moderate",
+            "gold_justification": "prescribe short-acting insulinprescribe a course of prednisoneincrease the dose of Advairadd Spirivaprescribe another course of Z-Pak\nModerate: Rx",
+            "model_justification": "The management of the patient's conditions includes the prescription of multiple medications such as prednisone, azithromycin, fluticasone-salmeterol, insulin lispro, and tiotropium. This involves prescription drug management, which presents a moderate risk of morbidity due to the potential side effects and the need for careful monitoring of the patient's response to the medications."
+        },
+        {
+            "example_id": 21491,
+            "level": "Moderate",
+            "gold_justification": "continue testosterone injectionsRefilled prescription for Tamsulosin\nModerate: Rx",
+            "model_justification": "The patient is on multiple prescription medications, including duloxetine, tamsulosin, testosterone, omeprazole, and pregabalin. Prescription drug management is considered a moderate risk of morbidity. Additionally, the management of hypogonadism with testosterone injections adds to the risk level."
+        },
+        {
+            "example_id": 48442,
+            "level": "Moderate",
+            "gold_justification": "Will start patient on a combination of lisinopril and hydrochlorothiazide\nModerate: Rx",
+            "model_justification": "The risk of complications is moderate due to the prescription drug management involved. The patient's medication regimen was adjusted, including the addition of lisinopril and hydrochlorothiazide, and discontinuation of the current hydrochlorothiazide pill. Additionally, the patient was advised to monitor for side effects."
+        },
+        {
+            "example_id": 21293,
+            "level": "Moderate",
+            "gold_justification": "continue to use the CPAP machine until further notice\nModerate- Continue Rx with CPAP",
+            "model_justification": "The management of the patient's condition involves the use of a CPAP machine, which is a prescribed health device. This indicates a moderate risk of morbidity."
+        },
+        {
+            "example_id": 43624,
+            "level": "Moderate",
+            "gold_justification": "atorvastatinhydrochlorothiazide-lisinopriloxybutynin(oxybutynin 10 mgPlan to start Semaglutide at 3 milligrams a day\nModerate: Rx",
+            "model_justification": "The management plan includes prescription drug management with medications such as semaglutide, atorvastatin, hydrochlorothiazide-lisinopril, and metformin for diabetes, hyperlipidemia, and hypertension, which involves moderate risk of morbidity. Additionally, the patient has elevated liver enzymes and obesity, which require careful monitoring and potential medication management. The decision to start semaglutide and the need for close follow-up and monitoring further support a moderate risk level."
+        },
+        {
+            "example_id": "29abffe04081a53ec40b3fc36ba832f13932909f99957b63029325c026b17efc",
+            "level": "Moderate",
+            "gold_justification": "Advised patient that they can return the rented machine at any time during the rental period | The management of the patient is expressed as stopping or discontinuing treatment, indicating a decision to cease a current therapy or intervention. This should be clearly documented to reflect the physician\u2019s clinical judgment and its impact on medical decision-making.This is a stretch to count because the physician is leaving it up to the patient that they can return the equipment for a new one for better treatment.",
+            "model_justification": "The patient is using a BiPAP machine, which is a prescribed health device. This involves a moderate risk of morbidity."
+        },
+        {
+            "example_id": "570ddc2195b3f0fad9a8fec41b7805563eda06bfed118b3f7fe172a3607407c7",
+            "level": "Low",
+            "gold_justification": "- Advised patient to soften stool with over-the-counter Docusate sodium, 100 milligrams twice a day. If stool becomes too soft, patient can reduce to once a day.- Advised patient to continue with ibuprofen, 600 milligrams three times a day for a week to help calm down inflammation.- Recommended occasional use of a laxative such as Milk of Magnesia or Miralax to draw liquid into the bowel and prevent stool from becoming dry and hard. | OTC management by physician during the encounter",
+            "model_justification": "The patient is advised to use over-the-counter medications such as Docusate sodium, Milk of Magnesia, and ibuprofen. These involve low risk of morbidity from additional diagnostic testing or treatment. The management plan does not include prescription drug management or other moderate or high-risk interventions."
+        },
+        {
+            "example_id": "f4c5fd627367157a2b8ff84352b96997568e0afa426e1f130bc0961960aae18e",
+            "level": "Moderate",
+            "gold_justification": "Plan to schedule a minor surgical procedure to snip the adhesion under sedation. This will be done on a thursday or Friday to allow for recovery over the weekend. | -Minor. Meets the criteria for moderate complexity for risk/management.",
+            "model_justification": "The management includes a minor surgical procedure to snip the adhesion under sedation, which carries a moderate risk of morbidity. Additionally, the post-surgery plan includes the use of OTC medications like ibuprofen and Tylenol for pain management."
+        },
+        {
+            "example_id": "4783e6195f6896e19afd68f0b6a2ce5c038b56fbfd11ca440fbfa5ee2b31aa1c",
+            "level": "Low",
+            "gold_justification": "Recommended trying a nasal steroid spray and a moisturizing spray to alleviate symptom | OTC management by physician during the encounter",
+            "model_justification": "The management actions taken during this encounter involve routine counseling and lifestyle advice. The recommendation to use OTC nasal sprays and the advice to monitor blood pressure do not elevate the risk level."
+        },
+        {
+            "example_id": "74f72c9e5b8ca9254bc906065376b680413557e4beec861b0310517499e3f4db",
+            "level": "Moderate",
+            "gold_justification": "baclofen 5 mg oral tablet: See Instructions, 0.5-2 tab(s) Oral tid as needed, 30 tab(s), 0 Refill(s).meloxicam 15 mg oral tablet: 15 mg, 1 tab(s), Oral, daily, NO ibprofen, aleve, 30 tab(s), 1 Refill(s). | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The management plan includes prescription drug management with baclofen and meloxicam, which involves moderate risk of morbidity. Additionally, the plan includes potential further interventions such as a medial branch block and possible radiofrequency ablation or neurotomy, indicating a moderate level of risk in patient management."
+        },
+        {
+            "example_id": "51a5e4ce097964fa969b8f8167373dd4ed0286e35ef794c3e1af3836ac6c7d33",
+            "level": "Moderate",
+            "gold_justification": "Orders:baclofen(baclofen 10 mg oral tablet), See Instructions, 1 refills, (Ordered) diclofenac(diclofenac sodium 75 mg oral delayed release tablet), 75 mg= 1 tab(s), Oral, bid, PRN, 1 refills, (Ordered) predniSONE(predniSONE 10 mg oral tablet), See Instructions, (Completed) predniSONE(predniSONE 10 mg oral tablet), See Instructions, (Ordered) | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The management plan includes prescription drug management with baclofen, diclofenac, and prednisone, which carries a moderate risk of morbidity. Additionally, the planned right SI joint injection is considered a minor surgery, which also contributes to a moderate risk level."
+        },
+        {
+            "example_id": "6bcc45c69961625982f196787ed311d250e14315eba77bb17411faa58a8eb810",
+            "level": "Moderate",
+            "gold_justification": "Prescribed Augmentin | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The management of the patient's facial cellulitis includes the prescription of Augmentin, which involves prescription drug management. This presents a moderate risk of morbidity due to the potential side effects and the need for careful monitoring of the patient's response to the medication."
+        },
+        {
+            "example_id": "326d7fc2ab9c0fc88e3b82c8ee9590606475ecf2b2645ec52b0fc29f1be1e943",
+            "level": "Low",
+            "gold_justification": "- Recommended the use of diclofenac gel, an over-the-counter anti-inflammatory topical medication, three to four times a day. | OTC management by physician during the encounter",
+            "model_justification": "The management plan includes recommending over-the-counter anti-inflammatory topical medication (diclofenac gel), advising the patient to use a compression device, and suggesting custom-made arch supports. These are low-risk interventions."
+        },
+        {
+            "example_id": "92aa3832eb128027edd04c4b47a7a036195a45174ca7de4c54232543a9e930d5",
+            "level": "Moderate",
+            "gold_justification": "Prescribed rosuvastatin 20mgfor cholesterol managementPrescribed Allopurinol for gout management, | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The management plan includes prescription drug management (e.g., allopurinol, rosuvastatin, losartan, meloxicam, gabapentin), which carries a moderate risk of morbidity. Additionally, the decision to order an MRI for cervical radiculopathy and the referral to an orthopedic surgeon for potential knee surgery further supports a moderate risk level."
+        },
+        {
+            "example_id": "06ec8e0ffc81f94edf02a82a71dc0cbaac81c75b4ff5a4c71fcbf48fd1e5532d",
+            "level": "Moderate",
+            "gold_justification": "Prescribed Meloxicam | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The patient was prescribed Meloxicam and Diclofenac, both of which are prescription medications. This involves a moderate risk of morbidity."
+        },
+        {
+            "example_id": "2cdaf8c911ac655c2a4c3926a0020214a3e01b55ac06342c6b87d1385d3fa5d9",
+            "level": "High",
+            "gold_justification": "traMADol | The medication is classified as high risk and has the potential to cause life-threatening effects.",
+            "model_justification": "The patient is on Tramadol, which has the potential to cause life-threatening effects. Therefore, the risk of complications is classified as High."
+        },
+        {
+            "example_id": "2110758ecf2bacab19d1d16501b38a0a19609820e08a1fab16bf858f590c5638",
+            "level": "Moderate",
+            "gold_justification": "ciprofloxacin (Cipro 500 mg oral tabl | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The management of the patient's epididymitis involves the prescription of antibiotics (ciprofloxacin). Prescription drug management is considered to carry a moderate risk of morbidity. Therefore, the risk of complications and/or morbidity or mortality of patient management is considered moderate."
+        },
+        {
+            "example_id": "efacef63146912623e7ccc5688e0021b769861a6102b8ad4fc4df87ed5c4b72c",
+            "level": "Moderate",
+            "gold_justification": "prednisone and diclofenac | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The patient is being managed with prescription medications, including prednisone, diclofenac, and cyclobenzaprine, which involve moderate risk of morbidity. Additionally, the plan includes potential further imaging and physical therapy, indicating a moderate level of risk in patient management."
+        },
+        {
+            "example_id": "9f3e878a6ba52efc0c9e1f66588969f30870d19ca06c88e4188b38a76aa59cc0",
+            "level": "Moderate",
+            "gold_justification": "meloxicamBilateral L5/S1 TFESI without contrast | ",
+            "model_justification": "The management plan includes prescription drug management with meloxicam, which carries a moderate risk of morbidity. Additionally, the patient is being considered for a repeat bilateral L5-S1 transforaminal steroid injection, which involves potential risks and requires careful management."
+        },
+        {
+            "example_id": "20e68d446263d08496dbdfcf1207bc3d8f43bcdcc59c090c2cd20dbce100d8ec",
+            "level": "Moderate",
+            "gold_justification": "Recommended application of steroid cream twice a day  which is a prescription medication",
+            "model_justification": "The patient was prescribed triamcinolone 0.1% topical cream, which is a higher-dose formulation requiring a prescription."
+        },
+        {
+            "example_id": "6524bc2b61f793a861575748c88bfc1e876c6e2edbe47c0680b9c5054c59a7d0",
+            "level": "Minimal",
+            "gold_justification": " | No management detected.",
+            "model_justification": "The management of the patient's pharyngitis and nasal congestion involves monitoring symptoms and ordering a diagnostic test (Strep Group A PCR). There are no prescription drugs, surgeries, or other interventions that would increase the risk of complications, morbidity, or mortality. Therefore, the risk of complications and/or morbidity or mortality of patient management is considered minimal."
+        },
+        {
+            "example_id": "21a5b4e9827d69bfeed93ec2004cc6268591d8f8cc00d488501a37b65eec9bbe",
+            "level": "Minimal",
+            "gold_justification": "- If strep test is positive, will prescribe an antibiotic. | Does not count with \"if\" context.",
+            "model_justification": "The encounter involves ordering tests to identify the cause of symptoms and advising symptomatic treatment if viral. There is no prescription drug management or other moderate or high-risk interventions involved. The plan includes monitoring symptoms and potentially prescribing antibiotics if the strep test is positive, which is a hypothetical scenario and should not be counted as a risk."
+        },
+        {
+            "example_id": "2419086940c647b2569ab922ada1e5d558966c58419f36982bb50c693477b697",
+            "level": "Low",
+            "gold_justification": "Advised to continue with Zyrtec 2.5mg daily until the rash is completely resolved for two weeks.- Advised to increase Zyrtec dosage to 5mg if the hives look worse in the morning.- Advised to stop taking iron supplement for now and follow up with regular | OTC management by physician during the encounter",
+            "model_justification": "The patient was advised to continue taking Zyrtec, which is available OTC. Therefore, this should be classified as Low risk."
+        },
+        {
+            "example_id": "9e3591024eda30ee516e81bb38d0aa44dd40dea47b092b8db0e4b8afe20b60cf",
+            "level": "Low",
+            "gold_justification": "- Advised patient to use an ankle brace for support. | OTC management by physician during the encounterBrace can be purchased anywhere.",
+            "model_justification": "The management plan includes recommending the use of an ankle brace for support and advising the patient to follow up if pain persists or weight bearing is not tolerated. These are low-risk interventions. The potential for a repeat x-ray if pain persists does not elevate the risk level."
+        },
+        {
+            "example_id": "15b7b4e3725eb425c99ac4c9e655b50548bc653ea72fc2dd15168b4b93efa53c",
+            "level": "Minimal",
+            "gold_justification": "Relative rest. | Home care remedies, such as RICE, using a heating pad, or resting, are considered minimal complexity.",
+            "model_justification": "The management plan involves relative rest and monitoring, with no prescription drug management or other interventions that would increase the risk of complications, morbidity, or mortality."
+        },
+        {
+            "example_id": "09931323336f7c665ec8db11bdb30eca8897f039cabb62730d03cd35aaf397a4",
+            "level": "Low",
+            "gold_justification": "The patient is managing the pain with over-the-counter medications (naproxen and acetaminophen) and non-pharmacological measures (ice)",
+            "model_justification": "The management plan includes the use of over-the-counter medications (naproxen and acetaminophen) and non-invasive interventions such as knee bracing. There is no indication of prescription drug management or other moderate or high-risk factors."
+        },
+        {
+            "example_id": "8f82878b7a2f02b9357869849a9b6f32eef7e9c01d952f6e658c013a90388643",
+            "level": "Moderate",
+            "gold_justification": "medication orders (Ordered)doxycycline (doxycycline monohydrate 100 mg oral capsu | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The patient was prescribed a one-time dose of 200mg doxycycline as a prophylactic measure. This prescription drug management indicates a moderate risk of morbidity due to the potential side effects and the need for monitoring the effectiveness of the treatment."
+        },
+        {
+            "example_id": "54334b5123e8fa418f0c69c3e897234484f632aee9b3e6624dc9337374bc41fe",
+            "level": "Moderate",
+            "gold_justification": "Prescribed amoxicillin, 500 milligrams, three times a day for 10 days | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The management plan includes prescription drug management (amoxicillin), which carries a moderate risk of morbidity. Additionally, the potential diagnosis of Lyme disease and the need to monitor and possibly extend antibiotic treatment further supports a moderate risk level."
+        },
+        {
+            "example_id": "22ef7868afbbd6f282ee9b66c5546757f234cc3c42b19953229025da4c7e0b3d",
+            "level": "Moderate",
+            "gold_justification": "tetanus/diphth/pertuss (Tdap) adult/adol(Adacel (Tdap)), 0.5 mL, Intramuscular, once, (Completed) | Some vaccines are typically administered for preventative health but there are instances where they are given in response to a specific medical concern. For example, if a patient steps on a rusty nail and is nearing the due date for their next tetanus shot, the provider may choose to administer the vaccine to prevent potential complications. In such cases, the vaccine serves both a preventative and problem-driven purpose.",
+            "model_justification": "The management plan includes administering a tetanus shot, which is considered a minor procedure. According to the guidelines, minor surgery should be classified as Moderate."
+        },
+        {
+            "example_id": "d4be4cbd88ae7279af01c306b0910ffd1d5832bcac8aaed3392ed3099a184b0d",
+            "level": "Moderate",
+            "gold_justification": "continue on current regimen of carvedilol, furosemide pending above | ",
+            "model_justification": "The management plan includes prescription drug management for conditions such as heart failure and COPD, which carries a moderate risk of morbidity. The decision to order a CT scan and multiple lab tests for further evaluation of the patient's conditions also contributes to the moderate risk level. Additionally, the patient's chronic conditions such as COPD and heart failure require ongoing management, which contributes to the moderate risk of complications. The use of continuous supplemental oxygen therapy, a prescribed health device, also contributes to the moderate risk level."
+        },
+        {
+            "example_id": "bfcf4c5e69cbebec267edb2051260c7286299700529c309bc88ddb2b84a7a4d7",
+            "level": "Moderate",
+            "gold_justification": "New Medications This Visit*denotes recorded medicationmeloxicam 15 mg oral tablet: 15 mg, 1 tab(s), Oral, daily, No ibuprofen or aleve, PRN: pain, 30 tab(s), 2 Refill(s).predniSONE 20 mg oral tablet: 60 mg, 3 tab(s), Oral, daily, for 5 day(s), in AM with food, 15 tab(s), 0 Refill(s). | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The patient was prescribed prednisone and meloxicam, which involve prescription drug management. This elevates the risk of complications to a moderate level due to the potential side effects and the need for careful management of these medications."
+        },
+        {
+            "example_id": "a1abe6991918767317de28e498a4e19a96d7db3247038d23627c05675aa831f4",
+            "level": "Low",
+            "gold_justification": "A4570 splint (Charge) | Demonstrates that a splint was ordered. It would fall under low if the physician directed the patient to get a splint.",
+            "model_justification": "The management plan includes recommending ibuprofen for pain management and fitting the patient with a splint. These are low-risk interventions."
+        },
+        {
+            "example_id": "b0bfad4c393506ed8aef9d146b35e9f3664c59c95f88bba5ecf11dce1dff5403",
+            "level": "Low",
+            "gold_justification": "- Patient was advised to take ibuprofen for pain and inflammation, and to rest and hydrate. | OTC management by physician during the encounter",
+            "model_justification": "The management plan includes recommending ibuprofen for pain and inflammation, which is an OTC medication. This classifies the risk as Low."
+        },
+        {
+            "example_id": "441ba3661d95701c6d3b5e1aa2221c117e283b0c94238f33313a18fa161fc23a",
+            "level": "Moderate",
+            "gold_justification": "diclofenac 1% topical gel: 2 gm, Topical, tid, 100 gm, 1 Refill(s).meloxicam 15 mg oral tablet: 15 mg, 1 tab(s), Oral, daily, PRN: pain, 15 tab(s), 1 Refill(s). | ",
+            "model_justification": "The patient was prescribed multiple medications, including meloxicam and diclofenac gel, which involve prescription drug management. This elevates the risk of complications to a moderate level due to the potential side effects and the need for careful management of these medications."
+        },
+        {
+            "example_id": "cf17a41bb215d5f677e0a3a9421f5632a01fbaf11fd535c8cccb7c31e4b4f0fa",
+            "level": "Moderate",
+            "gold_justification": "Prescribed Zithromax | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The patient is being managed with a prescription medication, azithromycin, for the protracted URI. Prescription drug management indicates a moderate risk of morbidity."
+        },
+        {
+            "example_id": "31076d30066c70f8c81125091ced3431e651b227a57be125a98e3b407a1f2073",
+            "level": "Moderate",
+            "gold_justification": "Orders:nitrofurantoin(nitrofurantoin macrocrystals 100 mg oral capsule), 100 mg= 1 cap(s), Oral, q12 hrs, (Ordered) | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The management plan includes prescription drug management with nitrofurantoin for a possible UTI, which involves moderate risk of morbidity."
+        },
+        {
+            "example_id": "c6ed7f5ee8db72cd4ad3e6429af3392a5736c6a15a444bba7da48356b7f203de",
+            "level": "Moderate",
+            "gold_justification": "- Advised patient to wear a protective splint for three weeks, removing only for showering and low-risk activities.- Recommended icing and over-the-counter pain medication (Tylenol, Ibuprofen) as needed for pain management. | Prescribed cephalexin which is a prescription medication",
+            "model_justification": "The patient was prescribed cephalexin for the infection, which involves prescription drug management. This places the risk of complications and/or morbidity or mortality at a 'Moderate' level."
+        },
+        {
+            "example_id": "fca079d386a80f9475a96dfa35eccfc088ec98980e3bbac9c65ca3861b1ffad6",
+            "level": "Low",
+            "gold_justification": "OTC management by physician during the encounter | - Advised to use Tylenol for pain management as needed.",
+            "model_justification": "The management plan involves conservative measures such as keeping the scrape moist, monitoring for infection, and using Tylenol for pain management. There are no prescription drugs, surgeries, or other interventions that would increase the risk of complications, morbidity, or mortality."
+        },
+        {
+            "example_id": "8b2ca4c7d48a32a571457548eefde4578d7f1f042741170bc553313b8b53a96e",
+            "level": "Moderate",
+            "gold_justification": "amoxicillin-clavulanate(amoxicillin-clavulanate 400 mg-57 mg/5 mL oral liquid), 6.25 mL, Oral, q12 hrs, (Ordered) | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The risk of complications is moderate due to the prescription drug management (amoxicillin-clavulanate). This fits the criteria for moderate risk as it involves the management of a prescription medication."
+        },
+        {
+            "example_id": "464b11b4b31689bcd419fb22b10078f3e084bd076dfb34f7b478eb1db46ab5c6",
+            "level": "Low",
+            "gold_justification": "Encouraged intermittent icing, elevation, andOTC analgesicsas needed. Return if symptoms worsen or evolve. | OTC management by physician during the encounter",
+            "model_justification": "The risk of complications and/or morbidity or mortality from patient management is low. The management plan includes wearing an ankle brace, avoiding football activities for a week, and using OTC analgesics as needed."
+        },
+        {
+            "example_id": "8d3f2d64ece87a0717de8c2e7078170b9ecb6eb2eb67a9cffc70c1fa65ced23e",
+            "level": "High",
+            "gold_justification": "Prescribed Flexeril (a muscle relaxer) to be taken at bedtime. Needs to make a follow up appointment to evaluate multiple fractures. | Prescription medication was managed by the physician during this encounter | The prescription of tramadol 50 mg, which is a high-risk medication with the potential to cause life-threatening effects.",
+            "model_justification": "The management plan includes prescription drug management with tramadol, which is a high-risk medication due to its potential for life-threatening effects."
+        },
+        {
+            "example_id": "8fe53a382e6c33113c0f67fbe9abd1cb695ae4fae1a8a7b0f1970cd1132467ed",
+            "level": "Moderate",
+            "gold_justification": "amoxicillin-clavulanate(amoxicillin-clavulanate 875 mg-125 mg oral tablet), 1 tab(s), Oral, q12 hrs, (Ordered) office o/p new low 30-44 min (Charge), Quantity: 1, Dog bite | Puncture wound | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The risk of complications is moderate due to the prescription drug management with Augmentin (amoxicillin-clavulanate) for the dog bite and puncture wound."
+        },
+        {
+            "example_id": "47b230b22f1bb370e0bbc9524a6a098b880b10f13a671d0ddd07d6d70f596bed",
+            "level": "Moderate",
+            "gold_justification": "albuterol(albuterol 90 mcg/inh inhalation aerosol), 2 puff(s), Inhale, qid, PRN, 4 refills, (Ordered) | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The patient is being managed with prescription medication (albuterol) for asthma, which indicates a moderate risk of morbidity. The use of a rescue inhaler for asthma management supports a moderate risk level."
+        },
+        {
+            "example_id": "624a0bde6335f35b42aff71ca4f5e0db1a8e955f6487e1b746e8098912e30543",
+            "level": "Moderate",
+            "gold_justification": "The patient reports experiencing significant stress and anxiety, exacerbated by her current living situation- Discussed potential resources for housing and food security. | SDoH",
+            "model_justification": "The management plan includes prescription drug management (e.g., lisinopril, losartan, furosemide), which carries a moderate risk of morbidity. Additionally, the decision to schedule an echo of the heart to assess shortness of breath and the need to monitor the patient's response to the current medication regimen further supports a moderate risk level."
+        },
+        {
+            "example_id": "2f8ab0c8d6baf1858a380d51f857a7727ce39285f34f7a0706d022c19a281f58",
+            "level": "Moderate",
+            "gold_justification": "- Prescribed doxycycline, 100mg twice a day for a week- Ordered a short course of Methylprednisolone (Medrol Dose-Pak) to reduce inflammation | Prescription medication was managed by the physician during this encounter.",
+            "model_justification": "The patient management involves moderate risk due to the prescription drug management for chronic sinusitis and seasonal allergies, including doxycycline, methylprednisolone, and montelukast. The decision to prescribe steroids and antibiotics adds to the moderate risk. Additionally, the patient's balance issues and multiple falls contribute to the moderate risk of complications."
+        }
+    ]
+}

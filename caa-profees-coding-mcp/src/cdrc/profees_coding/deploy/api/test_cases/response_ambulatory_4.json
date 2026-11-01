@@ -1,0 +1,125 @@
+{
+  "procedure": [
+    {
+      "description": "Removal impacted cerumen using irrigation/lavage, unilateral",
+      "code": "69209",
+      "system": "CPT",
+      "justification": "The note explicitly states successful irrigation of the right ear with removal of impacted cerumen during the encounter.",
+      "modifiers": [
+        {
+          "code": "RT",
+          "description": "Right side (used to identify procedures performed on the right side)",
+          "justification": "Performed unilateral right ear service explicitly documented."
+        }
+      ],
+      "linked_diagnosis": [
+        {
+          "code": "H61.21",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Impacted cerumen, right ear",
+          "justification": "The assessment and plan explicitly documents impacted cerumen of the right ear and states that irrigation was performed with successful cerumen removal."
+        }
+      ]
+    }
+  ],
+  "em": [
+    {
+      "code": "99203",
+      "description": "Office o/p new low 30 min",
+      "source": "MDM",
+      "system": "CPT",
+      "justification": "Encounter type: Problem-focused evaluation and management with referrals, splints, and irrigation.\nPatient type: New. Visit history support the prediction.\nProblem Complexity: Low. 1 stable, chronic illness. 1 acute, uncomplicated illness or injury\nData Complexity: Minimal. Tests & Documents: 1 elements present.\nRisk Of Complications: Moderate. Ordered lisinopril prescription medication today.\nTime statement: No clinician time statement is documented.",
+      "modifiers": [
+        {
+          "code": "25",
+          "description": "Significant, separately identifiable evaluation and management service by the same physician or other qualified health care professional on the same day of the procedure or other service",
+          "justification": "Separate E/M for hand condition beyond cerumen procedure."
+        }
+      ],
+      "encounter_type": {
+        "encounter_type": "Office or Other Outpatient Service",
+        "justification": "Problem-focused evaluation and management with referrals, splints, and irrigation."
+      },
+      "problem_complexity": {
+        "level": "Low",
+        "detailed_justification": "1 stable, chronic illness: Trigger finger of right hand with associated tenosynovitis/tendinopathy (consolidated). 1 acute, uncomplicated illness or injury: Impacted cerumen of right ear.\nTrigger finger of right hand with associated tenosynovitis/tendinopathy (consolidated): A&P addresses this as a long-standing condition with functional impact requiring active management: 'pain and locking... for a long time' and plan includes splints, home exercises, work accommodation guidance, and 'Referred to occupational therapy.' While not explicitly labeled chronic, the duration ('for a long time') and ongoing management support chronicity; no explicit worsening/exacerbation is documented to justify Moderate.\nImpacted cerumen of right ear: A&P documents straightforward treatment with successful removal: 'Successful irrigation of right ear and removal of cerumen.' No complications, systemic symptoms, or escalation beyond routine in-office management.",
+        "justification": "1 stable, chronic illness. 1 acute, uncomplicated illness or injury",
+        "confidence": 0.6
+      },
+      "data_complexity": {
+        "level": "Minimal",
+        "detailed_justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. One unique test was ordered: CBC panel (blood test). No documented review of external notes or prior test results, and medication orders/referrals are excluded.",
+        "justification": "Tests & Documents: 1 elements present.",
+        "confidence": 1.0
+      },
+      "risk_of_complications": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": "Ordered lisinopril prescription medication today.",
+        "confidence": 1.0
+      },
+      "pc_critic_response": "The prior assessment generally reached Low complexity, but it under-characterized the hand condition as purely acute. The A&P and HPI (used to support status) describe hand locking/pain 'for a long time' with work-function limitation and active conservative management plus OT referral, making it best supported as a stable chronic illness (Low). Cerumen impaction remains acute uncomplicated (Low). No single problem meets Moderate because there is no documented exacerbation/progression, uncertain prognosis workup, systemic symptoms, or complicated injury. Highest problem type met is Low, so overall Problem Complexity Level remains Low, established by the chronic hand condition (and also supported by the additional acute cerumen problem). Assumption: 'for a long time' reflects chronicity (>=1 year) though exact duration is not stated; if duration were clearly <1 year, it would downgrade to acute uncomplicated but overall would still remain Low.",
+      "rc_critic_response": "",
+      "dc_critic_response": "1) DISC: I looked for explicit language such as \u201cdiscussed with Dr. X\u201d or documented phone/curbside consults; the note only shows an occupational therapy referral, which does not qualify as DISC, so DISC is not present. 2) Intpr: I checked for radiology studies (X-ray/CT/MRI/US) and any statement of independent interpretation; none are documented in the note or orders, so Intpr is not present. 3) IHx: I checked for history provided by someone other than the patient (e.g., spouse/parent/caregiver) and whether that person supplied crucial history; the HPI/ROS are from the patient and no independent historian is documented, so IHx is not present. 4) Tests & Documents count: I counted only unique qualifying tests/documents (orders/reviews) and excluded medication orders and referrals; the EHR shows a CBC panel ordered (qualifies as 1). No other unique tests were ordered or reviewed in the note, and no outside test results are reviewed, so total remains 1.",
+      "mdm_complexity": {
+        "level": "Low",
+        "detailed_justification": null,
+        "justification": null,
+        "confidence": null
+      },
+      "time_spent": {
+        "time_spent_minutes": 0,
+        "evidence": null,
+        "justification": "No clinician time statement is documented."
+      },
+      "linked_diagnosis": [
+        {
+          "code": "M65.30",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Trigger finger, unspecified finger",
+          "justification": "The assessment and plan documents trigger finger of the right hand as an active problem evaluated and managed with splints, home exercises, work accommodation guidance, and occupational therapy referral."
+        },
+        {
+          "code": "M65.949",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Unspecified synovitis and tenosynovitis, unspecified hand",
+          "justification": "The assessment and plan separately lists tenosynovitis of finger and links it to the same conservative management and occupational therapy referral during this encounter."
+        },
+        {
+          "code": "H61.21",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Impacted cerumen, right ear",
+          "justification": "The assessment and plan documents impacted cerumen of the right ear as a current problem evaluated during the visit and treated with ear irrigation/removal."
+        }
+      ],
+      "confidence": null
+    }
+  ],
+  "diagnosis": [
+    {
+      "code": "M65.30",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Trigger finger, unspecified finger",
+      "justification": "The assessment and plan documents trigger finger of the right hand as an active problem evaluated and managed with splints, home exercises, work accommodation guidance, and occupational therapy referral."
+    },
+    {
+      "code": "M65.949",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Unspecified synovitis and tenosynovitis, unspecified hand",
+      "justification": "The assessment and plan separately lists tenosynovitis of finger and links it to the same conservative management and occupational therapy referral during this encounter."
+    },
+    {
+      "code": "H61.21",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Impacted cerumen, right ear",
+      "justification": "The assessment and plan documents impacted cerumen of the right ear as a current problem evaluated during the visit and treated with ear irrigation/removal."
+    }
+  ]
+}

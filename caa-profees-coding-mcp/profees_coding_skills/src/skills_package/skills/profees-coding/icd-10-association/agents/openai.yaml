@@ -1,0 +1,4 @@
+interface:
+  display_name: "ICD-10 Association"
+  short_description: "Link diagnoses to E/M and procedures"
+  default_prompt: "Use $icd-10-association to link diagnoses to E/M and procedure items."

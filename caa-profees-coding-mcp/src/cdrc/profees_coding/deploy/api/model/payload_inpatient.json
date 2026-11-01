@@ -1,0 +1,379 @@
+{
+  "encounter_id": "qwef7db8b8dcefb0b0892b50cfb69f1a8c497880a955de882684db23a1b6e5a",
+  "encounter_metadata": {
+    "client_name": "BayCare",
+    "type": "Inpatient",
+    "admit_time": "2025-01-16T13:20:00Z",
+    "discharge_time": "2025-01-24T10:00:00Z",
+    "service_dates": [
+      "2025-01-16",
+      "2025-01-17",
+      "2025-01-18",
+      "2025-01-19",
+      "2025-01-20",
+      "2025-01-21",
+      "2025-01-22",
+      "2025-01-23"
+    ]
+  },
+  "documents": [
+    {
+      "document_id": "1001",
+      "service_date": "2025-01-16",
+      "document_type": "ED Pre-Arrival Notes",
+      "text": "ED Pre-Arrival Notes Result date: January 16, 2025 13:05 UTC. Pre-Arrival Summary: 68F increased weakness, blood sugar 500s per EMS.",
+      "time_created": "2025-01-16T13:05:00Z",
+      "is_physician_note": false,
+      "provider_participants": [
+        {
+          "practitioner_id": "ED Nurse",
+          "role": "author",
+          "participation_time": "2025-01-16T13:05:00Z",
+          "credentials": "RN",
+          "npi": null,
+          "specialty": "Emergency Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": false
+        }
+      ]
+    },
+    {
+      "document_id": "1101",
+      "service_date": "2025-01-16",
+      "document_type": "History & Physical",
+      "text": "Admit H&P: 68F with severe community-acquired pneumonia, sepsis, acute hypoxic respiratory failure requiring O2. Hyperglycemia on arrival. Plan: IV ceftriaxone, azithro, IVF cautious, insulin, cultures, CXR/CT, labs, O2 titration.",
+      "time_created": "2025-01-16T15:40:00Z",
+      "practitioner": "Hospitalist",
+      "is_physician_note": true,
+      "practitioner_id": "Hospitalist",
+      "practitioner_name": "Hospitalist",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-16T15:40:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1201",
+      "service_date": "2025-01-17",
+      "document_type": "Daily Progress Note",
+      "text": "Hospital Day 2: Persistent fevers, tachycardia improved with antibiotics. O2 requirement 3L NC. Reviewed labs (WBC, lactate trend) and imaging. Continue IV ceftriaxone/azithro, monitor cultures, adjust insulin, DVT prophylaxis, PT/OT.",
+      "time_created": "2025-01-17T14:10:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-17T14:10:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1202",
+      "service_date": "2025-01-17",
+      "document_type": "Medication Reconciliation Note",
+      "text": "Med rec completed. Chronic meds reviewed and reconciled with inpatient orders.",
+      "time_created": "2025-01-17T18:30:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Pharmacist",
+          "role": "author",
+          "participation_time": "2025-01-17T18:30:00Z",
+          "credentials": "PharmD",
+          "npi": null,
+          "specialty": "Pharmacy",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": false
+        }
+      ]
+    },
+    {
+      "document_id": "1301",
+      "service_date": "2025-01-18",
+      "document_type": "Daily Progress Note",
+      "text": "Hospital Day 3: Patient reports improved breathing. On 2L O2 via NC. Continues IV antibiotics and diuresis. Reviewed CXR, daily labs. PT assisted with ambulation 2 laps on unit. Continue current regimen; monitor for decompensation.",
+      "time_created": "2025-01-18T14:32:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-18T14:32:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1401",
+      "service_date": "2025-01-19",
+      "document_type": "Daily Progress Note",
+      "text": "Hospital Day 4: Afebrile. O2 1-2L with ambulation. Cultures negative to date. Reviewed labs; glucose better controlled. Transition planning started; continue IV antibiotics today, consider PO step-down tomorrow.",
+      "time_created": "2025-01-19T13:55:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-19T13:55:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1501",
+      "service_date": "2025-01-20",
+      "document_type": "Daily Progress Note",
+      "text": "Hospital Day 5: Continued improvement. Off O2 at rest; minimal O2 with exertion. Antibiotics adjusted to PO step-down. Reviewed imaging and labs; continued insulin titration. Discharge planning with case management.",
+      "time_created": "2025-01-20T15:05:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-20T15:05:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1601",
+      "service_date": "2025-01-21",
+      "document_type": "Daily Progress Note",
+      "text": "Hospital Day 6: Shortness of breath worsened overnight; O2 back to 2L. Re-reviewed imaging; ordered repeat CXR and additional labs. Restarted IV diuresis. High concern for complication or volume overload; close monitoring.",
+      "time_created": "2025-01-21T16:40:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-21T16:40:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1701",
+      "service_date": "2025-01-22",
+      "document_type": "Daily Progress Note",
+      "text": "Hospital Day 7: Improved after diuresis; O2 down to 1L. Reviewed repeat CXR and labs. Continue PO antibiotics, continue insulin adjustments. Anticipate discharge in 24-48 hours if stable.",
+      "time_created": "2025-01-22T14:25:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-22T14:25:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    },
+    {
+      "document_id": "1801",
+      "service_date": "2025-01-23",
+      "document_type": "Discharge Summary",
+      "text": "Discharge Summary: Admit for severe CAP complicated by sepsis and acute hypoxic respiratory failure. Improved with IV antibiotics, O2, and diuresis. Procedure performed: Thoracentesis for pleural effusion. Diagnosis at discharge: Severe community-acquired pneumonia (J18.9), sepsis (A41.9), acute hypoxic respiratory failure (J96.01). Discharge meds reviewed, follow-up arranged, return precautions provided. Total discharge management time > 30 minutes.",
+      "time_created": "2025-01-23T18:10:00Z",
+      "provider_participants": [
+        {
+          "practitioner_id": "Hospitalist",
+          "role": "author",
+          "participation_time": "2025-01-23T18:10:00Z",
+          "credentials": "MD",
+          "npi": null,
+          "specialty": "Hospital Medicine",
+          "subspecialty": null,
+          "group_practice_id": null,
+          "is_physician_or_qhp": true
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "order_type": "Medication Order",
+      "time_created": "2025-01-16T15:45:00Z",
+      "status": "active",
+      "catalog_type": "Inpatient Medication",
+      "display": {
+        "hna_mnemonic": "Ceftriaxone IV",
+        "ordered_as": "ceftriaxone 2 g IV q24h"
+      },
+      "time_last_updated": "2025-01-16T15:45:00Z"
+    },
+    {
+      "order_type": "Medication Order",
+      "time_created": "2025-01-16T15:46:00Z",
+      "status": "active",
+      "catalog_type": "Inpatient Medication",
+      "display": {
+        "hna_mnemonic": "Azithromycin IV",
+        "ordered_as": "azithromycin 500 mg IV daily"
+      },
+      "time_last_updated": "2025-01-16T15:46:00Z"
+    },
+    {
+      "order_type": "Medication Order",
+      "time_created": "2025-01-16T15:47:00Z",
+      "status": "active",
+      "catalog_type": "Inpatient Medication",
+      "display": {
+        "hna_mnemonic": "Insulin glargine",
+        "ordered_as": "insulin glargine 20 Units SQ qHS"
+      },
+      "time_last_updated": "2025-01-16T15:47:00Z"
+    }
+  ],
+  "patient_age": 68,
+  "patient_type": "New",
+  "patient_birthdate": "1958-02-10T00:00:00Z",
+  "patient_sex": "male",
+  "patient_id": "pt_001",
+  "current_encounter_period": {
+    "start": "2023-10-03T14:15:00Z",
+    "end": "2023-10-03T14:15:00Z"
+  },
+  "health_plan": [
+    {
+      "health_plan": "Medicare Part A/B",
+      "active_status": "Active",
+      "health_plan_effective_date": "2020-01-01"
+    }
+  ],
+  "awv_history": [
+    {
+      "hcpcs_code": "G0439",
+      "claim_date": "2024-06-10"
+    }
+  ],
+  "facility_info": [
+    {
+      "patient_loc": "3N-312",
+      "nurse_unit_loc": "3 North",
+      "building_loc": "Inpatient Tower",
+      "facility_loc": "Main Campus",
+      "ccn_name": "General Hospital",
+      "ccn_number": 345678.0,
+      "pos_code": 21,
+      "cms_submission_type": "Institutional",
+      "beg_effective_dt_tm": "2025-01-16T13:20:00Z",
+      "end_effective_dt_tm": "2025-01-24T10:00:00Z",
+      "is_excepted": false
+    }
+  ],
+  "provider_info": [
+    {
+      "physician_ind": 1,
+      "position": "Hospitalist",
+      "physician_status": "In",
+      "encntr_prsnl_r": "Attending"
+    }
+  ],
+  "lab_info": [
+    {
+      "facility_location": "Inpatient Core Lab",
+      "service_location": "3 North",
+      "lab_name": "Hospital Core Lab",
+      "clia_number_txt": "34D1122334"
+    }
+  ],
+  "anaesthesia_staff_info": [
+    {
+      "role_performed": "Anesthesiologist",
+      "signing_indicator": 1,
+      "in_time": "2025-01-23T08:20:00Z",
+      "out_time": "2025-01-23T09:05:00Z"
+    }
+  ],
+  "anaesthesia_concurrent_staff_info": [
+    {
+      "relationship": "Concurrent OR Coverage",
+      "concurrent_encounter_count": 2
+    }
+  ],
+  "anaesthesia_record_info": [
+    {
+      "asa_display_value": "ASA 3",
+      "asa_structured_status": "Final",
+      "result_date": "2025-01-23T09:10:00Z"
+    }
+  ],
+  "tags": [
+    "inpatient",
+    "sepsis",
+    "concurrent-coding"
+  ],
+  "additional_input": {
+    "note_time": "2025.01",
+    "note_type": "SIGNED",
+    "physician_specialty": "Hospital Medicine",
+    "coding_mode": "concurrent",
+    "concurrent_coding_rule": "Each service_date is coded independently per specialty using documents authored by that specialty; orders are included when their timestamps fall on the service date."
+  },
+  "problem_list": [
+    {
+      "description": "Vertigo",
+      "code": "R42",
+      "status": "active",
+      "priority": "2"
+    },
+    {
+      "description": "Acute depression",
+      "code": "F32.A",
+      "status": "active",
+      "priority": "1"
+    },
+    {
+      "description": "Brain concussion",
+      "code": "S06.0XAA",
+      "status": "inactive",
+      "priority": "2"
+    },
+    {
+      "description": "Benign essential hypertension",
+      "code": "I10",
+      "status": "active",
+      "priority": "1"
+    },
+    {
+      "description": "Acute insomnia",
+      "code": "G47.00",
+      "status": "future",
+      "priority": "2"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+[
+  {
+    "input": {
+      "example_id": "00177f180937e427d003e61a2ebcbf2dd596a03061e94eab2c1eed14f2face1d",
+      "encounter_metadata": {
+        "client_name": "Hudson",
+        "type": "Ambulatory",
+        "service_dates": [
+          "2025-01-16"
+        ]
+      },
+      "soap": {
+        "subjective": {
+          "cc": "",
+          "hpi": "The patient is a [AGE] female presenting with low back pain.\n\nLow back pain"
+        },
+        "review_of_systems": "Neurological: Positive for numbness and tingling sensation.\nMusculoskeletal: Positive for pressure in the back.",
+        "objective": {
+          "physical_examination": "Musculoskeletal:\nNo significant difference in sensation.\n"
+        },
+        "assessment_and_plan": {
+          "text": {
+            "summary": "Patient is a [AGE] female presenting today for low back pain.",
+            "text": "",
+            "diagnoses": [
+              {
+                "name": "Low back pain (M54.50)",
+                "id": "[GUID]",
+                "text": "- Assessment consistent with low back pain l."
+              }
+            ]
+          }
+        }
+      },
+      "text": null,
+      "orders": [
+        {
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display": {
+            "hna_mnemonic": "XR SPINE LUMBAR ROUTINE* (HUD)",
+            "ordered_as": "XR SPINE LUMBAR ROUTINE* (HUD)"
+          }
+        },
+        {
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display": {
+            "hna_mnemonic": "XR SPINE LUMBAR ROUTINE* (HUD)",
+            "ordered_as": "XR SPINE LUMBAR ROUTINE* (HUD)"
+          }
+        }
+      ],
+      "patient_type": "New",
+      "patient_age": "22",
+      "patient_sex": "male",
+      "source": "Hudson",
+      "transcript": "",
+      "tags": [],
+      "additional_input": {
+        "note_time": "2025.06",
+        "note_type": "DRAFT",
+        "physician_specialty": "general medicine"
+      },
+      "all_patient_problems": [
+        { "name": "Low back pain (M54.50)" }
+      ]
+    },
+    "gold": {
+      "procedure": [
+        {
+          "description": "Excision of lesion, eyelid (CPT 91452)",
+          "code": "91452",
+          "system": "CPT",
+          "justification": "...",
+          "modifiers": [
+            { "code": "25", "description": "...", "justification": "..." },
+            { "code": "LT", "description": "...", "justification": "..." }
+          ],
+          "linked_diagnosis": [
+            {
+              "code": "E11.9",
+              "is_primary": true,
+              "system": "ICD-10-CM",
+              "description": "Type 2 diabetes mellitus without complications",
+              "justification": "..."
+            }
+          ]
+        },
+        {
+          "description": "HCPCS add-on code for prolonged office visit (G2111)",
+          "code": "G2111",
+          "system": "HCPCS",
+          "justification": "...",
+          "linked_diagnosis": [
+            {
+              "code": "E11.9",
+              "is_primary": true,
+              "system": "ICD-10-CM",
+              "description": "Type 2 diabetes mellitus without complications",
+              "justification": "..."
+            }
+          ]
+        }
+      ],
+      "em": [
+        {
+          "code": "99202",
+          "description": "New patient office or other outpatient visit, Level 2",
+          "source": "MDM",
+          "confidence": 0.9,
+          "system": "CPT",
+          "justification": "...",
+          "modifiers": [],
+          "encounter_type": {
+            "encounter_type": "Office or Other Outpatient Service",
+            "justification": "..."
+          },
+          "problem_complexity": { "level": "Low", "justification": "..." },
+          "data_complexity": { "level": "Minimal", "justification": "N/A" },
+          "risk_of_complications": { "level": "Minimal", "justification": "..." },
+          "mdm_complexity": { "level": "Minimal" },
+          "time_spent": {
+            "time_spent_minutes": 14,
+            "evidence": "Total time spent caring for patient today was Face-to-face time with patient: 10 minutes Visit Preparation: 2 minutes Documentation time: 2 minutes"
+          },
+          "linked_diagnosis": [
+            {
+              "code": "E11.9",
+              "is_primary": true,
+              "system": "ICD-10-CM",
+              "description": "Type 2 diabetes mellitus without complications",
+              "justification": "..."
+            }
+          ]
+        }
+      ],
+      "diagnosis": [
+        {
+          "code": "E11.9",
+          "is_primary": false,
+          "description": "Type 2 diabetes mellitus without complications",
+          "system": "ICD-10-CM",
+          "justification": "Chronic condition on problem list"
+        }
+      ]
+    }
+  },
+{
+    "input": {
+      "example_id": "00177f180937e427d1410ebcbf2dd596a03061e94eab2c1eed14f2face1d",
+      "soap": {
+        "subjective": {
+          "cc": "",
+          "hpi": "The patient is a [AGE] female presenting for an annual wellness exam."
+        },
+        "review_of_systems": "Neurological: Positive for numbness and tingling sensation.\nMusculoskeletal: Positive for pressure in the back.",
+        "objective": {
+          "physical_examination": "Musculoskeletal:\nNo significant difference in sensation.\n"
+        },
+        "assessment_and_plan": {
+          "text": {
+            "summary": "Patient is a [AGE] female presenting today for annual wellness exam and evaluation of low back pain.",
+            "text": "",
+            "diagnoses": [
+              {
+                "name": "Encounter for general adult medical examination with abnormal findings (Z00.01)",
+                "id": "[GUID-Z]",
+                "text": "- Annual wellness visit; abnormal finding: low back pain."
+              },
+              {
+                "name": "Low back pain (M54.50)",
+                "id": "[GUID-M54]",
+                "text": "- Assessment consistent with low back pain."
+              }
+            ]
+          }
+        }
+      },
+      "text": null,
+      "orders": [
+        {
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display": {
+            "hna_mnemonic": "XR SPINE LUMBAR ROUTINE* (HUD)",
+            "ordered_as": "XR SPINE LUMBAR ROUTINE* (HUD)"
+          }
+        },
+        {
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display": {
+            "hna_mnemonic": "XR SPINE LUMBAR ROUTINE* (HUD)",
+            "ordered_as": "XR SPINE LUMBAR ROUTINE* (HUD)"
+          }
+        }
+      ],
+      "patient_type": "New",
+      "patient_age": "22",
+      "patient_sex": "male",
+      "source": "Hudson",
+      "transcript": "",
+      "tags": [],
+      "additional_input": {
+        "note_time": "2025.06",
+        "note_type": "DRAFT",
+        "physician_specialty": "general medicine"
+      },
+      "all_patient_problems": [
+        { "name": "Encounter for general adult medical examination with abnormal findings (Z00.01)" },
+        { "name": "Low back pain (M54.50)" }
+      ]
+    },
+    "gold": {
+      "procedure": [
+        {
+          "description": "Excision of lesion, eyelid (CPT 91452)",
+          "code": "91452",
+          "system": "CPT",
+          "justification": "...",
+          "modifiers": [
+            { "code": "25", "description": "...", "justification": "..." },
+            { "code": "LT", "description": "...", "justification": "..." }
+          ],
+          "linked_diagnosis": [
+            {
+              "code": "E11.9",
+              "is_primary": true,
+              "system": "ICD-10-CM",
+              "description": "Type 2 diabetes mellitus without complications",
+              "justification": "..."
+            }
+          ]
+        },
+        {
+          "description": "HCPCS add-on code for prolonged office visit (G2111)",
+          "code": "G2111",
+          "system": "HCPCS",
+          "justification": "...",
+          "linked_diagnosis": [
+            {
+              "code": "E11.9",
+              "is_primary": true,
+              "system": "ICD-10-CM",
+              "description": "Type 2 diabetes mellitus without complications",
+              "justification": "..."
+            }
+          ]
+        }
+      ],
+      "em": [
+        {
+          "code": "99204",
+          "description": "New patient office or other outpatient visit, Level 4",
+          "source": "MDM",
+          "confidence": 0.9,
+          "system": "CPT",
+          "justification": "...",
+          "modifiers": [
+            { "code": "25", "description": "Significant, separately identifiable E/M service by same physician on same day as preventive service", "justification": "Problem-oriented visit distinct from preventive wellness visit" }
+          ],
+          "encounter_type": {
+            "encounter_type": "Office or Other Outpatient Service",
+            "justification": "..."
+          },
+          "problem_complexity": { "level": "Moderate", "justification": "..." },
+          "data_complexity": { "level": "Minimal", "justification": "N/A" },
+          "risk_of_complications": { "level": "Moderate", "justification": "..." },
+          "mdm_complexity": { "level": "Moderate" },
+          "time_spent": {
+            "time_spent_minutes": 14,
+            "evidence": "Total time spent caring for patient today was Face-to-face time with patient: 10 minutes Visit Preparation: 2 minutes Documentation time: 2 minutes"
+          },
+          "linked_diagnosis": [
+            {
+              "code": "M54.50",
+              "is_primary": true,
+              "system": "ICD-10-CM",
+              "description": "Low back pain, unspecified",
+              "justification": "Problem-oriented portion"
+            }
+          ]
+        },
+        {
+          "code": "99385",
+          "description": "Initial comprehensive preventive medicine evaluation and management, new patient; 18–39 years",
+          "system": "CPT",
+          "justification": "Annual wellness exam for 22-year-old new patient",
+          "modifiers": [],
+          "encounter_type": {
+            "encounter_type": "Preventive Medicine",
+            "justification": "Wellness visit"
+          },
+          "linked_diagnosis": [
+            {
+              "code": "Z00.01",
+              "is_primary": true,
+              "system": "ICD-10-CM",
+              "description": "Encounter for general adult medical examination with abnormal findings",
+              "justification": "Wellness exam with abnormal finding (back pain)"
+            }
+          ]
+        }
+      ],
+      "diagnosis": [
+        {
+          "code": "Z00.01",
+          "is_primary": true,
+          "description": "Encounter for general adult medical examination with abnormal findings",
+          "system": "ICD-10-CM",
+          "justification": "Annual wellness exam"
+        },
+        {
+          "code": "M54.50",
+          "is_primary": false,
+          "description": "Low back pain, unspecified",
+          "system": "ICD-10-CM",
+          "justification": "Abnormal finding noted during wellness"
+        },
+        {
+          "code": "E11.9",
+          "is_primary": false,
+          "description": "Type 2 diabetes mellitus without complications",
+          "system": "ICD-10-CM",
+          "justification": "Chronic condition on problem list"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,32 @@
+prompt_path: ./cdrc/profees_coding/cpt_procedure/models/ner_rag/config/prompts.yaml
+prompt_version: v0.1
+design: ner_rag
+model_name: caa-gpt-5-2025-08-07-dev-sds
+model_kwargs:
+  reasoning_effort: low
+  seed: 1
+batch_size: 5
+num_few_shot_examples: 3
+query:
+  retrieval:
+    mode: all
+  rerank:
+    mode: all
+retrieval:
+  method: hybrid
+  weights: [0.5, 0.5]
+  sub_retrievers:
+    0:
+      method: semantic
+      vector_store:
+        type: faiss
+        path: cdrc/profees_coding/cpt_procedure/rag/vdb/vdb_cpt_long_descriptions_oracle-text-embedding-3-large-1-dev-local
+        embedding_model: oracle-text-embedding-3-large-1-dev
+      search_kwargs: {"score_threshold": 0.0, "k": 3}
+    1:
+      method: lexical
+      vector_store:
+        type: bm25
+        path: cdrc/profees_coding/cpt_procedure/rag/vdb/vdb_cpt_long_descriptions_bm25/vdb.pickle
+        filter: ""
+      search_kwargs: {"k": 3}

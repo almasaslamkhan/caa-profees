@@ -1,0 +1,150 @@
+{
+    "encounter_id": "qwef7db8b8dcefb0b0892b50cfb69f1a8c497880a955de882684db23a1b6e5a",
+    "encounter_metadata": {
+      "client_name": "General Hospital",
+      "type": "Emergency Department",
+      "service_dates": [
+        "2025-01-24T10:00:00Z"
+      ]
+    },
+    "orders": [
+      {
+        "order_type": "Medication Order",
+        "time_created": "2025-01-16T15:45:00Z",
+        "status": "active",
+        "catalog_type": "Inpatient Medication",
+        "display": {
+          "hna_mnemonic": "Ceftriaxone IV",
+          "ordered_as": "ceftriaxone 2 g IV q24h"
+        },
+        "time_last_updated": "2025-01-16T15:45:00Z"
+      },
+      {
+        "order_type": "Medication Order",
+        "time_created": "2025-01-16T15:46:00Z",
+        "status": "active",
+        "catalog_type": "Inpatient Medication",
+        "display": {
+          "hna_mnemonic": "Azithromycin IV",
+          "ordered_as": "azithromycin 500 mg IV daily"
+        },
+        "time_last_updated": "2025-01-16T15:46:00Z"
+      },
+      {
+        "order_type": "Medication Order",
+        "time_created": "2025-01-16T15:47:00Z",
+        "status": "active",
+        "catalog_type": "Inpatient Medication",
+        "display": {
+          "hna_mnemonic": "Insulin glargine",
+          "ordered_as": "insulin glargine 20 Units SQ qHS"
+        },
+        "time_last_updated": "2025-01-16T15:47:00Z"
+      }
+    ],
+    "patient_type": "New",
+    "patient_birthdate": "1958-02-10T00:00:00Z",
+    "patient_sex": "male",
+    "current_encounter_period": {
+      "start": "2023-10-03T14:15:00Z",
+      "end": "2023-10-03T14:15:00Z"
+    },
+    "health_plan": [
+      {
+        "health_plan": "Medicare Advantage",
+        "active_status": "Active",
+        "health_plan_effective_date": "2024-01-01"
+      }
+    ],
+    "awv_history": [
+      {
+        "hcpcs_code": "G0438",
+        "claim_date": "2024-03-15"
+      }
+    ],
+    "facility_info": [
+      {
+        "patient_loc": "ED Bay 12",
+        "nurse_unit_loc": "Emergency Department",
+        "building_loc": "Hospital Tower",
+        "facility_loc": "Main Campus",
+        "ccn_name": "General Hospital",
+        "ccn_number": 987654.0,
+        "pos_code": 23,
+        "cms_submission_type": "Institutional",
+        "beg_effective_dt_tm": "2025-01-16T00:00:00Z",
+        "end_effective_dt_tm": "2025-01-23T23:59:59Z",
+        "is_excepted": false
+      }
+    ],
+    "provider_info": [
+      {
+        "physician_ind": 1,
+        "position": "Emergency Physician",
+        "physician_status": "In",
+        "encntr_prsnl_r": "Attending"
+      }
+    ],
+    "lab_info": [
+      {
+        "facility_location": "ED Lab",
+        "service_location": "Emergency Department",
+        "lab_name": "STAT Lab",
+        "clia_number_txt": "98D7654321"
+      }
+    ],
+    "anaesthesia_staff_info": [
+      {
+        "role_performed": "CRNA",
+        "signing_indicator": 1,
+        "in_time": "2025-01-16T16:00:00Z",
+        "out_time": "2025-01-16T17:00:00Z"
+      }
+    ],
+    "anaesthesia_concurrent_staff_info": [
+      {
+        "relationship": "Concurrent Coverage",
+        "concurrent_encounter_count": 1
+      }
+    ],
+    "anaesthesia_record_info": [
+      {
+        "asa_display_value": "ASA 3",
+        "asa_structured_status": "Final",
+        "result_date": "2025-01-16T17:05:00Z"
+      }
+    ],
+    "problem_list": [
+      {
+        "description": "Vertigo",
+        "code": "R42",
+        "status": "active",
+        "priority": "2"
+      },
+      {
+        "description": "Acute depression",
+        "code": "F32.A",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Brain concussion",
+        "code": "S06.0XAA",
+        "status": "inactive",
+        "priority": "2"
+      },
+      {
+        "description": "Benign essential hypertension",
+        "code": "I10",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Acute insomnia",
+        "code": "G47.00",
+        "status": "future",
+        "priority": "2"
+      }
+    ],
+    "soap_text": "[2025-01-16] ED Pre-Arrival Notes: ED Pre-Arrival Notes Result date: January 16, 2025 13:05 UTC. Pre-Arrival Summary: 68F increased weakness, blood sugar 500s per EMS.\n\n[2025-01-16] History & Physical: Admit H&P: 68F with severe community-acquired pneumonia, sepsis, acute hypoxic respiratory failure requiring O2. Hyperglycemia on arrival. Plan: IV ceftriaxone, azithro, IVF cautious, insulin, cultures, CXR/CT, labs, O2 titration.\n\n[2025-01-17] Daily Progress Note: Hospital Day 2: Persistent fevers, tachycardia improved with antibiotics. O2 requirement 3L NC. Reviewed labs (WBC, lactate trend) and imaging. Continue IV ceftriaxone/azithro, monitor cultures, adjust insulin, DVT prophylaxis, PT/OT.\n\n[2025-01-17] Medication Reconciliation Note: Med rec completed. Chronic meds reviewed and reconciled with inpatient orders.\n\n[2025-01-18] Daily Progress Note: Hospital Day 3: Patient reports improved breathing. On 2L O2 via NC. Continues IV antibiotics and diuresis. Reviewed CXR, daily labs. PT assisted with ambulation 2 laps on unit. Continue current regimen; monitor for decompensation.\n\n[2025-01-19] Daily Progress Note: Hospital Day 4: Afebrile. O2 1-2L with ambulation. Cultures negative to date. Reviewed labs; glucose better controlled. Transition planning started; continue IV antibiotics today, consider PO step-down tomorrow.\n\n[2025-01-20] Daily Progress Note: Hospital Day 5: Continued improvement. Off O2 at rest; minimal O2 with exertion. Antibiotics adjusted to PO step-down. Reviewed imaging and labs; continued insulin titration. Discharge planning with case management.\n\n[2025-01-21] Daily Progress Note: Hospital Day 6: Shortness of breath worsened overnight; O2 back to 2L. Re-reviewed imaging; ordered repeat CXR and additional labs. Restarted IV diuresis. High concern for complication or volume overload; close monitoring.\n\n[2025-01-22] Daily Progress Note: Hospital Day 7: Improved after diuresis; O2 down to 1L. Reviewed repeat CXR and labs. Continue PO antibiotics, continue insulin adjustments. Anticipate discharge in 24-48 hours if stable.\n\n[2025-01-23] Discharge Summary: Discharge Summary: Admit for severe CAP complicated by sepsis and acute hypoxic respiratory failure. Improved with IV antibiotics, O2, and diuresis. Discharge meds reviewed, follow-up arranged, return precautions provided. Total discharge management time > 30 minutes."
+}

@@ -1,0 +1,115 @@
+{
+  "encounter_id": "payload_no_em_g2211_filter_smoke",
+  "encounter_metadata": {
+    "client_name": "Hudson",
+    "type": "Ambulatory",
+    "service_dates": [
+      "2025-01-16"
+    ]
+  },
+  "ambient_note": {
+    "subjective": {
+      "cc": "Annual wellness visit and routine health review.",
+      "hpi": "Patient presents for a scheduled Medicare wellness visit and routine annual health review. Preventive screenings, health risk assessment, medications, functional status, cognition, mood, fall risk, vaccine status, and personalized prevention planning were reviewed. Patient reports feeling well today and does not raise a new concern. The primary care clinician documents that this practice remains the continuing focal point for the patient's health needs and care coordination. The patient also has longstanding atrial fibrillation after prior ablation; cardiology records were reviewed during wellness planning, and anticoagulation was discussed but deferred today because the patient has had recurrent falls and bruising risk. Stroke and bleeding risk will be reassessed at follow-up."
+    },
+    "reviewOfSystems": "General: Feeling well. Cardiovascular: No chest pain. Respiratory: No shortness of breath. Neurologic: No dizziness or falls reported.",
+    "objective": {
+      "vitalSigns": "BP 122/76, HR 68, SpO2 98%, BMI 26.1.",
+      "laboratoryResults": "",
+      "physicalExamination": "General: Well appearing, no acute distress. Heart: Regular rate and rhythm. Lungs: Clear to auscultation. Gait steady."
+    },
+    "assessmentAndPlan": {
+      "summary": "Subsequent Medicare Annual Wellness Visit and routine annual preventive exam.",
+      "text": "Health risk assessment reviewed. Personalized prevention plan updated. Age-appropriate screening schedule and vaccine counseling discussed. Medication list and care team reviewed. Routine annual preventive exam completed. Atrial fibrillation risk plan reviewed in the context of fall risk and bruising risk; anticoagulation was discussed and deferred with risk-based reasoning, and stroke/bleeding risk will be reassessed at follow-up. The clinician documents ongoing primary care responsibility as the continuing focal point for all needed services, including coordination of preventive screening, medication list maintenance, care team updates, chronic-care risk review, and annual follow-up planning. Charges entered for subsequent Medicare AWV and G2211 visit complexity.",
+      "diagnoses": [
+        {
+          "name": "Subsequent Medicare Annual Wellness Visit",
+          "text": "Preventive wellness planning and routine health review"
+        }
+      ]
+    },
+    "diagnosticsStudies": ""
+  },
+  "soap_text": "Chief Complaint\nAnnual wellness visit and routine health review.\n\nHistory of Present Illness\nThe patient presents for a scheduled Medicare wellness visit and routine annual health review. Preventive screenings, health risk assessment, medications, functional status, cognition, mood, fall risk, vaccine status, and personalized prevention planning were reviewed. The patient reports feeling well today and does not raise a new concern. The primary care clinician documents that this practice remains the continuing focal point for the patient's health needs and care coordination.\n\nThe patient also has longstanding atrial fibrillation after prior ablation. Cardiology records were reviewed during wellness planning. Anticoagulation was discussed but deferred today because the patient has had recurrent falls and bruising risk. Stroke and bleeding risk will be reassessed at follow-up.\n\nReview of Systems\nGeneral: Feeling well. Cardiovascular: No chest pain or palpitations. Respiratory: No shortness of breath. Neurologic: No dizziness reported; history of recurrent falls reviewed in risk planning.\n\nPhysical Exam\nBP 122/76, HR 68, SpO2 98%, BMI 26.1.\nGeneral: Well appearing, no acute distress. Heart: Regular rate and rhythm. Lungs: Clear to auscultation. Gait steady.\n\nAssessment/Plan\n1. Subsequent Medicare Annual Wellness Visit | (Z00.00: Encounter for general adult medical examination without abnormal findings)\nHealth risk assessment reviewed. Personalized prevention plan updated. Age-appropriate screening schedule and vaccine counseling discussed. Medication list and care team reviewed.\n\n2. Routine adult preventive health examination | (Z00.00: Encounter for general adult medical examination without abnormal findings)\nRoutine annual preventive exam completed. Continue healthy diet, regular activity, and routine annual follow-up.\n\n3. Atrial fibrillation after prior ablation | (I48.91: Unspecified atrial fibrillation)\nRisk plan reviewed in the context of fall risk and bruising risk. Anticoagulation was discussed and deferred with risk-based reasoning. Reassess stroke and bleeding risk at follow-up.\n\n4. Longitudinal primary care visit complexity\nThe clinician documents ongoing primary care responsibility as the continuing focal point for all needed services, including coordination of preventive screening, medication list maintenance, care team updates, chronic-care risk review, and annual follow-up planning.\n\nOrdered:\nG0439 annual wellness visit, includes a personalized prevention plan of service (PPPS), subsequent visit (Charge), Quantity: 1.\nG2211 visit complexity add-on (Charge), Quantity: 1.\n",
+  "orders": [],
+  "patient_type": "Established",
+  "patient_birthdate": "1958-02-10T00:00:00Z",
+  "patient_sex": "male",
+  "current_encounter_period": {
+    "start": "2025-01-16T14:15:00Z",
+    "end": "2025-01-16T14:45:00Z"
+  },
+  "health_plan": [
+    {
+      "health_plan": "medicare advantag part b",
+      "active_status": "Active",
+      "health_plan_effective_date": "2025-01-01"
+    }
+  ],
+  "awv_history": [
+    {
+      "claim_date": "2024-01-03T00:00:00Z",
+      "code": "G0438",
+      "description": "Initial annual wellness visit, includes a personalized prevention plan of service (PPPS), first visit"
+    }
+  ],
+  "facility_info": [
+    {
+      "patient_loc": "Clinic Room 3",
+      "nurse_unit_loc": "Primary Care",
+      "building_loc": "Medical Office Building A",
+      "facility_loc": "Main Campus",
+      "ccn_name": "General Hospital",
+      "ccn_number": 123456.0,
+      "pos_code": 11,
+      "cms_submission_type": "Professional",
+      "beg_effective_dt_tm": "2025-01-01T00:00:00Z",
+      "end_effective_dt_tm": "2026-12-31T23:59:59Z",
+      "is_excepted": true
+    }
+  ],
+  "provider_info": [
+    {
+      "physician_ind": 1,
+      "position": "Attending Physician",
+      "physician_status": "In",
+      "encntr_prsnl_r": "Primary"
+    }
+  ],
+  "lab_info": [
+    {
+      "facility_location": "Main Campus Lab",
+      "service_location": "Outpatient Lab",
+      "lab_name": "Hospital Core Lab",
+      "clia_number_txt": "12D4567890"
+    }
+  ],
+  "anaesthesia_staff_info": [
+    {
+      "role_performed": "Anesthesiologist",
+      "signing_indicator": 1,
+      "in_time": "2025-01-16T09:00:00Z",
+      "out_time": "2025-01-16T10:00:00Z"
+    }
+  ],
+  "anaesthesia_concurrent_staff_info": [
+    {
+      "relationship": "Anesthesia Coverage",
+      "concurrent_encounter_count": 2
+    }
+  ],
+  "anaesthesia_record_info": [
+    {
+      "asa_display_value": "ASA 2",
+      "asa_structured_status": "Final",
+      "result_date": "2025-01-16T10:05:00Z"
+    }
+  ],
+  "problem_list": [
+    {
+      "name": "Atrial fibrillation",
+      "text": "Longstanding atrial fibrillation after prior ablation",
+      "status": "active"
+    }
+  ]
+}

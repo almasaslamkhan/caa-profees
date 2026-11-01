@@ -1,0 +1,157 @@
+{
+    "encounter_id": "ascdsdfrwegergfvavdafv", 
+    "encounter_metadata": {
+      "client_name": "Hudson",
+      "type": "Ambulatory",
+      "service_dates": [
+        "2025-01-16"
+      ]
+    },
+    "ambient_note": {
+      "subjective": {
+          "cc": "for wellness exam",
+          "hpi": "The patient is a 29-year-old female with no significant past medical history, presenting for a routine check-up with a complaint of right knee pain.<br/>\n<br/>\nRight Knee Pain<br/>\nThe patient reports right knee pain that began three to four days ago after starting cycling exercise classes, which involve spin activities. The pain is localized to the right knee, described as dull and intermittent, and does not occur all day. It is aggravated by standing for long periods, walking uphill, running, and climbing stairs, and is relieved by sitting or resting. She took a painkiller once at the onset, which provided some relief, though she is unsure if improvement was due to rest or medication. She is not regularly using ice or a knee wrap. The patient denies any prior knee injuries or surgeries and has not experienced the knee giving out. She is generally healthy, does not take any regular medications, and has no allergies. Family history is notable for hypertension in her father and low blood pressure in her mother. She has had one prior surgery for a dental cyst, unrelated to her current complaint.<br/>\n<br/>\n",
+          "pastMedicalHistory": "",
+          "surgicalHistory": "",
+          "familyHistory": "",
+          "socialHistory": "",
+          "immunizationHistory": "",
+          "listOfAllergies": "",
+          "listOfCurrentRx": ""
+      },
+      "reviewOfSystems": "Musculoskeletal: Positive for knee pain and problems climbing stairs. Negative for knee giving out.",
+      "objective": {
+          "vitalSigns": "",
+          "laboratoryResults": "",
+          "physicalExamination": "Extremities:<br/>\nLeft knee exam within normal limits<br/>\n<br/>\nMusculoskeletal:<br/>\nNo pain with right knee extension<br/>\nNo pain with right knee flexion<br/>\nMild pain with right knee abduction or external rotation<br/>\n<br/>\nNeurological:<br/>\nDeep tendon reflexes 2+ to 4+ throughout<br/>\n<br/>\n"
+      },
+      "assessmentAndPlan": {
+          "summary": "Patient is a 29-year-old female presenting for evaluation of right knee pain following recent increase in physical activity.<br/><br/>",
+          "text": " 69210 (instrumentation) was performed during encounter note no diagnosis for this procedure and I perform it per patient request. Time: A total of 40 minutes was spent on this visit. Time spent with patient: 20 minutes This time was spent with patient obtaining HPI, performing a physical exam, and counseling the patient on presenting illness, diagnoses, further workup and testing, plan/treatment/risks and complications, refilling medications and ordering labs for further evaluation and medical management decision making, and/or for monitoring chronic disease.   Visit Prep: 5 minutes Documentation time: 10 minutes Post Visit Follow up within 24 hrs: 5 minutes  Right knee sprain (initial encounter).Exam findings consistent with mild sprain without structural injury. A therapeutic corticosteroid injection was performed to reduce inflammation and facilitate improved function. During today’s wellness visit, the patient initiated and reaffirmed an ongoing, continuous primary care relationship. Management of her musculoskeletal complaint requires longitudinal oversight, including monitoring response to conservative therapy, guidance on graded return to exercise, injury-prevention counseling, and assessment for potential escalation if symptoms do not improve. Her care plan will require personalized follow-up to support her long-term health goals, integrate preventive services, and proactively manage emerging issues. The complexity and continuity of this relationship extend beyond today’s singular knee complaint and involve a holistic, patient-specific approach to ongoing primary care. Wellness exam done ;Right knee sprain<br/>- Assessment consistent with right knee sprain based on localized pain, exam findings, and recent increase in physical activity; no evidence of structural injury requiring imaging.<br/>- Recommend rest and avoidance of spinning or strenuous activity for at least one week.<br/>- Gradual return to exercise, starting with walking.<br/>- Use knee brace when resuming exercise.<br/>- Over-the-counter pain medications (Ibuprofen, Motrin, Advil) as needed.<br/>- Nurse to provide knee exercises.<br/><br/>",
+          "diagnoses": []
+      },
+      "diagnosticsStudies": ""
+    },
+    "soap_text": "Chief Complaint Follow-up for diabetes, kidney disease, blood pressure, and left knee pain. HPI 66-year-old male established VA patient with Type 2 diabetes, chronic kidney disease, hypertension, hyperlipidemia, coronary artery disease, and chronic left knee osteoarthritis presents for routine follow-up. He reports home glucose readings ranging from 180 to 240 mg/dL over the past month despite taking metformin and insulin glargine. Most recent labs from last week show A1c 8.9%, eGFR 38, creatinine 1.8, and urine albumin/creatinine ratio 420 mg/g. He reports occasional missed insulin doses due to difficulty remembering evening administration. He also reports worsening left knee pain for the past 3 weeks, worse with walking and stairs. Pain is 7/10 today. Prior imaging showed degenerative joint disease. He denies recent trauma, fever, redness, or acute swelling. He has had prior benefit from corticosteroid injection and requests repeat injection today. Review of Systems Constitutional: Positive for fatigue. No fever or chills. Cardiovascular: No chest pain or palpitations. Respiratory: No cough or acute shortness of breath. Endocrine: Elevated home glucose readings. No hypoglycemic episodes reported. Genitourinary: No dysuria or hematuria. MSK: Positive for chronic left knee pain, worse with ambulation and stairs. Physical Exam General: Alert, oriented, no acute distress. Cardiovascular: Regular rate and rhythm, no murmur. Respiratory: Clear to auscultation bilaterally. Extremities: Trace bilateral lower extremity edema. No foot ulcers. Decreased monofilament sensation in both feet. MSK: Left knee with medial joint line tenderness, crepitus with range of motion, no erythema, no warmth, no instability. Assessment & Plan Type 2 diabetes A1c elevated at 8.9%; home glucose readings 180 to 240 mg/dL. eGFR 38, creatinine 1.8, urine albumin/creatinine ratio 420 mg/g. Continue insulin glargine 28 units nightly. Reviewed adherence strategies for missed evening insulin doses. Repeat A1c and renal labs in 3 months. Continue diabetic foot checks. Chronic kidney disease Continue renal monitoring. Avoid NSAIDs. Consider nephrology referral if renal function worsens. Left knee osteoarthritis with worsening pain Left knee pain 7/10, worse with ambulation and stairs; exam with medial joint line tenderness and crepitus. Prior imaging showed degenerative joint disease. Risks, benefits, and alternatives of corticosteroid injection discussed, including bleeding, infection, pain flare, skin changes, and transient hyperglycemia given diabetes. Patient verbalized understanding and agreed to proceed. Left knee intra-articular corticosteroid injection performed today using sterile technique with corticosteroid and local anesthetic. Patient tolerated injection well with no immediate complications. Advised to monitor for redness, fever, worsening pain, swelling, or significant glucose elevation. Avoid NSAIDs due to CKD. Continue acetaminophen, ice, and home exercise program as needed. Hypertension BP above goal today at 148/86. Continue lisinopril. Home BP log requested.",
+    "orders": [
+        {
+          "order_type": "Medication Order",
+          "status": "ordered",
+          "catalog_type": "Pharmacy",
+          "display_line": "Tablet",
+          "mnemonic": "Lisinopril"
+        },
+        {
+          "order_type": "Non Medication Order",
+          "status": "ordered",
+          "catalog_type": "Lab",
+          "display_line": "Blood Test",
+          "mnemonic": "CBC Panel"
+        }
+    ],
+    "patient_type": "New",
+    "appointment_type": "New",
+    "patient_birthdate": "1958-02-10T00:00:00Z",
+    "patient_sex": "male",
+    "current_encounter_period": {
+      "start": "2025-01-16T14:15:00Z",
+      "end": "2025-01-16T14:15:00Z"
+    },
+    "health_plan": [
+      {
+        "health_plan": "medicare advantag part b",
+        "active_status": "Active",
+        "health_plan_effective_date": "2023-01-01"
+      }
+    ],
+    "awv_history": [
+        {
+            "hcpcs_code": "G0439",
+            "claim_date": "2024-01-05"
+        }
+    ],
+    "facility_info": [
+      {
+        "patient_loc": "Clinic Room 3",
+        "nurse_unit_loc": "Primary Care",
+        "building_loc": "Medical Office Building A",
+        "facility_loc": "Main Campus",
+        "ccn_name": "General Hospital",
+        "ccn_number": 123456.0,
+        "pos_code": 11,
+        "cms_submission_type": "Professional",
+        "beg_effective_dt_tm": "2025-01-01T00:00:00Z",
+        "end_effective_dt_tm": "2026-12-31T23:59:59Z",
+        "is_excepted": true
+      }
+    ],
+    "provider_info": [
+      {
+        "physician_ind": 1,
+        "position": "Attending Physician",
+        "physician_status": "In",
+        "encntr_prsnl_r": "Primary"
+      }
+    ],
+    "lab_info": [
+      {
+        "facility_location": "Main Campus Lab",
+        "service_location": "Outpatient Lab",
+        "lab_name": "Hospital Core Lab",
+        "clia_number_txt": "12D4567890"
+      }
+    ],
+    "anaesthesia_staff_info": [
+      {
+        "role_performed": "Anesthesiologist",
+        "signing_indicator": 1,
+        "in_time": "2025-01-16T09:00:00Z",
+        "out_time": "2025-01-16T10:00:00Z"
+      }
+    ],
+    "anaesthesia_concurrent_staff_info": [
+      {
+        "relationship": "Anesthesia Coverage",
+        "concurrent_encounter_count": 2
+      }
+    ],
+    "anaesthesia_record_info": [
+      {
+        "asa_display_value": "ASA 2",
+        "asa_structured_status": "Final",
+        "result_date": "2025-01-16T10:05:00Z"
+      }
+    ],
+    "problem_list": [
+      {
+        "description": "Vertigo",
+        "code": "R42",
+        "status": "active",
+        "priority": "2"
+      },
+      {
+        "description": "Acute depression",
+        "code": "F32.A",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Brain concussion",
+        "code": "S06.0XAA",
+        "status": "inactive",
+        "priority": "2"
+      },
+      {
+        "description": "Benign essential hypertension",
+        "code": "I10",
+        "status": "active",
+        "priority": "1"
+      },
+      {
+        "description": "Acute insomnia",
+        "code": "G47.00",
+        "status": "future",
+        "priority": "2"
+      }
+    ]
+}

@@ -1,0 +1,11 @@
+prompt_path: ./cdrc/profees_coding/modifiers/models/parallel_modifiers/config/prompts.yaml
+guidelines_path: ./cdrc/profees_coding/modifiers/models/parallel_modifiers/config/modifier_guidelines.yaml
+modifiers_in_scope: "25,50,LT,RT,"
+# model_name: caa-gpt-5-2025-08-07-dev-sds
+model_name: caa-gpt-5.2-2025-12-11-dev-sds
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: none
+  seed: 2
+num_repeats: 1  
+prompt_version: v4

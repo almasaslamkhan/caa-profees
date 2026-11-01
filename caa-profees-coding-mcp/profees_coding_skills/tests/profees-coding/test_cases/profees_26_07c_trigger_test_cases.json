@@ -1,0 +1,201 @@
+{
+  "suite": "ProFees AoA agent trigger validation",
+  "release": "26.07c",
+  "source": "https://confluence.oraclecorp.com/confluence/display/IBS/Testing+cases+for+26.07c",
+  "summary": "Validate that the ProFees AoA agent triggers only for supported coding-summary and recode prompts, and does not trigger for unsupported conversational use cases.",
+  "test_cases": [
+    {
+      "id": 1,
+      "test_prompt": "show me coding summary",
+      "expected_result": "Positive: ProFees AoA agent is triggered",
+      "should_trigger": true,
+      "trigger_type": "coding_summary"
+    },
+    {
+      "id": 2,
+      "test_prompt": "Display coding summary",
+      "expected_result": "Positive: ProFees AoA agent is triggered",
+      "should_trigger": true,
+      "trigger_type": "coding_summary"
+    },
+    {
+      "id": 3,
+      "test_prompt": "Open coding summary",
+      "expected_result": "Positive: ProFees AoA agent is triggered",
+      "should_trigger": true,
+      "trigger_type": "coding_summary"
+    },
+    {
+      "id": 4,
+      "test_prompt": "Show me this patient's coding summary",
+      "expected_result": "Positive: ProFees AoA agent is triggered",
+      "should_trigger": true,
+      "trigger_type": "coding_summary"
+    },
+    {
+      "id": 5,
+      "test_prompt": "Show me ProFees coding summary",
+      "expected_result": "Positive: ProFees AoA agent is triggered",
+      "should_trigger": true,
+      "trigger_type": "coding_summary"
+    },
+    {
+      "id": 6,
+      "test_prompt": "Recode this encounter",
+      "expected_result": "Positive: ProFees AoA agent is triggered for recode",
+      "should_trigger": true,
+      "trigger_type": "recode"
+    },
+    {
+      "id": 7,
+      "test_prompt": "Please recode this visit",
+      "expected_result": "Positive: ProFees AoA agent is triggered for recode",
+      "should_trigger": true,
+      "trigger_type": "recode"
+    },
+    {
+      "id": 8,
+      "test_prompt": "Re-run coding for this patient",
+      "expected_result": "Positive: ProFees AoA agent is triggered for recode",
+      "should_trigger": true,
+      "trigger_type": "recode"
+    },
+    {
+      "id": 9,
+      "test_prompt": "Update the coding recommendations",
+      "expected_result": "Positive: ProFees AoA agent is triggered for recode",
+      "should_trigger": true,
+      "trigger_type": "recode"
+    },
+    {
+      "id": 10,
+      "test_prompt": "Refresh the coding summary",
+      "expected_result": "Positive: ProFees AoA agent is triggered for recode",
+      "should_trigger": true,
+      "trigger_type": "recode"
+    },
+    {
+      "id": 11,
+      "test_prompt": "Show me diagnosis summary",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 12,
+      "test_prompt": "Show me billing summary",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 13,
+      "test_prompt": "Submit codes",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 14,
+      "test_prompt": "Save codes",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 15,
+      "test_prompt": "Analysis the encounter",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 16,
+      "test_prompt": "What codes should I bill?",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 17,
+      "test_prompt": "Show me patient summary",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 18,
+      "test_prompt": "Show me clinical summary",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 19,
+      "test_prompt": "Add procedure code",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    },
+    {
+      "id": 20,
+      "test_prompt": "Explain coding recommendations",
+      "expected_result": "Negative: ProFees AoA agent is not triggered",
+      "should_trigger": false,
+      "trigger_type": "unsupported"
+    }
+  ],
+  "notification_test_cases": [
+    {
+      "id": 1,
+      "scenario": "MCP notification with valid patient and encounter context",
+      "input": {
+        "tool": "render_ambulatory_coding_notification",
+        "patient_id": "valid-patient-id",
+        "encounter_id": "valid-encounter-id",
+        "description": "Generated coding suggestions"
+      },
+      "expected_result": "A Generated codes notification card is displayed.",
+      "expected_rendered_type": "notification"
+    },
+    {
+      "id": 2,
+      "scenario": "Open Generated codes notification",
+      "input": {
+        "action": "ambulatorycoding.open",
+        "patient_id": "valid-patient-id",
+        "encounter_id": "valid-encounter-id"
+      },
+      "expected_result": "Clicking the notification opens the existing ambulatory coding canvas.",
+      "expected_rendered_type": "canvas"
+    },
+    {
+      "id": 3,
+      "scenario": "Notification is missing patient or encounter context",
+      "input": {
+        "tool": "render_ambulatory_coding_notification",
+        "patient_id": "",
+        "encounter_id": ""
+      },
+      "expected_result": "The notification does not open the canvas. The MCP logs notification_context_incomplete.",
+      "expected_rendered_type": "notification"
+    },
+    {
+      "id": 4,
+      "scenario": "Generated codes card or canvas cannot display details",
+      "input": {
+        "ui_error": "Generated codes details unavailable"
+      },
+      "expected_result": "The conversational response does not expose codes, code counts, or code types and says: Unable to display generated codes. Please try again later."
+    },
+    {
+      "id": 5,
+      "scenario": "Conversational recode request",
+      "input": {
+        "physician_prompt": "Perform recode"
+      },
+      "expected_result": "No recode tool call and no new notification card or canvas are generated. The response directs the user to click Recode in the existing Generated codes canvas.",
+      "should_trigger_recode": false
+    }
+  ]
+}

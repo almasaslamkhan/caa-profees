@@ -1,0 +1,135 @@
+{
+  "procedure": [
+    {
+      "description": "Visit complexity inherent to ongoing, longitudinal primary care or management of a single serious or complex condition",
+      "code": "G2211",
+      "system": "HCPCS",
+      "justification": "Established patient seen for wellness and follow-up; provider documents that they \u201ccontinue to follow for general primary care,\u201d with ongoing preventive health management and continued oversight of musculoskeletal concerns and plan to monitor symptoms over time with follow-up in 4\u20136 weeks, indicating longitudinal primary care relationship.",
+      "modifiers": [],
+      "linked_diagnosis": [
+        {
+          "code": "Z00.01",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Encounter for general adult medical examination with abnormal findings",
+          "justification": "The add-on complexity code G2211 is justified by the provider\u2019s description of ongoing, longitudinal primary care and preventive health management (wellness exam with abnormal findings), which aligns with an encounter for general adult medical examination with abnormal findings."
+        },
+        {
+          "code": "S83.91XA",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Sprain of unspecified site of right knee, initial encounter",
+          "justification": "The right knee sprain is an abnormal finding addressed within the context of ongoing primary care, and the provider documents continued monitoring and follow-up of this musculoskeletal condition, supporting the added visit complexity described by G2211."
+        }
+      ]
+    }
+  ],
+  "em": [
+    {
+      "code": "99203",
+      "description": null,
+      "source": "MDM",
+      "confidence": null,
+      "system": "CPT",
+      "justification": "Encounter type: EncounterType.OUTPATIENT. Objective evidence: \"Musculoskeletal: No pain with right knee extension or flexion. Mild pain with right knee abduction or external rotation.\" Assessment/Plan evidence: \"2. Right knee sprain - Assessment consistent with sprain related to recent increase in activity. - Recommend rest and avoidance of spinning/strenuous activity for at least one week. - Gradual return to exercise, starting with walking. - Knee brace when resuming activity. - OTC NSAIDs as needed. - Home knee-strengthening program reviewed; nurse provided exercises. - ... follow up in 4\u20136 weeks or sooner if pain persists/worsens to reassess need for further treatment or imaging.\"\n1. problem_complexity: Low. Justification: 1 acute, uncomplicated illness or injury: Right knee sprain.\nRight knee sprain: A&P documents new sprain due to recent activity with conservative management (rest, brace, OTC NSAIDs, home exercises) and contingent imaging if not improved. No systemic symptoms, no cross-system evaluation, and no evidence of complication or diagnostic uncertainty. Meets AMA definition of an acute, uncomplicated injury, which sets overall problem complexity to Low.\n2. data_complexity: Minimal. Justification: Minimal Data Elements Present. Tests & Documents: 1 elements present. One unique test ordered during this encounter: CBC Panel (lab). No other tests/documents reviewed or ordered. Medication order does not count toward T&D.\n3. risk_of_complications: Moderate. Justification: Highest risk item: Prescription drug management. The Orders list includes a named prescription medication order: \"Lisinopril | Tablet (ordered).\" Per guidelines, initiating a prescription medication is Moderate risk regardless of indication. Additional items: Named OTC management for knee pain (\"OTC NSAIDs as needed\") and OTC device recommendation (\"Knee brace when resuming activity\") are Low risk. Minimal-risk actions include wellness counseling and CBC lab order. Final risk must equal the highest identified risk, which is Moderate due to prescription drug management.",
+      "modifiers": [
+        {
+          "code": "25",
+          "description": "Significant, Separately Identifiable Evaluation and Management Service by the Same Physician or Other Qualified Health Care Professional on the Same Day of the Procedure or Other Service",
+          "justification": "Two distinct E/M services on same DOS (preventive 99387 and problem-oriented 99203) by same provider. Documentation shows significant, separately identifiable problem-oriented E/M beyond the routine preventive exam, including targeted MSK history/exam and management plan for an acute knee sprain. Per CPT and NCCI, append 25 to the problem-oriented E/M when reported with a preventive E/M on the same date."
+        }
+      ],
+      "encounter_type": {
+        "encounter_type": "Office or Other Outpatient Service",
+        "justification": "Objective evidence: \"Musculoskeletal: No pain with right knee extension or flexion. Mild pain with right knee abduction or external rotation.\" Assessment/Plan evidence: \"2. Right knee sprain - Assessment consistent with sprain related to recent increase in activity. - Recommend rest and avoidance of spinning/strenuous activity for at least one week. - Gradual return to exercise, starting with walking. - Knee brace when resuming activity. - OTC NSAIDs as needed. - Home knee-strengthening program reviewed; nurse provided exercises. - ... follow up in 4\u20136 weeks or sooner if pain persists/worsens to reassess need for further treatment or imaging.\""
+      },
+      "problem_complexity": {
+        "level": "Low",
+        "justification": "1 acute, uncomplicated illness or injury: Right knee sprain.\nRight knee sprain: A&P documents new sprain due to recent activity with conservative management (rest, brace, OTC NSAIDs, home exercises) and contingent imaging if not improved. No systemic symptoms, no cross-system evaluation, and no evidence of complication or diagnostic uncertainty. Meets AMA definition of an acute, uncomplicated injury, which sets overall problem complexity to Low.",
+        "confidence": 1.0
+      },
+      "data_complexity": {
+        "level": "Minimal",
+        "justification": "Minimal Data Elements Present. Tests & Documents: 1 elements present. One unique test ordered during this encounter: CBC Panel (lab). No other tests/documents reviewed or ordered. Medication order does not count toward T&D.",
+        "confidence": 1.0
+      },
+      "risk_of_complications": {
+        "level": "Moderate",
+        "justification": "Highest risk item: Prescription drug management. The Orders list includes a named prescription medication order: \"Lisinopril | Tablet (ordered).\" Per guidelines, initiating a prescription medication is Moderate risk regardless of indication. Additional items: Named OTC management for knee pain (\"OTC NSAIDs as needed\") and OTC device recommendation (\"Knee brace when resuming activity\") are Low risk. Minimal-risk actions include wellness counseling and CBC lab order. Final risk must equal the highest identified risk, which is Moderate due to prescription drug management.",
+        "confidence": 1.0
+      },
+      "mdm_complexity": {
+        "level": "Low",
+        "justification": null,
+        "confidence": null
+      },
+      "time_spent": null,
+      "linked_diagnosis": [
+        {
+          "code": "S83.91XA",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Sprain of unspecified site of right knee, initial encounter",
+          "justification": "The problem-oriented E/M service focuses on evaluation and management of the new right knee pain, assessed as a right knee sprain, including history, focused exam, treatment recommendations (rest, brace, NSAIDs, exercises), and follow-up planning, all of which support medical necessity for 99203."
+        },
+        {
+          "code": "Z00.01",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Encounter for general adult medical examination with abnormal findings",
+          "justification": "Although the primary focus for 99203 is the acute knee sprain, the provider also notes that this visit includes routine wellness evaluation and ongoing primary care; the general exam with abnormal findings (knee sprain) provides additional context for the overall E/M service complexity."
+        }
+      ]
+    },
+    {
+      "code": "99387",
+      "description": null,
+      "source": null,
+      "confidence": null,
+      "system": "CPT",
+      "justification": "Encounter type: EncounterType.PREVENTIVE_MEDICINE. Objective evidence: \"Physical Examination: Extremities: Left knee exam WNL... Neurological: DTRs 2+ to 4+ throughout.\" Assessment/Plan evidence: \"1. Wellness exam completed; ongoing primary care and preventive health management reviewed.\"",
+      "modifiers": [],
+      "encounter_type": {
+        "encounter_type": "Preventive Medicine",
+        "justification": "Objective evidence: \"Physical Examination: Extremities: Left knee exam WNL... Neurological: DTRs 2+ to 4+ throughout.\" Assessment/Plan evidence: \"1. Wellness exam completed; ongoing primary care and preventive health management reviewed.\""
+      },
+      "problem_complexity": null,
+      "data_complexity": null,
+      "risk_of_complications": null,
+      "mdm_complexity": null,
+      "time_spent": null,
+      "linked_diagnosis": [
+        {
+          "code": "Z00.01",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Encounter for general adult medical examination with abnormal findings",
+          "justification": "99387 is a preventive medicine service for a comprehensive wellness examination; the note documents a wellness exam and ongoing preventive health management with abnormal findings, directly corresponding to Z00.01."
+        },
+        {
+          "code": "S83.91XA",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Sprain of unspecified site of right knee, initial encounter",
+          "justification": "The right knee sprain is the abnormal finding identified and managed during the wellness encounter, which is why Z00.01 (with abnormal findings) is used; S83.91XA specifies the nature of that abnormal musculoskeletal finding addressed during the preventive visit."
+        }
+      ]
+    }
+  ],
+  "diagnosis": [
+    {
+      "code": "Z00.01",
+      "is_primary": true,
+      "system": "ICD-10-CM",
+      "description": "Encounter for general adult medical examination with abnormal findings",
+      "justification": "Assessment/Plan: \u201c1. Wellness exam completed; ongoing primary care and preventive health management reviewed.\u201d Knee sprain is an abnormal finding addressed at the same visit, so the preventive adult exam with abnormal findings is the appropriate primary diagnosis."
+    },
+    {
+      "code": "S83.91XA",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Sprain of unspecified site of right knee, initial encounter",
+      "justification": "Assessment/Plan: \u201c2. Right knee sprain\u2026 related to recent increase in activity.\u201d Right knee is specified, but no ligament or structure is identified, so unspecified site of right knee, initial encounter, is the most specific supported option."
+    }
+  ]
+}

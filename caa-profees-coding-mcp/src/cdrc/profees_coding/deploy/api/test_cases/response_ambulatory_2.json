@@ -1,0 +1,275 @@
+{
+  "procedure": [
+    {
+      "description": "Immunization administration (includes percutaneous, intradermal, subcutaneous, or intramuscular injections); 1 vaccine (single or combination vaccine/toxoid)",
+      "code": "90471",
+      "system": "CPT",
+      "justification": "The note documents PCV immunization today and the immunization record shows pneumococcal 20-valent conjugate vaccine given on the encounter date.",
+      "modifiers": [],
+      "linked_diagnosis": [
+        {
+          "code": "Z23",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Encounter for immunization",
+          "justification": "The plan documents health maintenance with PCV immunization given today, which supports immunization administration."
+        }
+      ]
+    },
+    {
+      "description": "Visit complexity inherent to evaluation and management associated with medical care services that serve as the continuing focal point for all needed health care services and/or with medical care services that are part of ongoing care related to a patient's single, serious condition or a complex condition",
+      "code": "G2211",
+      "system": "HCPCS",
+      "justification": "Establish-care visit assumed ongoing management of multiple chronic conditions with medication changes and planned follow-up.",
+      "modifiers": [],
+      "linked_diagnosis": [
+        {
+          "code": "M79.7",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Fibromyalgia",
+          "justification": "Fibromyalgia is a complex chronic condition that was actively managed with medication initiation and follow-up planning, supporting ongoing longitudinal care."
+        },
+        {
+          "code": "E03.9",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Hypothyroidism, unspecified",
+          "justification": "Hypothyroidism is a chronic condition under continued primary care management with repeat thyroid testing ordered."
+        },
+        {
+          "code": "E78.5",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Hyperlipidemia, unspecified",
+          "justification": "Hyperlipidemia was managed as part of continuing primary care with repeat labs and consideration of future treatment."
+        },
+        {
+          "code": "Z86.73",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+          "justification": "History of CVA was addressed with preventive management recommendations, reflecting ongoing longitudinal management of a significant past condition."
+        },
+        {
+          "code": "G47.30",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Sleep apnea, unspecified",
+          "justification": "Sleep apnea was followed as part of continuing comprehensive care with review of current PAP use and tolerance."
+        },
+        {
+          "code": "F32.A",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Depression, unspecified",
+          "justification": "Depression was part of the patient's ongoing chronic care with medication review and taper discussion during the visit."
+        }
+      ]
+    }
+  ],
+  "em": [
+    {
+      "code": "99204",
+      "description": "Office o/p new mod 45 min",
+      "source": "MDM",
+      "system": "CPT",
+      "justification": "Encounter type: New patient visit with medication changes and labs ordered.\nPatient type: New. Visit history support the prediction.\nProblem Complexity: Moderate. 1 self-limited or minor problem. 8 stable, chronic illness. 1 chronic illness with exacerbation, progression, or side effects of treatment. 1 undiagnosed new problem with uncertain prognosis\nData Complexity: Moderate. Tests & Documents: 4 elements present.\nRisk Of Complications: Moderate. Started prescription duloxetine for fibromyalgia.\nTime statement: A total time of 30 minutes was spent on office visit.",
+      "modifiers": [
+        {
+          "code": "25",
+          "description": "Significant, separately identifiable evaluation and management service by the same physician or other qualified health care professional on the same day of the procedure or other service",
+          "justification": "Problem-oriented E/M was significant and separate from same-day immunization administration."
+        }
+      ],
+      "encounter_type": {
+        "encounter_type": "Office or Other Outpatient Service",
+        "justification": "New patient visit with medication changes and labs ordered."
+      },
+      "problem_complexity": {
+        "level": "Moderate",
+        "detailed_justification": "1 self-limited or minor problem: Health maintenance immunization (PCV20 given). 8 stable, chronic illness: History of CVA (secondary prevention not on aspirin), Hyperlipidemia (LDL previously >200; repeat planned), Hypothyroidism (prior mildly suppressed TSH; repeat planned), GERD (off meds, doing okay), Chronic opioid use / chronic pain regimen (fentanyl and oxycodone continued), Depression (on SSRI; plan to reduce/taper), Asthma (infrequent inhaler use; follow-up), Sleep apnea (continues CPAP, tolerating). 1 chronic illness with exacerbation, progression, or side effects of treatment: Fibromyalgia with increasing pain. 1 undiagnosed new problem with uncertain prognosis: Memory problems (attributed possibly to opioids; neurology evaluation planned).\nFibromyalgia with increasing pain: A&P: \"Fibromyalgia. She reports increasing pain from this. Trial of duloxetine 20 mg twice daily consider tapering up if works okay.\" Worsening symptoms with active treatment escalation supports chronic illness with exacerbation.\nHistory of CVA (secondary prevention not on aspirin): A&P: \"Apparent history of a CVA... Not currently on aspirin. I would recommend she take 1 of those. Baby aspirin daily.\" CVA is chronic and is being managed for prevention; no acute neurologic change documented.\nHyperlipidemia (LDL previously >200; repeat planned): A&P: \"Hyperlipidemia. Her last lipids showed LDL greater than 200\u2013repeat in consider lipid-lowering agents.\" Chronic condition addressed with diagnostic monitoring; no explicit statement of worsening/progression today.\nHypothyroidism (prior mildly suppressed TSH; repeat planned): A&P: \"Hypothyroidism. Last thyroid level showed mild suppression of her TSH\u2013will repeat.\" Chronic condition addressed with monitoring; no explicit uncontrolled symptoms or medication change documented.\nGERD (off meds, doing okay): A&P: \"GERD\u2013doing okay off medications as well.\" Chronic condition assessed as stable without escalation.\nChronic opioid use / chronic pain regimen (fentanyl and oxycodone continued): A&P: \"Opioid use. No change in her fentanyl and oxycodone.\" Ongoing chronic therapy assessed/continued without change, consistent with stable chronic condition management.\nDepression (on SSRI; plan to reduce/taper): A&P: \"Depression\u2013doing well... we will cut that down to 100 mg daily and consider tapering further...\" Condition described as doing well; despite dose reduction, A&P does not document exacerbation/poor control.\nAsthma (infrequent inhaler use; follow-up): A&P: \"Asthma\u2013very infrequent use of her inhaler...\u2013follow-up.\" Chronic condition assessed as stable with routine follow-up.\nSleep apnea (continues CPAP, tolerating): A&P: \"Sleep apnea\u2013continues on CPAP and tolerating okay.\" Chronic condition managed with device and assessed as stable.\nMemory problems (attributed possibly to opioids; neurology evaluation planned): A&P: \"Memory problems. I did point out that her opioids may have an effect here. She is getting neurology evaluation in the future.\" Symptom problem without definitive diagnosis and planned specialty evaluation supports uncertain prognosis (even without immediate testing ordered today).\nHealth maintenance immunization (PCV20 given): A&P: \"Health maintenance\u2013PCV immunization today.\" Preventive care action; not a disease problem and does not increase problem complexity.",
+        "justification": "1 self-limited or minor problem. 8 stable, chronic illness. 1 chronic illness with exacerbation, progression, or side effects of treatment. 1 undiagnosed new problem with uncertain prognosis",
+        "confidence": 0.6
+      },
+      "data_complexity": {
+        "level": "Moderate",
+        "detailed_justification": "Moderate Data Elements Present. Tests & Documents: 4 elements present. Unique tests ordered: CBC panel, CMP, Lipid Profile, TSH; no qualifying test reviews/external notes.",
+        "justification": "Tests & Documents: 4 elements present.",
+        "confidence": 1.0
+      },
+      "risk_of_complications": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": "Started prescription duloxetine for fibromyalgia.",
+        "confidence": 1.0
+      },
+      "pc_critic_response": "Audit finding: the prior Problem Complexity level of Moderate is supported, but the original justification was incomplete and somewhat imprecise. The highest-level addressed problem is fibromyalgia with documented worsening (\"increasing pain\") and treatment escalation (trial of duloxetine), meeting chronic illness with exacerbation (Moderate). Multiple other chronic conditions were also explicitly addressed in the A&P (CVA prevention, hyperlipidemia monitoring, hypothyroidism monitoring, GERD, opioid use, depression, asthma, OSA), which were under-specified in the earlier summary. Additionally, \"memory problems\" is an addressed symptom with planned neurology evaluation and no definitive diagnosis, reasonably classifiable as an undiagnosed problem with uncertain prognosis (Moderate), providing an independent basis for Moderate even if fibromyalgia were debated. No A&P problem meets High criteria (no threat to life/bodily function or severe exacerbation documented). Assumption: neurology evaluation represents active diagnostic evaluation planning; no immediate diagnostic orders documented for memory complaint.",
+      "rc_critic_response": "",
+      "dc_critic_response": "1) DISC: I searched the note for explicit statements of discussion with another qualified health care professional (e.g., \u201cdiscussed with Dr X\u201d). The note only states the patient was referred/scheduled for therapy and will have a future neurology evaluation; these are referrals/plans, not documented discussions, so DISC is not supported.\n2) Intpr (radiology): I checked for any imaging (XR/CT/MRI/US) orders/results and any language of independent interpretation (\u201cI reviewed/independently interpreted\u201d). The only diagnostic result mentioned is an event monitor (not radiology) and there are no imaging findings discussed; therefore Intpr is not present.\n3) iHx: I looked for history provided by someone other than the patient (e.g., spouse/parent reports). History is narrated as the patient reporting, with no separate historian identified and no indication the patient is unable to provide history; therefore iHx is not present.\n4) Tests & Documents count: I counted only unique tests/documents ordered/reviewed, excluding medication orders and vaccines. Orders documented: Comprehensive Metabolic Panel, Lipid Profile, TSH 3rd generation, and (from structured data) CBC panel. No external notes reviewed and no test results reviewed/interpreted in this encounter beyond historical statements, so total T&D items = 4 orders. This meets Category 1 (>=3 items) for Moderate data complexity.",
+      "mdm_complexity": {
+        "level": "Moderate",
+        "detailed_justification": null,
+        "justification": null,
+        "confidence": null
+      },
+      "time_spent": {
+        "time_spent_minutes": 30,
+        "evidence": "I spent over 30 minutes in the face-to-face, and documentation of this visit today.",
+        "justification": "A total time of 30 minutes was spent on office visit."
+      },
+      "linked_diagnosis": [
+        {
+          "code": "M79.7",
+          "is_primary": true,
+          "system": "ICD-10-CM",
+          "description": "Fibromyalgia",
+          "justification": "The assessment and plan document worsening fibromyalgia pain and active treatment with a trial of duloxetine, making this a primary problem managed at the visit."
+        },
+        {
+          "code": "E03.9",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Hypothyroidism, unspecified",
+          "justification": "Hypothyroidism was specifically assessed with review of prior TSH suppression and repeat TSH ordered for ongoing management."
+        },
+        {
+          "code": "E78.5",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Hyperlipidemia, unspecified",
+          "justification": "Hyperlipidemia was addressed with review of prior LDL greater than 200, repeat lipid testing, and consideration of lipid-lowering therapy."
+        },
+        {
+          "code": "Z86.73",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+          "justification": "The past CVA was reviewed in the assessment and plan, including residual history and recommendation to start daily baby aspirin for secondary prevention."
+        },
+        {
+          "code": "G47.30",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Sleep apnea, unspecified",
+          "justification": "Sleep apnea was actively followed with documentation that the patient continues PAP therapy and is tolerating it."
+        },
+        {
+          "code": "F32.A",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Depression, unspecified",
+          "justification": "Depression was assessed as doing well and medication management was discussed with plans to adjust and taper therapy."
+        },
+        {
+          "code": "F11.90",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Opioid use, unspecified, uncomplicated",
+          "justification": "Opioid use was specifically addressed in the plan with no change in fentanyl and oxycodone and discussion of possible effect on memory."
+        },
+        {
+          "code": "R41.3",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Other amnesia",
+          "justification": "Memory problems were explicitly assessed during the encounter, with counseling about opioid effect and planned neurology evaluation."
+        },
+        {
+          "code": "J45.909",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Unspecified asthma, uncomplicated",
+          "justification": "Asthma was mentioned in the assessment and plan with follow-up of very infrequent inhaler use during allergy season."
+        },
+        {
+          "code": "K21.9",
+          "is_primary": false,
+          "system": "ICD-10-CM",
+          "description": "Gastro-esophageal reflux disease without esophagitis",
+          "justification": "GERD was addressed in the assessment and plan as doing okay off medication, indicating current follow-up of the condition."
+        }
+      ],
+      "confidence": null
+    }
+  ],
+  "diagnosis": [
+    {
+      "code": "M79.7",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Fibromyalgia",
+      "justification": "The assessment and plan document worsening fibromyalgia pain and active treatment with a trial of duloxetine, making this a primary problem managed at the visit."
+    },
+    {
+      "code": "E03.9",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Hypothyroidism, unspecified",
+      "justification": "Hypothyroidism was specifically assessed with review of prior TSH suppression and repeat TSH ordered for ongoing management."
+    },
+    {
+      "code": "E78.5",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Hyperlipidemia, unspecified",
+      "justification": "Hyperlipidemia was addressed with review of prior LDL greater than 200, repeat lipid testing, and consideration of lipid-lowering therapy."
+    },
+    {
+      "code": "Z86.73",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+      "justification": "The past CVA was reviewed in the assessment and plan, including residual history and recommendation to start daily baby aspirin for secondary prevention."
+    },
+    {
+      "code": "G47.30",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Sleep apnea, unspecified",
+      "justification": "Sleep apnea was actively followed with documentation that the patient continues PAP therapy and is tolerating it."
+    },
+    {
+      "code": "F32.A",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Depression, unspecified",
+      "justification": "Depression was assessed as doing well and medication management was discussed with plans to adjust and taper therapy."
+    },
+    {
+      "code": "F11.90",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Opioid use, unspecified, uncomplicated",
+      "justification": "Opioid use was specifically addressed in the plan with no change in fentanyl and oxycodone and discussion of possible effect on memory."
+    },
+    {
+      "code": "R41.3",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Other amnesia",
+      "justification": "Memory problems were explicitly assessed during the encounter, with counseling about opioid effect and planned neurology evaluation."
+    },
+    {
+      "code": "J45.909",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Unspecified asthma, uncomplicated",
+      "justification": "Asthma was mentioned in the assessment and plan with follow-up of very infrequent inhaler use during allergy season."
+    },
+    {
+      "code": "K21.9",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Gastro-esophageal reflux disease without esophagitis",
+      "justification": "GERD was addressed in the assessment and plan as doing okay off medication, indicating current follow-up of the condition."
+    },
+    {
+      "code": "Z23",
+      "is_primary": false,
+      "system": "ICD-10-CM",
+      "description": "Encounter for immunization",
+      "justification": "The plan documents health maintenance with PCV immunization given today, which supports immunization administration."
+    }
+  ]
+}

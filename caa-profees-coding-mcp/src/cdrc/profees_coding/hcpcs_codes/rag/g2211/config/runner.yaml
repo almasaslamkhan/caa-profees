@@ -1,0 +1,6 @@
+prompt_path: ./cdrc/profees_coding/hcpcs_codes/rag/g2211/config/prompts.yaml
+model_name: gpt-5.2-2025-11-13
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: high
+  seed: 23

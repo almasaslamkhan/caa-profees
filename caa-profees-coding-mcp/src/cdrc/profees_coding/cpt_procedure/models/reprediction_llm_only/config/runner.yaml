@@ -1,0 +1,8 @@
+prompt_path: ./cdrc/profees_coding/cpt_procedure/models/reprediction_llm_only/config/prompts.yaml
+prompt_version: v0.1
+design: reprediction_llm_only
+model_name: caa-gpt-5-2025-08-07-dev-sds
+model_kwargs:
+  reasoning_effort: low
+  seed: 1
+batch_size: 5

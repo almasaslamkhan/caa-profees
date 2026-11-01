@@ -1,0 +1,22 @@
+prompt_path: ./cdrc/profees_coding/em/models/reprediction_mdm_only/config/prompts.yaml
+
+embedding_model: oracle-text-embedding-3-large-1-dev
+vdb_index_path: cdrc/profees_coding/em/models/medprompt_detailed_multi/vdb/vdb_icl_knowledge_base_v0.1_pla_cga_dis_209_oracle-text-embedding-3-large-1-dev
+
+model_name: caa-gpt-5.2-2025-12-11-dev-sds
+model_kwargs:
+  temperature: 1.0
+  reasoning_effort: none
+  seed: 2
+
+num_few_shot_examples: 3
+predict_mdm_complexity: false
+num_repeats: 1  # number of times for medprompt ensemble
+
+prompt_version: v1.1
+time_statement_prompt_version: v4
+encounter_type_prompt_version: v10
+skip_additional_info: false
+omit_soap_note: true
+omit_patient_problems: true
+icl_mode: knowledge_base

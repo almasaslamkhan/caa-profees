@@ -1,0 +1,5 @@
+HCPCS_G2211_PROMPT_VERSION = "g2211_prompt_version"
+HCPCS_AWV_PROMPT_VERSION = "awv_prompt_version"
+HCPCS_OTHER_PROMPT_VERSION = "other_prompt_version"
+HCPCS_AWV_ELIGIBILITY_PROMPT_VERSION = "awv_eligibility_prompt_version"
+HCPCS_BRANCH_NAME = "hcpcs_branch_name"

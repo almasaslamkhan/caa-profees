@@ -1,0 +1,14 @@
+prompt_path: ./cdrc/profees_coding/icd10cm/models/workflow/config/prompts.yaml
+combo_rules_path: ./cdrc/profees_coding/icd10cm/data/combo_codes.yaml
+combo_rules: False
+model_name: caa-gpt-5.1-2025-11-13-dev
+embedding_model: text-embedding-3-large
+model_kwargs:
+  temperature: 1.0
+  seed: 2
+prompt_version: v1
+llm_only_prompt_version: v1
+extract_and_queries_prompt_version: v2
+code_reranker_prompt_version: v4
+icl_mode: knowledge_base
+search_top_k: 30 # code search using queries
